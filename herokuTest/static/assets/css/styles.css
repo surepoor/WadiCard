@@ -189,7 +189,6 @@ p {
 }
 	
 .gray-bg{
-	/*background:#f7f9fc url(../img/pattern.png);*/
 	background-size: cover;
     background-position: center;
 }
@@ -6165,7 +6164,6 @@ a.tag_t, a.tag_t:hover, a.tag_t:focus {
 	font-size:15px;
 }
 .inc-fleat.inc-add:before {
-	/*background:url(../img/add.svg);*/
 	content:"";
     position: absolute;
 	background-size: contain;
@@ -6175,7 +6173,6 @@ a.tag_t, a.tag_t:hover, a.tag_t:focus {
     left:0px;
 }
 .inc-fleat.inc-call:before {
-    /*background: url(../img/call.svg);*/
     content: "";
     position: absolute;
     background-size: contain;
@@ -6657,7 +6654,6 @@ a.like-listing:hover, a.like-listing:focus{
     color: #ffffff;
 }
 .Reveal-items-modern-list .inc-fleat.inc-add:before {
-	/*background:url(../img/light-add.svg);*/
 	content:"";
 	position: absolute;
     background-size: contain;
@@ -6667,7 +6663,6 @@ a.like-listing:hover, a.like-listing:focus{
     left: 4px;
 }
 .Reveal-items-modern-list .inc-fleat.inc-call:before {
-    /*background: url(../img/light-call.svg);*/
     content: "";
 	position: absolute;
     background-size: contain;
@@ -7292,7 +7287,6 @@ a.btn.width-170 {
     color: #5278a2;
 }
 .inc-fleat.inc-bed:before {
-	/*background:url(../img/bed.svg);*/
 	content:"";
     position: absolute;
 	background-size: contain;
@@ -7302,7 +7296,6 @@ a.btn.width-170 {
     left:-2px;
 }
 .inc-fleat.inc-bath:before {
-	/*background:url(../img/bath.svg);*/
 	content:"";
     position: absolute;
 	background-size:contain;
@@ -7312,7 +7305,6 @@ a.btn.width-170 {
     left:-2px;
 }
 .inc-fleat.inc-type:before {
-	/*background:url(../img/type.svg);*/
 	content:"";
     position: absolute;
 	background-size:contain;
@@ -7322,7 +7314,6 @@ a.btn.width-170 {
     left:-2px;
 }
 .inc-fleat.inc-area:before {
-	/*background:url(../img/area.svg);*/
 	content:"";
     position: absolute;
 	background-size:contain;
@@ -8249,7 +8240,6 @@ article figure>a:hover .Reveal-listing-box-img {
 .title__curve {
     width: 100%;
     height: 60px;
-    /*background-image: url(../img/course-title-curve.png);*/
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -8265,7 +8255,6 @@ article figure>a:hover .Reveal-listing-box-img {
     left: 0;
     right: 0;
     bottom: 0;
-    /*background-image: url(../img/pattern.png);*/
 }
 /*------------------ Listings Elements: Category 2 ------------------*/
 .Reveal-moderns-category {
@@ -10534,7 +10523,6 @@ ul.author-list-counter li span {
 	position:relative;
 }
 .Reveal-icon-wrap:before {
-    /*content:url(../img/arrow.png);*/
     position: absolute;
     width: auto;
     height: auto;
