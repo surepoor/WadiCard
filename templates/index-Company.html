@@ -1,12 +1,12 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="ar" dir="rtl">
 	<head>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+		
         <title>Listly - Business Directory & Listings HTML Template</title>
-
+		
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
 
         <!-- All Plugins Css -->
@@ -19,20 +19,20 @@
 
 		<!-- Custom Color Option -->
 		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">
-
+		
     </head>
-
+	
     <body class="red-skin">
         <!-- ============================================================== -->
         <!-- Preloader - style you can find in spinners.css -->
         <!-- ============================================================== -->
         <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
-
+		
         <!-- ============================================================== -->
         <!-- Main wrapper - style you can find in pages.scss -->
         <!-- ============================================================== -->
         <div id="main-wrapper">
-
+		
             <!-- ============================================================== -->
             <!-- Top header  -->
             <!-- ============================================================== -->
@@ -46,76 +46,74 @@
 								<img src="assets/img/logo.png" class="logo sw-m" alt="" /> منصة خدمات الحج والعمرة -->
 								شاذروان
 							</a>
-							<!-- <h4 class="Reveal-st-author-title">شاذروان</h4> -->
-
 							<div class="nav-toggle"></div>
 						</div>
 						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">
 							<ul class="nav-menu justify-content-center">
-
+							
 								<li class="active"><a href="javascript:void(0);">الرئيسية<span class="submenu-indicator"></span></a>
 									<ul class="nav-dropdown nav-submenu">
-										<li><a href="index.html">الخيار الأول</a></li>
-										<li><a href="home-2.html">الخيار الثاني</a></li>
-										<li><a href="home-3.html">الخيار الثالث</a></li>
-										<li><a href="home-4.html">الخيار الرابع</a></li>
-										<li><a href="home-5.html">الخيار الخامس</a></li><li><a href="home-6.html">الخيار السادس</a></li>
-										<li><a href="Map.html">Home Map</a></li>
+										<li><a href="index.html">الخيار الأول</a></li>                                    
+										<li><a href="home-2.html">الخيار الثاني</a></li>                                    
+										<li><a href="home-3.html">الخيار الثالث</a></li> 
+										<li><a href="home-4.html">الخيار الرابع</a></li> 
+										<li><a href="home-5.html">الخيار الخامس</a></li><li><a href="home-6.html">الخيار السادس</a></li> 
+										<li><a href="Map.html">Home Map</a></li> 
 									</ul>
 								</li>
-
+								
 								<li><a href="javascript:void(0);">من نحن<span class="submenu-indicator"></span></a>
 									<ul class="nav-dropdown nav-submenu">
 										<li><a href="events.html">All Events</a></li>
 										<li><a href="hotels.html">Find Hotels</a></li>
-										<li><a href="adventures.html">Find Adventures</a></li>
+										<li><a href="adventures.html">Find Adventures</a></li>		
 										<li><a href="booking.html">Booking Page</a></li>
 										<li><a href="dashboard.html">User Dashboard</a></li>
-										<li><a href="add-listing.html">Submit Listing</a></li>
+										<li><a href="add-listing.html">Submit Listing</a></li> 
 									</ul>
 								</li>
 
-								<li><a href="{% url 'company' %}">القطاعات</a></li>
+								<li><a href="index-Company.html">القطاعات</a></li>
 
-
+								
 								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>
 									<ul class="nav-dropdown nav-submenu">
 										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>
 											<ul class="nav-dropdown nav-submenu">
 												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>
-												<li><a href="list-layout-full-width.html">Full Width</a></li>
-												<li><a href="list-layout-with-map.html">With Map</a></li>
+												<li><a href="list-layout-full-width.html">Full Width</a></li>										
+												<li><a href="list-layout-with-map.html">With Map</a></li> 
 											</ul>
 										</li>
 										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>
 											<ul class="nav-dropdown nav-submenu" style="display: none;">
-												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>
-												<li><a href="grid-full-width.html">With Full Width</a></li>
-												<li><a href="grid-with-map.html">With Map</a></li>
+												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>                                    
+												<li><a href="grid-full-width.html">With Full Width</a></li>                                    
+												<li><a href="grid-with-map.html">With Map</a></li> 
 											</ul>
 										</li>
 										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>
 											<ul class="nav-dropdown nav-submenu">
-												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>
-												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>
+												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>                                    
+												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>                                    
 												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>
 											</ul>
 										</li>
 										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>
 											<ul class="nav-dropdown nav-submenu">
-												<li><a href="single-listing-1.html">Single Listing 1</a></li>
-												<li><a href="single-listing-2.html">Single Listing 2</a></li>
+												<li><a href="single-listing-1.html">Single Listing 1</a></li>                                    
+												<li><a href="single-listing-2.html">Single Listing 2</a></li>                                    
 												<li><a href="single-listing-3.html">Single Listing 3</a></li>
 											</ul>
 										</li>
 									</ul>
 								</li> -->
-
+								
 								<li><a href="javascript:void(0);">تواصل معنا<span class="submenu-indicator"></span></a>
 									<ul class="nav-dropdown nav-submenu">
 										<li><a href="blog.html">Blog Page</a></li>
-										<li><a href="blog-detail.html">Blog Detail</a></li>
-										<li><a href="pricing.html">Pricing Page</a></li>
+										<li><a href="blog-detail.html">Blog Detail</a></li>	
+										<li><a href="pricing.html">Pricing Page</a></li>	
 										<li><a href="about-us.html">About Us</a></li>
 										<li><a href="component.html">Component</a></li>
 										<li><a href="404.html">Error Page</a></li>
@@ -123,13 +121,13 @@
 										<li><a href="register.html">SignUp</a></li>
 									</ul>
 								</li>
-
+								
 								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->
-
+								
 							</ul>
-
+							
 							<ul class="nav-menu nav-menu-social align-to-right">
-
+								
 								<!-- <li>
 									<a href="#" data-toggle="modal" data-target="#login">
 										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>
@@ -150,229 +148,13 @@
 			<!-- ============================================================== -->
 			<!-- Top header  -->
 			<!-- ============================================================== -->
-
-
-			<!-- ============================ Hero Banner  Start================================== -->
-			<div class="image-cover hero-banner" style="background:url(https://via.placeholder.com/1920x900) no-repeat;" data-overlay="6">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-
-							<h1 class="big-header-capt capti">أكبر تجمع خدمات في منظومة الحج والعمرة و الزيارة</h1>
-							<div class="full-search-2 Reveal-search Reveal-search-radius box-style">
-								<div class="Reveal-search-content">
-
-									<div class="row">
-
-										<div class="col-lg-7 col-md-6 col-sm-12 br-left-p">
-											<div class="form-group">
-												<div class="input-with-icon">
-													<input type="text" class="form-control" placeholder="البحث عن ....">
-													<i class="theme-cl ti-search"></i>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-3 col-md-4 col-sm-12 br-left-p">
-											<div class="form-group">
-												<div class="input-with-icon">
-													<input type="text" class="form-control" placeholder="المدينة...">
-													<i class="theme-cl ti-target"></i>
-												</div>
-											</div>
-										</div>
-
-										<!-- <div class="col-lg-3 col-md-3 col-sm-6">
-											<div class="form-group">
-												<div class="input-with-icon">
-													<select id="list-category" class="form-control">
-														<option value="">&nbsp;</option>
-														<option value="1">Spa & Bars</option>
-														<option value="2">Restaurants</option>
-														<option value="3">Hotels</option>
-														<option value="4">Educations</option>
-														<option value="5">Business</option>
-														<option value="6">Retail & Shops</option>
-														<option value="7">Garage & Services</option>
-													</select>
-													<i class="theme-cl ti-briefcase"></i>
-												</div>
-											</div>
-										</div> -->
-
-										<div class="col-lg-2 col-md-2 col-sm-12">
-											<div class="form-group">
-												<a href="#" class="btn search-btn">بحث</a>
-											</div>
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-							<!-- <div class="popular-cat-list">
-								<ul>
-									<li><a href="grid-with-sidebar.html">Hotel & Spa</a></li>
-									<li><a href="grid-with-sidebar.html">Education</a></li>
-									<li><a href="grid-with-sidebar.html">Shopping</a></li>
-									<li><a href="grid-with-sidebar.html">Restaurants</a></li>
-								</ul>
-							</div> -->
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- ============================ Hero Banner End ================================== -->
-
-			<!-- ============================ Calegory Start ================================== -->
-			<section class="half light gray">
-				<div class="container">
-
-
-					<div class="row">
-						<div class="col text-center">
-							<div class="sec-heading center">
-								<!-- <h2>News & Blog</h2> -->
-								<h3>القطاع <span class="theme-cl"></span></h3>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="owl-carousel owl-theme" id="categorie-slide">
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="lni-revenue theme-cl"></i>
-											<i class="lni-revenue abs-icon"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>البنوك</h4>
-											<!-- <p>122 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-car"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>المواصلات</h4>
-											<!-- <p>155 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-home"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>السكن</h4>
-											<!-- <p>300 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-ruler-pencil"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>التعليم</h4>
-											<!-- <p>80 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-heart-broken"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الصحة</h4>
-											<!-- <p>120 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-world"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الاتصالات</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="grid-with-sidebar.html" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-desktop"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الإعلام</h4>
-											<!-- <p>210 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<!-- ============================ Calegory End ================================== -->
-
-
-
-
-
+			
+			
+			
 			<!-- ================================= Blog Grid ================================== -->
 			<section>
 				<div class="container">
-
+				
 					<!-- <div class="row">
 						<div class="col text-center">
 							<div class="sec-heading center">
@@ -385,7 +167,7 @@
 
 
 					<div class="row">
-
+						
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<span class="featurenew"><span class="fst">مُميّز</span></span>
@@ -408,23 +190,23 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 
-
-
+												ييبيأنكايديديونتيوت لابوري ييل
+												
 												<!-- 140 letter -->
-
+											  
 
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
 										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
+										
 
 									</ul>
 								</div>
-
+								
 								<!-- <div class="Reveal-smart-tes-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 								</div> -->
@@ -453,10 +235,10 @@
 											<i class="fas fa-globe"></i>
 										</column>
 									</row>
-
+								
 							</div>
 						</div>
-
+						
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<div class="item testimonial-center">
@@ -477,22 +259,23 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 
-
+												ييبيأنكايديديونتيوت لابوري ييل
+												
 												<!-- 140 letter -->
-
+											  
 
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
 										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
+										
 
 									</ul>
 								</div>
-
+								
 								<!-- <div class="Reveal-smart-tes-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 								</div> -->
@@ -521,10 +304,10 @@
 											<i class="fas fa-globe"></i>
 										</column>
 									</row>
-
+								
 							</div>
 						</div>
-
+						
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<span class="featurenew"><span class="fst">مُميّز</span></span>
@@ -547,22 +330,23 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 
-
+												ييبيأنكايديديونتيوت لابوري ييل
+												
 												<!-- 140 letter -->
-
+											  
 
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
 										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
+										
 
 									</ul>
 								</div>
-
+								
 								<!-- <div class="Reveal-smart-tes-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 								</div> -->
@@ -591,7 +375,7 @@
 											<i class="fas fa-globe"></i>
 										</column>
 									</row>
-
+								
 							</div>
 						</div>
 
@@ -617,22 +401,23 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 
-
+												ييبيأنكايديديونتيوت لابوري ييل
+												
 												<!-- 140 letter -->
-
+											  
 
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
 										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
+										
 
 									</ul>
 								</div>
-
+								
 								<!-- <div class="Reveal-smart-tes-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 								</div> -->
@@ -661,7 +446,7 @@
 											<i class="fas fa-globe"></i>
 										</column>
 									</row>
-
+								
 							</div>
 						</div>
 
@@ -685,22 +470,23 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 
-
+												ييبيأنكايديديونتيوت لابوري ييل
+												
 												<!-- 140 letter -->
-
+											  
 
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
 										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
+										
 
 									</ul>
 								</div>
-
+								
 								<!-- <div class="Reveal-smart-tes-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 								</div> -->
@@ -729,215 +515,7 @@
 											<i class="fas fa-globe"></i>
 										</column>
 									</row>
-
-							</div>
-						</div>
-
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
+								
 							</div>
 						</div>
 
@@ -963,22 +541,23 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 
-
+												ييبيأنكايديديونتيوت لابوري ييل
+												
 												<!-- 140 letter -->
-
+											  
 
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
 										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
+										
 
 									</ul>
 								</div>
-
+								
 								<!-- <div class="Reveal-smart-tes-content">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
 								</div> -->
@@ -1007,104 +586,225 @@
 											<i class="fas fa-globe"></i>
 										</column>
 									</row>
-
+								
 							</div>
 						</div>
 
-				</div>
+
+						<!-- Single blog Grid -->
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="item testimonial-center">
+								<div class="Reveal-smart-tes-author">
+									<div class="Reveal-st-author-box">
+										<div class="Reveal-st-author-thumb">
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+										<div class="Reveal-st-author-info">
+											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
+											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="Reveal-grid-caption-body">
+									<ul class="Reveal-contact-list">
+										<li><h6>عن الشركة:</h6></li>
+										<div class="row">
+											<div class="col-12 alignright cardheight">
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+												ييبيأنكايديديونتيوت لابوري ييل
+												
+												<!-- 140 letter -->
+											  
+
+											</div>
+										</div>
+										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
+										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
+										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
+										
+
+									</ul>
+								</div>
+								
+								<!-- <div class="Reveal-smart-tes-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+								</div> -->
+									<row>
+										<column>
+											<!-- Facebook -->
+											<i class="fab fa-facebook-f ml-3"></i>
+
+											<!-- Twitter -->
+											<i class="fab fa-twitter ml-3"></i>
+
+											<!-- Google -->
+											<i class="fab fa-google ml-3"></i>
+
+											<!-- Instagram -->
+											<i class="fab fa-instagram ml-3"></i>
+
+											<!-- Linkedin -->
+											<i class="fab fa-linkedin-in ml-3"></i>
+
+											<!-- Whatsapp -->
+											<i class="fab fa-whatsapp ml-3"></i>
+
+											<i class="fas fa-phone ml-3"></i>
+
+											<i class="fas fa-globe"></i>
+										</column>
+									</row>
+								
+							</div>
+						</div>
+
+
+						<!-- Single blog Grid -->
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="item testimonial-center">
+								<div class="Reveal-smart-tes-author">
+									<div class="Reveal-st-author-box">
+										<div class="Reveal-st-author-thumb">
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+										<div class="Reveal-st-author-info">
+											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
+											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="Reveal-grid-caption-body">
+									<ul class="Reveal-contact-list">
+										<li><h6>عن الشركة:</h6></li>
+										<div class="row">
+											<div class="col-12 alignright cardheight">
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+												ييبيأنكايديديونتيوت لابوري ييل
+												
+												<!-- 140 letter -->
+											  
+
+											</div>
+										</div>
+										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
+										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
+										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
+										
+
+									</ul>
+								</div>
+								
+								<!-- <div class="Reveal-smart-tes-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+								</div> -->
+									<row>
+										<column>
+											<!-- Facebook -->
+											<i class="fab fa-facebook-f ml-3"></i>
+
+											<!-- Twitter -->
+											<i class="fab fa-twitter ml-3"></i>
+
+											<!-- Google -->
+											<i class="fab fa-google ml-3"></i>
+
+											<!-- Instagram -->
+											<i class="fab fa-instagram ml-3"></i>
+
+											<!-- Linkedin -->
+											<i class="fab fa-linkedin-in ml-3"></i>
+
+											<!-- Whatsapp -->
+											<i class="fab fa-whatsapp ml-3"></i>
+
+											<i class="fas fa-phone ml-3"></i>
+
+											<i class="fas fa-globe"></i>
+										</column>
+									</row>
+								
+							</div>
+						</div>
+
+
+
+						<!-- Single blog Grid -->
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="item testimonial-center">
+								<div class="Reveal-smart-tes-author">
+									<div class="Reveal-st-author-box">
+										<div class="Reveal-st-author-thumb">
+											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+										</div>
+										<div class="Reveal-st-author-info">
+											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
+											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="Reveal-grid-caption-body">
+									<ul class="Reveal-contact-list">
+										<li><h6>عن الشركة:</h6></li>
+										<div class="row">
+											<div class="col-12 alignright cardheight">
+												لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+												ييبيأنكايديديونتيوت لابوري ييل
+												
+												<!-- 140 letter -->
+											  
+
+											</div>
+										</div>
+										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
+										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
+										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
+										
+
+									</ul>
+								</div>
+								
+								<!-- <div class="Reveal-smart-tes-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+								</div> -->
+									<row>
+										<column>
+											<!-- Facebook -->
+											<i class="fab fa-facebook-f ml-3"></i>
+
+											<!-- Twitter -->
+											<i class="fab fa-twitter ml-3"></i>
+
+											<!-- Google -->
+											<i class="fab fa-google ml-3"></i>
+
+											<!-- Instagram -->
+											<i class="fab fa-instagram ml-3"></i>
+
+											<!-- Linkedin -->
+											<i class="fab fa-linkedin-in ml-3"></i>
+
+											<!-- Whatsapp -->
+											<i class="fab fa-whatsapp ml-3"></i>
+
+											<i class="fas fa-phone ml-3"></i>
+
+											<i class="fas fa-globe"></i>
+										</column>
+									</row>
+								
+							</div>
+						</div>
+					
+				</div>		
 			</section>
-
-
-
-
-			<!-- ============================ Listing Ctegory Start ================================== -->
-			<section class="gray">
-				<div class="container">
-
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<div class="sec-heading center">
-								<!-- <h2>Categories</h2> -->
-								<h3>
-									إعلانك هنا يحقق لكَ الكثير
-									<span class="theme-cl"></span></h3>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="owl-carousel owl-theme" id="lists-slide">
-
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
-									<figure>
-										 <img src="{% static 'assets/img/011.png' %}" title="store" alt="store">
-
-									</figure>
-								</a>
-							</div>
-
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
-									<figure>
-										 <img src="{% static 'assets/img/022.png' %}" title="hotel" alt="hotel">
-
-									</figure>
-								</a>
-							</div>
-
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
-									<figure>
-										 <img src="{% static 'assets/img/033.png' %}" title="Shopping" alt="Shopping">
-
-									</figure>
-								</a>
-							</div>
-
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
-									<figure>
-										 <img src="{% static 'assets/img/011.png' %}" title="Places" alt="Places">
-
-									</figure>
-								</a>
-							</div>
-
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
-									<figure>
-										 <img src="{% static 'assets/img/022.png' %}" title="Restaurants" alt="Restaurants">
-
-									</figure>
-								</a>
-							</div>
-
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
-									<figure>
-										 <img src="{% static 'assets/img/033.png' %}" title="Marriage Hall" alt="Marriage Hall">
-
-										</figcaption>
-									</figure>
-								</a>
-							</div>
-
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<!-- ============================ Listing Category End ================================== -->
-
-
-
+		
+			
 
 			<!-- ============================ Footer Start ================================== -->
 			<footer class="dark-footer skin-dark-footer">
@@ -1112,11 +812,11 @@
 				<div>
 					<div class="container">
 						<div class="row">
-
+							
 							<div class="col-lg-4 col-md-6">
 								<div class="footer-widget">
-{#									<img src="{% static 'assets/img/logo-light.png' %}" class="img-fluid f-logo" alt="" />#}
-                                    <h4 class="Reveal-st-author-title">شاذروان</h4>
+									<!-- <img src="assets/img/logo-light.png" class="img-fluid f-logo" alt="" /> -->
+									<h4 class="Reveal-st-author-title">شاذروان</h4>
 									<p>المملكة العربية السعودية<br>جدة</p>
 									<ul class="footer-bottom-social">
 										<li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -1125,7 +825,7 @@
 										<li><a href="#"><i class="ti-linkedin"></i></a></li>
 									</ul>
 								</div>
-							</div>
+							</div>		
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
 									<h4 class="widget-title">روابط</h4>
@@ -1137,7 +837,7 @@
 									</ul>
 								</div>
 							</div>
-
+							
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
 									<h4 class="widget-title">روابط</h4>
@@ -1149,7 +849,7 @@
 									</ul>
 								</div>
 							</div>
-
+							
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
 									<h4 class="widget-title">روابط</h4>
@@ -1161,7 +861,7 @@
 									</ul>
 								</div>
 							</div>
-
+									
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
 									<h4 class="widget-title">روابط</h4>
@@ -1172,25 +872,25 @@
 									</ul>
 								</div>
 							</div>
-
+							
 						</div>
 					</div>
 				</div>
-
+				
 				<div class="footer-bottom">
 					<div class="container">
 						<div class="row align-items-center">
-
+							
 							<div class="col-lg-12 col-md-12 text-center">
-								<p class="mb-0">© 2021 شركة دنيا للإنتاج الصوتي والمرئي<a href="https://themezhub.net"></a> جميع الحقوق محفوظة</p>
+								<p class="mb-0">© 2021 شركة دنيا للإنتاج الصوتي والمرئي <a href="https://themezhub.net"></a> جميع الحقوق محفوظة</p>
 							</div>
-
+							
 						</div>
 					</div>
 				</div>
 			</footer>
 			<!-- ============================ Footer End ================================== -->
-
+			
 			<!-- Log In Modal -->
 			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">
 				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
@@ -1200,7 +900,7 @@
 							<h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>
 							<div class="login-form">
 								<form>
-
+								
 									<div class="form-group">
 										<label>User Name</label>
 										<div class="input-with-icon gray">
@@ -1208,7 +908,7 @@
 											<i class="ti-user"></i>
 										</div>
 									</div>
-
+									
 									<div class="form-group">
 										<label>Password</label>
 										<div class="input-with-icon gray">
@@ -1216,11 +916,11 @@
 											<i class="ti-unlock"></i>
 										</div>
 									</div>
-
+									
 									<div class="form-group">
 										<button type="submit" class="btn btn-md full-width pop-login">Login</button>
 									</div>
-
+								
 								</form>
 							</div>
 							<div class="modal-divider"><span>Or login via</span></div>
@@ -1240,10 +940,10 @@
 				</div>
 			</div>
 			<!-- End Modal -->
-
+			
 			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 
-
+			
 
 		</div>
 		<!-- ============================================================== -->
@@ -1253,7 +953,7 @@
 		<!-- ============================================================== -->
 		<!-- All Jquery -->
 		<!-- ============================================================== -->
-        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
+		 <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
 
 		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
 		<script src="{% static 'assets/js/popper.min.js' %}assets/js/popper.min.js"></script>
