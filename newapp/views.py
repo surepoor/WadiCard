@@ -5,4 +5,4 @@ def home(request):
 	return render(request, 'home.html')
 
 def company(request):
-	return render(request, 'index-company.html')
+	return render(request, 'indexcompany.html')
