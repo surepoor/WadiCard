@@ -3130,7 +3130,7 @@ ul {
 .nav-dropdown>li>a,
 .nav-menu>li>a,
 nav a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .navigation-portrait .nav-brand {
@@ -6244,13 +6244,13 @@ a.tag_t, a.tag_t:hover, a.tag_t:focus {
     text-align: center;
     color: #fff;
     background: #ef3f08;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1;
     padding: 10px 8px 6px;
     border-top-right-radius: 8px;
     width: 84px;
     letter-spacing: 0.5px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .Reveal-featured-liting-box:after {
     position: absolute;
@@ -14374,4 +14374,15 @@ a.blue2-theme {
     border-left: 44px solid transparent;
     border-right: 42px solid transparent;
     border-top: 6px solid #ef3f08;
+}
+
+
+.newnav {
+    color: #ffffff;
+    padding:20px 15px;
+    font-size: 24px;
+	margin-right: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
 }
