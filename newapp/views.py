@@ -2,11 +2,11 @@ from django.shortcuts import render
 from .models import *
 # Create your views here.
 def home(request):
-	hero = Hero.objects.all()
+	heros = Hero.objects.all()
 	data = {
-		'hero': hero,
+		'heros': heros,
 	}
-	return render(request, 'home.html')
+	return render(request, 'home.html', data)
 
 def company(request):
 	return render(request, 'indexcompany.html')

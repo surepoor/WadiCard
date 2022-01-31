@@ -135,11 +135,13 @@
 										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>
 									</a>
 								</li> -->
+                                {% for hero in heros %}
 								<li class="add-listing bg-whit">
-									<a href="https://forms.gle/ciLNj2KwDuSDJDxbA">
+									<a href="{{ hero.join_us }}">
 										 <i class="fas fa-plus-circle"></i> انضم لنا
 									</a>
 								</li>
+                                {% endfor %}
 							</ul>
 						</div>
 					</nav>
