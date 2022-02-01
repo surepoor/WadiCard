@@ -14386,3 +14386,9 @@ a.blue2-theme {
     text-transform: capitalize;
     font-family: 'Raleway', sans-serif;
 }
+
+.catsize {
+    width: 44px;
+    display: inline-block
+}
+

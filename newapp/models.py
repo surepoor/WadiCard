@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from django.utils.timezone import now
+from django.core.validators import FileExtensionValidator
 
 
 
@@ -14,7 +15,7 @@ class Hero(models.Model):
 
 
 class Category(models.Model):
-	logo_cat = models.ImageField(upload_to='photos/category')
+	logo_cat = models.FileField(upload_to='photos/category', validators=[FileExtensionValidator(['pdf', 'doc', 'svg'])])
 	name_cat = models.CharField(max_length=50)
 	desc_cat = models.CharField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
@@ -32,7 +33,7 @@ class Company(models.Model):
 		('ينبع', 'ينبع'),
 	)
 
-	logo_com = models.ImageField(upload_to='photos/company')
+	logo_com = models.FileField(upload_to='photos/company', validators=[FileExtensionValidator(['pdf', 'doc', 'svg'])])
 	name_com = models.CharField(max_length=50)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	is_featured = models.BooleanField(default=False)
@@ -51,7 +52,7 @@ class Company(models.Model):
 	end_date = models.DateTimeField()
 
 class Ad(models.Model):
-	image_ad = models.ImageField(upload_to='photos/ad')
+	image_ad = models.FileField(upload_to='photos/ad', validators=[FileExtensionValidator(['pdf', 'doc', 'svg'])])
 	link = models.URLField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
 	end_date = models.DateTimeField()
