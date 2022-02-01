@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from django.utils.timezone import now
 # from multiselectfield import MultiSelectField
 
 
@@ -17,7 +18,7 @@ class Category(models.Model):
 	logo_cat = models.ImageField(upload_to='photos/category')
 	name_cat = models.CharField(max_length=50)
 	desc_cat = models.CharField(max_length=150)
-	date_created = models.DateTimeField(default=datetime.now(), blank=True)
+	date_created = models.DateTimeField(default=datetime.now, blank=True)
 
 
 class Company(models.Model):
@@ -38,8 +39,8 @@ class Company(models.Model):
 	is_featured = models.BooleanField(default=False)
 	desc_com = models.CharField(max_length=150)
 	location = models.CharField(max_length=70)
-	city = models.CharField(choices= city_choices)
-	phone = models.IntegerField(max_length=15)
+	city = models.CharField(max_length=70, choices= city_choices)
+	phone = models.IntegerField()
 	website = models.URLField(max_length=150)
 	facebook_link = models.URLField(max_length=100)
 	twitter_link = models.URLField(max_length=100)
@@ -47,13 +48,13 @@ class Company(models.Model):
 	linkedin_link = models.URLField(max_length=100)
 	whatsapp_link = models.URLField(max_length=100)
 	email = models.EmailField(max_length=255)
-	date_created = models.DateTimeField(default=datetime.now(), blank=True)
+	date_created = models.DateTimeField(default=datetime.now, blank=True)
 	end_date = models.DateTimeField()
 
 class Ad(models.Model):
 	image_ad = models.ImageField(upload_to='photos/ad')
 	link = models.URLField(max_length=150)
-	date_created = models.DateTimeField(default=datetime.now(), blank=True)
+	date_created = models.DateTimeField(default=datetime.now, blank=True)
 	end_date = models.DateTimeField()
 
 
