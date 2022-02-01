@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime
-from multiselectfield import MultiSelectField
+# from multiselectfield import MultiSelectField
 
 
 
@@ -38,7 +38,7 @@ class Company(models.Model):
 	is_featured = models.BooleanField(default=False)
 	desc_com = models.CharField(max_length=150)
 	location = models.CharField(max_length=70)
-	city = MultiSelectField(choices= city_choices)
+	city = models.CharField(choices= city_choices)
 	phone = models.IntegerField(max_length=15)
 	website = models.URLField(max_length=150)
 	facebook_link = models.URLField(max_length=100)
