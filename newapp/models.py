@@ -3,17 +3,7 @@ from datetime import datetime
 from multiselectfield import MultiSelectField
 
 
-city_choices = (
-	('مكة','مكة'),
-	('الرياض','الرياض'),
-	('جدة','جدة'),
-	('المدينة المنورة','المدينة المنورة'),
-	('الدمام','الدمام'),
-	('الطائف','الطائف'),
-	('حائل','حائل'),
-	('ينبع','ينبع'),
 
-)
 
 # Create your models here.
 class Hero(models.Model):
@@ -31,6 +21,17 @@ class Category(models.Model):
 
 
 class Company(models.Model):
+	city_choices = (
+		('مكة', 'مكة'),
+		('الرياض', 'الرياض'),
+		('جدة', 'جدة'),
+		('المدينة المنورة', 'المدينة المنورة'),
+		('الدمام', 'الدمام'),
+		('الطائف', 'الطائف'),
+		('حائل', 'حائل'),
+		('ينبع', 'ينبع'),
+	)
+
 	logo_com = models.ImageField(upload_to='photos/company')
 	name_com = models.CharField(max_length=50)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)

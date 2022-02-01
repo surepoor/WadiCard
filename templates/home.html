@@ -388,7 +388,7 @@
 
 
 					<div class="row">
-
+                        {% for company in companys %}
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 							<span class="featurenew"><span class="fst">مُميّز</span></span>
@@ -397,11 +397,11 @@
 								<div class="Reveal-smart-tes-author">
 									<div class="Reveal-st-author-box">
 										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
+											<img src="{{company.logo_com.url}}" class="img-fluid" alt="" />
 										</div>
 										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
+											<h4 class="Reveal-st-author-title">{{company.name_com}}</h4>
+											<span class="Reveal-st-author-subtitle theme-cl">{{ company.category.name_cat}}</span>
 										</div>
 									</div>
 								</div>
@@ -411,7 +411,7 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
+												{{ company.desc_com }}
 
 
 
@@ -459,6 +459,7 @@
 
 							</div>
 						</div>
+                        {% endfor %}
 
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
