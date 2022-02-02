@@ -66,8 +66,10 @@
 .red-skin .single-widgets.widget_search form button,
 .red-skin .single-widgets.widget_tags ul li a:hover, .red-skin .single-widgets.widget_tags ul li a:focus,
 .red-skin .pagination>.active>a, .red-skin .pagination>.active>a:focus, .red-skin .pagination>.active>a:hover, .red-skin .pagination>.active>span, .red-skin .pagination>.active>span:focus, .red-skin .pagination>.active>span:hover, .red-skin .pagination>li>a:focus, .red-skin .pagination>li>a:hover{
-	background-color:#e4074e;
-	background:#e4074e;
+	/*background-color:#e4074e;*/
+	/*background:#e4074e;*/
+	background-color:#75C7EB;
+	background:#75C7EB;
 }
  
 .red-skin a.link:hover, .red-skin a.link:focus, .red-skin a:hover, a:focus,
@@ -93,7 +95,8 @@
 .red-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
 .red-skin .cn-info-icon i, .red-skin .client-info h5,
 .red-skin .listing-card-info-price{
-	color:#e4074e;
+	/*color:#e4074e;*/
+	color:#75C7EB;
 }
 
 .red-skin .pagination>.active>a, .red-skin .pagination>.active>a:focus, .red-skin .pagination>.active>a:hover, .red-skin .pagination>.active>span, .red-skin .pagination>.active>span:focus, .red-skin .pagination>.active>span:hover, .red-skin .pagination>li>a:focus, .red-skin .pagination>li>a:hover,
