@@ -6975,7 +6975,8 @@ a.btn.width-170 {
 }
 .Reveal-category-box:hover, .Reveal-category-box:focus{
     /*background:#e4074e;*/
-    background:#75C7EB;
+    /*background:#75C7EB;*/
+    background:#06214C;
 }
 .Reveal-category-box:hover .category-desc .Reveal-category-detail p, .Reveal-category-box:focus .category-desc .Reveal-category-detail p {
     color:#ffffff;
@@ -6985,7 +6986,8 @@ a.btn.width-170 {
 }
 
 .Reveal-category-box:hover .category-desc .category-icon, .Reveal-category-box:focus .category-desc .category-icon{
-    color:#ffffff !important;
+    /*color:#ffffff !important;*/
+    color:#75C7EB !important;
 
 }
 /*------------------------------------------------
@@ -14398,7 +14400,7 @@ a.blue2-theme {
 }
 
 .catsize {
-    width: 44px;
+    width: 48px;
     display: inline-block
 }
 

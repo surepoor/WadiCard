@@ -14,4 +14,12 @@ def home(request):
 	return render(request, 'home.html', data)
 
 def company(request):
-	return render(request, 'indexcompany.html')
+	companys = Company.objects.all()
+	data = {
+		'companys': companys,
+
+	}
+	return render(request, 'indexcompany.html', data)
+
+def details(request, name_cat):
+	return render(request, 'indextest.html')

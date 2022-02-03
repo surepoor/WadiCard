@@ -17,6 +17,7 @@ class Hero(models.Model):
 class Category(models.Model):
 	logo_cat = models.ImageField(upload_to='photos/category')
 	name_cat = models.CharField(max_length=50)
+	# slug_cat = models.CharField(max_length=50)
 	desc_cat = models.CharField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
 
