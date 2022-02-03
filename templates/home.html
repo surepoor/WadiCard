@@ -51,7 +51,7 @@
 						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">
 							<ul class="nav-menu justify-content-center">
 
-								<li><a href="">الرئيسية</a>
+								<li><a href="{% url 'home' %}">الرئيسية</a>
 
 								</li>
 
@@ -370,7 +370,10 @@
                         {% for company in companys %}
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
+
+                            {% if company.is_featured %}
 							<span class="featurenew"><span class="fst">مُميّز</span></span>
+                            {% endif %}
 
 							<div class="item testimonial-center">
 								<div class="Reveal-smart-tes-author">
