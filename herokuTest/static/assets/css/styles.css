@@ -6983,8 +6983,10 @@ a.btn.width-170 {
 .Reveal-category-box:hover .category-desc .Reveal-category-detail h4, .Reveal-category-box:focus .category-desc .Reveal-category-detail h4{
     color:#ffffff;
 }
+
 .Reveal-category-box:hover .category-desc .category-icon, .Reveal-category-box:focus .category-desc .category-icon{
     color:#ffffff !important;
+
 }
 /*------------------------------------------------
 	Listings Elements
@@ -14399,4 +14401,6 @@ a.blue2-theme {
     width: 44px;
     display: inline-block
 }
+
+
 
