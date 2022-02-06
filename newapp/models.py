@@ -17,7 +17,7 @@ class Hero(models.Model):
 class Category(models.Model):
 	logo_cat = models.ImageField(upload_to='photos/category')
 	name_cat = models.CharField(max_length=50)
-	# slug_cat = models.CharField(max_length=50)
+	slug_cat = models.CharField(max_length=50, default='none')
 	desc_cat = models.CharField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
 
@@ -36,6 +36,7 @@ class Company(models.Model):
 
 	logo_com = models.ImageField(upload_to='photos/company')
 	name_com = models.CharField(max_length=50)
+	slug_com = models.CharField(max_length=50, default='none')
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	is_featured = models.BooleanField(default=False)
 	desc_com = models.CharField(max_length=150)
