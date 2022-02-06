@@ -27,3 +27,16 @@ def details(request, slug_com):
 		'all_cats': all_cats,
 	}
 	return render(request, 'indextest.html', data)
+
+def search(request):
+	companys = Company.objects.order_by('-date_created')
+
+	if 'keyword' in request.GET:
+		keyword = request.GET['keyword']
+		if keyword:
+			companys = companys.filter(name_com__icontains=keyword) or companys.filter(desc_com__icontains=keyword)
+
+	data = {
+		'companys': companys,
+	}
+	return render(request, 'search.html', data)

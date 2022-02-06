@@ -131,60 +131,64 @@
 
 			<!-- ============================ Hero Banner  Start================================== -->
 {#			<div class="image-cover hero-banner" style="background:url(https://via.placeholder.com/1920x900) no-repeat;" data-overlay="6">#}
-			<div class="image-cover hero-banner" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="6">
-				<div class="container">
+
+            <div class="image-cover hero-banner" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="6">
+                <div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12">
 
 							<h1 class="big-header-capt capti">أكبر تجمع خدمات في منظومة الحج والعمرة و الزيارة</h1>
 							<div class="full-search-2 Reveal-search Reveal-search-radius box-style">
 								<div class="Reveal-search-content">
+                                    <form method="GET" action="{% url 'search' %}">
 
 									<div class="row">
 
-										<div class="col-lg-7 col-md-6 col-sm-12 br-left-p">
-											<div class="form-group">
-												<div class="input-with-icon">
-													<input type="text" class="form-control" placeholder="البحث عن ....">
-													<i class="theme-cl ti-search"></i>
-												</div>
-											</div>
-										</div>
+                                        <div class="col-lg-10 col-md-10 col-sm-12 br-left-p">
+                                            <div class="form-group">
+                                                <div class="input-with-icon">
+                                                    <input type="text" class="form-control" placeholder="البحث عن ...." name="keyword">
+                                                    <i class="theme-cl ti-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
 
-										<div class="col-lg-3 col-md-4 col-sm-12 br-left-p">
-											<div class="form-group">
-												<div class="input-with-icon">
-													<input type="text" class="form-control" placeholder="المدينة...">
-													<i class="theme-cl ti-target"></i>
-												</div>
-											</div>
-										</div>
+{#                                        <div class="col-lg-3 col-md-4 col-sm-12 br-left-p">#}
+{#                                            <div class="form-group">#}
+{#                                                <div class="input-with-icon">#}
+{#                                                    <input type="text" class="form-control" placeholder="المدينة..." name="keyword">#}
+{#                                                    <i class="theme-cl ti-target"></i>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
 
-										<!-- <div class="col-lg-3 col-md-3 col-sm-6">
-											<div class="form-group">
-												<div class="input-with-icon">
-													<select id="list-category" class="form-control">
-														<option value="">&nbsp;</option>
-														<option value="1">Spa & Bars</option>
-														<option value="2">Restaurants</option>
-														<option value="3">Hotels</option>
-														<option value="4">Educations</option>
-														<option value="5">Business</option>
-														<option value="6">Retail & Shops</option>
-														<option value="7">Garage & Services</option>
-													</select>
-													<i class="theme-cl ti-briefcase"></i>
-												</div>
-											</div>
-										</div> -->
+                                        <!-- <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-with-icon">
+                                                    <select id="list-category" class="form-control">
+                                                        <option value="">&nbsp;</option>
+                                                        <option value="1">Spa & Bars</option>
+                                                        <option value="2">Restaurants</option>
+                                                        <option value="3">Hotels</option>
+                                                        <option value="4">Educations</option>
+                                                        <option value="5">Business</option>
+                                                        <option value="6">Retail & Shops</option>
+                                                        <option value="7">Garage & Services</option>
+                                                    </select>
+                                                    <i class="theme-cl ti-briefcase"></i>
+                                                </div>
+                                            </div>
+                                        </div> -->
 
-										<div class="col-lg-2 col-md-2 col-sm-12">
-											<div class="form-group">
-												<a href="#" class="btn search-btn">بحث</a>
-											</div>
-										</div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn search-btn">بحث</button>
+                                            </div>
+                                        </div>
+
 
 									</div>
+                                    </form>
 
 								</div>
 
