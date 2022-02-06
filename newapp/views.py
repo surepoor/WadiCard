@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_list_or_404
 from .models import *
 # Create your views here.
 def home(request):
@@ -21,5 +21,9 @@ def company(request):
 	}
 	return render(request, 'indexcompany.html', data)
 
-def details(request, name_cat):
-	return render(request, 'indextest.html')
+def details(request, slug_com):
+	all_cats = get_list_or_404(Company, slug_com=slug_com)
+	data = {
+		'all_cats': all_cats,
+	}
+	return render(request, 'indextest.html', data)
