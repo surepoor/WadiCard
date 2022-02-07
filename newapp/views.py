@@ -1,5 +1,10 @@
 from django.shortcuts import render, get_list_or_404
 from .models import *
+
+from django.db.models import Q
+from functools import reduce
+from operator import or_
+
 # Create your views here.
 def home(request):
 	heros = Hero.objects.all()
@@ -34,7 +39,10 @@ def search(request):
 	if 'keyword' in request.GET:
 		keyword = request.GET['keyword']
 		if keyword:
-			companys = companys.filter(name_com__icontains=keyword) or companys.filter(desc_com__icontains=keyword)
+			companys = companys.filter(name_com__icontains=keyword) or companys.filter(desc_com__icontains=keyword) \
+					   or companys.filter(city__icontains=keyword)
+
+
 
 	data = {
 		'companys': companys,

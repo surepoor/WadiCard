@@ -116,7 +116,8 @@ i.req {
 
 body {
 	background: #ffffff;
-	color:#55667b;
+	/*color:#55667b;*/
+	color:#06214C;
 	font-size:15px;
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
@@ -4018,6 +4019,7 @@ nav a {
 	/*border:2px solid #ea1b41 !important;*/
     background:#75C7EB !important;
 	border:2px solid #75C7EB !important;
+
 
 }
 .nav-menu.nav-menu-social>li.add-listing:hover a, .nav-menu.nav-menu-social>li.add-listing:focus a,
@@ -14403,6 +14405,12 @@ a.blue2-theme {
 .catsize {
     width: 48px;
     display: inline-block
+}
+
+
+.ihov:hover {
+    color: #75C7EB;
+    font-size: 150%;
 }
 
 
