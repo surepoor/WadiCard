@@ -34,9 +34,15 @@ class Company(models.Model):
 		('ينبع', 'ينبع'),
 	)
 
+	slug_choices = (
+		('media', 'اعلام'),
+		('khalid', 'خالد'),
+
+	)
+
 	logo_com = models.ImageField(upload_to='photos/company')
 	name_com = models.CharField(max_length=50)
-	slug_com = models.CharField(max_length=50, default='none')
+	slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	is_featured = models.BooleanField(default=False)
 	desc_com = models.CharField(max_length=150)
