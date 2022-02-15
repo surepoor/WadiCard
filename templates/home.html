@@ -55,11 +55,14 @@
 
 								</li>
 
-								<li><a href="">من نحن</a>
+                                <li><a href="{% url 'company' %}">من نحن</a></li>
 
-								</li>
 
-								<li><a href="{% url 'company' %}">القطاعات</a></li>
+								<li><a href="">تواصل معنا</a>
+{##}
+{#								</li>#}
+
+
 
 
 								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>
@@ -95,7 +98,7 @@
 									</ul>
 								</li> -->
 
-								<li><a href="">تواصل معنا</a>
+								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن المعهد</a>
 
 								</li>
 
@@ -495,7 +498,7 @@
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />{{company.city}}</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
+										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />{{company.phone}}</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
 
 
@@ -508,26 +511,39 @@
 									<row>
 										<column>
 											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3 ihov"></i>
+{#											<i <a href="{{company.facebook_link}}"> class="fab fa-facebook-f ml-3 ihov"> </a></i>#}
+
+                                            <a href="{{company.facebook_link}}" class="fab fa-facebook-f ml-3 ihov"></a>
 
 											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3 ihov"></i>
+{#											<i class="fab fa-twitter ml-3 ihov"></i>#}
+
+                                            <a href="{{company.twitter_link}}" class="fab fa-twitter ml-3 ihov"></a>
+
 
 											<!-- Google -->
-											<i class="fab fa-google ml-3 ihov"></i>
+{#											<i class="fab fa-google ml-3 ihov"></i>#}
+
+{#                                            <a href="{{company.facebook_link}}" class="fab fa-google ml-3 ihov"></a>#}
+
 
 											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3 ihov"></i>
+{#											<i class="fab fa-instagram ml-3 ihov"></i>#}
+                                            <a href="{{company.instgram_link}}" class="fab fa-instagram ml-3 ihov"></a>
 
 											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3 ihov"></i>
+{#											<i class="fab fa-linkedin-in ml-3 ihov"></i>#}
+                                            <a href="{{company.linkedin_link}}" class="fab fa-linkedin-in ml-3 ihov"></a>
 
 											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3 ihov"></i>
+{#											<i class="fab fa-whatsapp ml-3 ihov"></i>#}
+                                            <a href="{{company.whatsapp_link}}" class="fab fa-whatsapp ml-3 ihov"></a>
 
-											<i class="fas fa-phone ml-3 ihov"></i>
+{#											<i class="fas fa-phone ml-3 ihov"></i>#}
+                                            <a href="{{company.email}}" class="fas fa-address-book ml-3 ihov"></a>
+{#											<i class="fas fa-globe ihov"></i>#}
+                                            <a href="{{company.website}}" class="fas fa-globe ihov"></a>
 
-											<i class="fas fa-globe ihov"></i>
 										</column>
 									</row>
 
@@ -535,560 +551,560 @@
 						</div>
                         {% endfor %}
 
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<span class="featurenew"><span class="fst">مُميّز</span></span>
-
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
-
-
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة
-
-
-												<!-- 140 letter -->
-
-
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
-
-
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3"></i>
-
-											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3"></i>
-
-											<!-- Google -->
-											<i class="fab fa-google ml-3"></i>
-
-											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3"></i>
-
-											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3"></i>
-
-											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3"></i>
-
-											<i class="fas fa-phone ml-3"></i>
-
-											<i class="fas fa-globe"></i>
-										</column>
-									</row>
-
-							</div>
-						</div>
-
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<span class="featurenew"><span class="fst">مُميّز</span></span>#}
+{##}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{##}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{##}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
+{##}
+{##}
+{#						<!-- Single blog Grid -->#}
+{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+{#							<div class="item testimonial-center">#}
+{#								<div class="Reveal-smart-tes-author">#}
+{#									<div class="Reveal-st-author-box">#}
+{#										<div class="Reveal-st-author-thumb">#}
+{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+{#										</div>#}
+{#										<div class="Reveal-st-author-info">#}
+{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+{#										</div>#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#								<div class="Reveal-grid-caption-body">#}
+{#									<ul class="Reveal-contact-list">#}
+{#										<li><h6>عن الشركة:</h6></li>#}
+{#										<div class="row">#}
+{#											<div class="col-12 alignright cardheight">#}
+{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+{##}
+{##}
+{#												<!-- 140 letter -->#}
+{##}
+{##}
+{#											</div>#}
+{#										</div>#}
+{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+{##}
+{##}
+{#									</ul>#}
+{#								</div>#}
+{##}
+{#								<!-- <div class="Reveal-smart-tes-content">#}
+{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+{#								</div> -->#}
+{#									<row>#}
+{#										<column>#}
+{#											<!-- Facebook -->#}
+{#											<i class="fab fa-facebook-f ml-3"></i>#}
+{##}
+{#											<!-- Twitter -->#}
+{#											<i class="fab fa-twitter ml-3"></i>#}
+{##}
+{#											<!-- Google -->#}
+{#											<i class="fab fa-google ml-3"></i>#}
+{##}
+{#											<!-- Instagram -->#}
+{#											<i class="fab fa-instagram ml-3"></i>#}
+{##}
+{#											<!-- Linkedin -->#}
+{#											<i class="fab fa-linkedin-in ml-3"></i>#}
+{##}
+{#											<!-- Whatsapp -->#}
+{#											<i class="fab fa-whatsapp ml-3"></i>#}
+{##}
+{#											<i class="fas fa-phone ml-3"></i>#}
+{##}
+{#											<i class="fas fa-globe"></i>#}
+{#										</column>#}
+{#									</row>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{##}
 				</div>
 			</section>
 
@@ -1206,50 +1222,50 @@
 							</div>
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
-									<h4 class="widget-title">روابط</h4>
+									<h4 class="widget-title">المشروع</h4>
 									<ul class="footer-menu">
-										<li><a href="about-us.html">عن الشركة</a></li>
-										<li><a href="faq.html">استفسار</a></li>
-										<li><a href="checkout.html">الدفع</a></li>
-										<li><a href="login.html">التسجيل</a></li>
+										<li><a href="about-us.html">من نحن</a></li>
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
 									</ul>
 								</div>
 							</div>
 
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
-									<h4 class="widget-title">روابط</h4>
+									<h4 class="widget-title">المعهد</h4>
 									<ul class="footer-menu">
-										<li><a href="about-us.html">عن الشركة</a></li>
-										<li><a href="faq.html">استفسار</a></li>
-										<li><a href="checkout.html">الدفع</a></li>
-										<li><a href="login.html">التسجيل</a></li>
+										<li><a href="about-us.html">عن المعهد</a></li>
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
 									</ul>
 								</div>
 							</div>
 
 							<div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
-									<h4 class="widget-title">روابط</h4>
+									<h4 class="widget-title">التواصل</h4>
 									<ul class="footer-menu">
-										<li><a href="about-us.html">عن الشركة</a></li>
-										<li><a href="faq.html">استفسار</a></li>
-										<li><a href="checkout.html">الدفع</a></li>
-										<li><a href="login.html">التسجيل</a></li>
+										<li><a href="about-us.html">تواصل معنا</a></li>
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
 									</ul>
 								</div>
 							</div>
 
-							<div class="col-lg-2 col-md-4">
-								<div class="footer-widget">
-									<h4 class="widget-title">روابط</h4>
-									<ul class="footer-menu">
-										<li><a href="about-us.html">عن الشركة</a></li>
-										<li><a href="faq.html">استفسار</a></li>
-										<li><a href="checkout.html">الدفع</a></li>
-									</ul>
-								</div>
-							</div>
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">روابط</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="about-us.html">عن الشركة</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
 
 						</div>
 					</div>
@@ -1260,7 +1276,7 @@
 						<div class="row align-items-center">
 
 							<div class="col-lg-12 col-md-12 text-center">
-								<p class="mb-0">© 2021 شركة دنيا للإنتاج الصوتي والمرئي<a href="https://themezhub.net"></a> جميع الحقوق محفوظة</p>
+								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="https://themezhub.net"></a>  جميع الحقوق محفوظة © 2021 </p>
 							</div>
 
 						</div>

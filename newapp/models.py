@@ -8,18 +8,16 @@ from django.core.validators import FileExtensionValidator
 
 # Create your models here.
 class Hero(models.Model):
-	image_hero = models.ImageField(upload_to='photos/%y/%m/%d')
-	logo_header = models.ImageField(upload_to='photos/%y/%m/%d')
 	join_us = models.URLField(max_length=150)
 
 
 
-class Category(models.Model):
-	logo_cat = models.ImageField(upload_to='photos/category')
-	name_cat = models.CharField(max_length=50)
-	slug_cat = models.CharField(max_length=50, default='none')
-	desc_cat = models.CharField(max_length=150)
-	date_created = models.DateTimeField(default=datetime.now, blank=True)
+# class Category(models.Model):
+# 	logo_cat = models.ImageField(upload_to='photos/category')
+# 	name_cat = models.CharField(max_length=50)
+# 	slug_cat = models.CharField(max_length=50, default='none')
+# 	desc_cat = models.CharField(max_length=150)
+# 	date_created = models.DateTimeField(default=datetime.now, blank=True)
 
 
 class Company(models.Model):
@@ -35,34 +33,43 @@ class Company(models.Model):
 	)
 
 	slug_choices = (
-		('media', 'اعلام'),
-		('khalid', 'خالد'),
+		('media', 'الاعلام'),
+		('emergency', 'الطوارئ'),
+		('governance', 'القطاع الحكومي'),
+		('health', 'الصحة'),
+		('catering ', 'خدمات الإعاشة'),
+		('retail', 'التجزئة'),
+		('telecom', 'الإتصالات'),
+		('aviation', 'الطيران'),
+		('living', 'السكن'),
+		('transportation', 'المواصلات'),
+		('electronics', 'الإلكترونيات'),
+		('banks', 'البنوك'),
 
 	)
 
 	logo_com = models.ImageField(upload_to='photos/company')
 	name_com = models.CharField(max_length=50)
 	slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
-	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	is_featured = models.BooleanField(default=False)
-	desc_com = models.CharField(max_length=150)
-	location = models.CharField(max_length=70)
+	desc_com = models.CharField(max_length=150, blank=True)
+	location = models.CharField(max_length=70, blank=True)
 	city = models.CharField(max_length=70, choices= city_choices)
 	phone = models.IntegerField()
-	website = models.URLField(max_length=150)
-	facebook_link = models.URLField(max_length=100)
-	twitter_link = models.URLField(max_length=100)
-	instgram_link = models.URLField(max_length=100)
-	linkedin_link = models.URLField(max_length=100)
-	whatsapp_link = models.URLField(max_length=100)
-	email = models.EmailField(max_length=255)
+	website = models.URLField(max_length=150, blank=True)
+	facebook_link = models.URLField(max_length=100, blank=True)
+	twitter_link = models.URLField(max_length=100, blank=True)
+	instgram_link = models.URLField(max_length=100, blank=True)
+	linkedin_link = models.URLField(max_length=100, blank=True)
+	whatsapp_link = models.URLField(max_length=100, blank=True)
+	email = models.EmailField(max_length=255, blank=True)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
-	end_date = models.DateTimeField()
+	end_date = models.DateTimeField(blank=True)
 
 class Ad(models.Model):
 	image_ad = models.ImageField(upload_to='photos/ad')
 	link = models.URLField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
-	end_date = models.DateTimeField()
+	end_date = models.DateTimeField(blank=True)
 
 

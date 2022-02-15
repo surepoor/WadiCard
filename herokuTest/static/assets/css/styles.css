@@ -10687,10 +10687,19 @@ ul.author-list-counter li span {
 	About Info
 -------------------------------------------------------------*/
 .about-captione h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 	font-weight:700;
 	line-height:1.2;
 }
+
+.about-captione p {
+    margin-bottom: 3rem;
+	font-weight:600;
+    font-size: 16px;
+	line-height:2.0;
+}
+
+
 .doc_video {
     position: relative;
 }
@@ -14413,5 +14422,17 @@ a.blue2-theme {
     font-size: 150%;
 }
 
+.centerkha {
+    float: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightkha h2 {
+    text-align: right;
+    float: right;
+
+}
 
 
