@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 from django.utils.timezone import now
 from django.core.validators import FileExtensionValidator
+from django.core.validators import RegexValidator
 
 
 
@@ -45,6 +46,9 @@ class Company(models.Model):
 		('transportation', 'المواصلات'),
 		('electronics', 'الإلكترونيات'),
 		('banks', 'البنوك'),
+		('education', 'التعليم'),
+		('twafah', 'الطوافة'),
+		('safety', 'الأمن والسلامة'),
 
 	)
 
@@ -61,6 +65,10 @@ class Company(models.Model):
 		('المواصلات', 'المواصلات'),
 		('الإلكترونيات', 'الإلكترونيات'),
 		('البنوك', 'البنوك'),
+		('التعليم', 'التعليم'),
+		('الطوافة', 'الطوافة'),
+		('الأمن والسلامة', 'الأمن والسلامة'),
+
 
 	)
 
@@ -70,10 +78,12 @@ class Company(models.Model):
 	slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
 	is_special = models.BooleanField(default=False)
 	is_featured = models.BooleanField(default=False)
-	description_com = models.CharField(max_length=150, blank=True)
+	description_com = models.CharField(max_length=170, blank=True)
 	location = models.CharField(max_length=70, blank=True)
 	city = models.CharField(max_length=70, choices= city_choices)
-	phone = models.IntegerField()
+	# phone = models.IntegerField()
+	phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+	phone_num = models.CharField(validators=[phone_regex], max_length=17, blank=True)  # validators should be a list
 	website = models.URLField(max_length=150, blank=True)
 	facebook_link = models.URLField(max_length=100, blank=True)
 	twitter_link = models.URLField(max_length=100, blank=True)

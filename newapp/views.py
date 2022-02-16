@@ -41,8 +41,8 @@ def search(request):
 	if 'keyword' in request.GET:
 		keyword = request.GET['keyword']
 		if keyword:
-			companys = companys.filter(name_com__icontains=keyword) or companys.filter(desc_com__icontains=keyword) \
-					   or companys.filter(city__icontains=keyword)
+			companys = companys.filter(name_com__icontains=keyword) or companys.filter(description_com__icontains=keyword) \
+					   or companys.filter(city__icontains=keyword) or companys.filter(category_com=keyword)
 
 
 

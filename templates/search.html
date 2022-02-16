@@ -155,7 +155,7 @@
 										</div>
 										<div class="Reveal-st-author-info">
 											<h4 class="Reveal-st-author-title">{{company.name_com}}</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">{{ company.category.name_cat}}</span>
+											<span class="Reveal-st-author-subtitle theme-cl">{{ company.category_com}}</span>
 										</div>
 									</div>
 								</div>
@@ -165,7 +165,7 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												{{ company.desc_com }}
+												{{ company.description_com }}
 
 
 
@@ -175,7 +175,7 @@
 											</div>
 										</div>
 										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />{{company.city}}</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>
+										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />{{company.phone_num}}</li>
 										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
 
 
@@ -188,26 +188,40 @@
 									<row>
 										<column>
 											<!-- Facebook -->
-											<i class="fab fa-facebook-f ml-3 ihov"></i>
+{#											<i <a href="{{company.facebook_link}}"> class="fab fa-facebook-f ml-3 ihov"> </a></i>#}
+
+                                            <a href="{{company.facebook_link}}" class="fab fa-facebook-f ml-3 ihov"></a>
 
 											<!-- Twitter -->
-											<i class="fab fa-twitter ml-3 ihov"></i>
+{#											<i class="fab fa-twitter ml-3 ihov"></i>#}
+
+                                            <a href="{{company.twitter_link}}" class="fab fa-twitter ml-3 ihov"></a>
+
 
 											<!-- Google -->
-											<i class="fab fa-google ml-3 ihov"></i>
+{#											<i class="fab fa-google ml-3 ihov"></i>#}
+
+{#                                            <a href="{{company.facebook_link}}" class="fab fa-google ml-3 ihov"></a>#}
+
 
 											<!-- Instagram -->
-											<i class="fab fa-instagram ml-3 ihov"></i>
+{#											<i class="fab fa-instagram ml-3 ihov"></i>#}
+                                            <a href="{{company.instgram_link}}" class="fab fa-instagram ml-3 ihov"></a>
 
 											<!-- Linkedin -->
-											<i class="fab fa-linkedin-in ml-3 ihov"></i>
+{#											<i class="fab fa-linkedin-in ml-3 ihov"></i>#}
+                                            <a href="{{company.linkedin_link}}" class="fab fa-linkedin-in ml-3 ihov"></a>
 
 											<!-- Whatsapp -->
-											<i class="fab fa-whatsapp ml-3 ihov"></i>
+{#											<i class="fab fa-whatsapp ml-3 ihov"></i>#}
+                                            <a href="{{company.whatsapp_link}}" class="fab fa-whatsapp ml-3 ihov"></a>
 
-											<i class="fas fa-phone ml-3 ihov"></i>
+{#											<i class="fas fa-phone ml-3 ihov"></i>#}
+                                            <a href="mailto: {{company.email}}" class="fas fa-address-book ml-3 ihov"></a>
 
-											<i class="fas fa-globe ihov"></i>
+{#											<i class="fas fa-globe ihov"></i>#}
+                                            <a href="{{company.website}}" class="fas fa-globe ihov"></a>
+
 										</column>
 									</row>
 
