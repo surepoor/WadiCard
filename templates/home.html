@@ -55,7 +55,10 @@
 
 								</li>
 
-                                <li><a href="{% url 'company' %}">من نحن</a></li>
+                                <li><a href="{% url 'company' %}">كل الشركات</a></li>
+
+
+                                <li><a href="{% url 'about' %}">من نحن</a></li>
 
 
 								<li><a href="">تواصل معنا</a>
@@ -113,13 +116,11 @@
 										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>
 									</a>
 								</li> -->
-                                {% for hero in heros %}
 								<li class="add-listing bg-whit">
-									<a href="{{ hero.join_us }}">
+									<a href="https://forms.gle/ciLNj2KwDuSDJDxbA">
 										 <i class="fas fa-plus-circle"></i> انضم لنا
 									</a>
 								</li>
-                                {% endfor %}
 							</ul>
 						</div>
 					</nav>
@@ -462,7 +463,9 @@
 
 
 					<div class="row">
+
                         {% for company in companys %}
+                        {% if company.is_special %}
 						<!-- Single blog Grid -->
 						<div class="col-lg-4 col-md-6 col-sm-12">
 
@@ -478,7 +481,7 @@
 										</div>
 										<div class="Reveal-st-author-info">
 											<h4 class="Reveal-st-author-title">{{company.name_com}}</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">{{ company.category.name_cat}}</span>
+											<span class="Reveal-st-author-subtitle theme-cl">{{ company.category_com}}</span>
 										</div>
 									</div>
 								</div>
@@ -488,7 +491,7 @@
 										<li><h6>عن الشركة:</h6></li>
 										<div class="row">
 											<div class="col-12 alignright cardheight">
-												{{ company.desc_com }}
+												{{ company.description_com }}
 
 
 
@@ -540,7 +543,8 @@
                                             <a href="{{company.whatsapp_link}}" class="fab fa-whatsapp ml-3 ihov"></a>
 
 {#											<i class="fas fa-phone ml-3 ihov"></i>#}
-                                            <a href="{{company.email}}" class="fas fa-address-book ml-3 ihov"></a>
+                                            <a href="mailto: {{company.email}}" class="fas fa-address-book ml-3 ihov"></a>
+
 {#											<i class="fas fa-globe ihov"></i>#}
                                             <a href="{{company.website}}" class="fas fa-globe ihov"></a>
 
@@ -549,6 +553,7 @@
 
 							</div>
 						</div>
+                        {% endif %}
                         {% endfor %}
 
 {#						<!-- Single blog Grid -->#}

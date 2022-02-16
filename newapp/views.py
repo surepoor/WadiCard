@@ -7,23 +7,26 @@ from operator import or_
 
 # Create your views here.
 def home(request):
-	heros = Hero.objects.all()
+	# heros = Hero.objects.all()
 	companys = Company.objects.all()
 	data = {
-		'heros': heros,
+		# 'heros': heros,
 		'companys':companys,
 
 	}
 	return render(request, 'home.html', data)
 
 def company(request):
-	heros = Hero.objects.all()
+	companys = Company.objects.all()
 	data = {
-		'heros': heros,
+		# 'heros': heros,
+		'companys': companys,
 
 	}
+	return render(request, 'indexcompany.html', data)
 
-	return render(request, 'about-us.html', data)
+def about(request):
+	return render(request, 'about-us.html')
 
 def details(request, slug_com):
 	all_cats = get_list_or_404(Company, slug_com=slug_com)

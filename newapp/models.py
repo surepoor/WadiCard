@@ -7,8 +7,8 @@ from django.core.validators import FileExtensionValidator
 
 
 # Create your models here.
-class Hero(models.Model):
-	join_us = models.URLField(max_length=150)
+# class Hero(models.Model):
+# 	join_us = models.URLField(max_length=150)
 
 
 
@@ -48,11 +48,29 @@ class Company(models.Model):
 
 	)
 
+	category_choices = (
+		('الإعلام', 'الإعلام'),
+		('الطوارئ', 'الطوارئ'),
+		('القطاع الحكومي', 'القطاع الحكومي'),
+		('الصحة', 'الصحة'),
+		('خدمات الإعاشة ', 'خدمات الإعاشة'),
+		('التجزئة', 'التجزئة'),
+		('الإتصالات', 'الإتصالات'),
+		('الطيران', 'الطيران'),
+		('السكن', 'السكن'),
+		('المواصلات', 'المواصلات'),
+		('الإلكترونيات', 'الإلكترونيات'),
+		('البنوك', 'البنوك'),
+
+	)
+
 	logo_com = models.ImageField(upload_to='photos/company')
 	name_com = models.CharField(max_length=50)
+	category_com = models.CharField(max_length=50, choices=category_choices, default='none')
 	slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
+	is_special = models.BooleanField(default=False)
 	is_featured = models.BooleanField(default=False)
-	desc_com = models.CharField(max_length=150, blank=True)
+	description_com = models.CharField(max_length=150, blank=True)
 	location = models.CharField(max_length=70, blank=True)
 	city = models.CharField(max_length=70, choices= city_choices)
 	phone = models.IntegerField()
