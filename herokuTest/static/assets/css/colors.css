@@ -116,7 +116,7 @@
 .red-skin .nav-tabs .nav-item.show .nav-link, .red-skin .nav-tabs .nav-link.active,
 .red-skin .btn.pop-login,
 .red-skin .single-widgets.widget_tags ul li a:hover, .red-skin .single-widgets.widget_tags ul li a:focus{
-	border-color:#e4074e;
+	/*border-color:#e4074e;*/
 }
 
 .red-skin li.login-attri.theme-log a {

@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_list_or_404
+from django.shortcuts import render, get_list_or_404, redirect
 from .models import *
 
 from django.db.models import Q
@@ -50,3 +50,12 @@ def search(request):
 		'companys': companys,
 	}
 	return render(request, 'search.html', data)
+
+
+def register(request):
+	if request.method == 'POST':
+		print('Yoooooooooooooooooooooo')
+		return redirect('register')
+
+	else:
+		return render(request, 'register.html')

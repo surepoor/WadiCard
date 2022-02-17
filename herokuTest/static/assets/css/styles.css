@@ -1981,8 +1981,10 @@ a.btn-trans-video i {
     right: -2rem; 
 }
 .btn-theme{
-	background:#f96825;
-	border-color:#f96825;
+	/*background:#f96825;*/
+	/*border-color:#f96825;*/
+    background:#75C7EB;;
+	border-color:#75C7EB;;
 	color:#ffffff;
 	transition:all ease 0.4s;
 }
@@ -6135,7 +6137,7 @@ a.tag_t, a.tag_t:hover, a.tag_t:focus {
 .btn.btn-theme {
     background:#f96825;
     border-radius: 4px;
-	margin-right:10px;
+	/*margin-right:10px;*/
 	margin-bottom:5px;
 }
 .btn.btn-theme-light {
