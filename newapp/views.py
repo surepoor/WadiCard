@@ -54,7 +54,7 @@ def search(request):
 
 def register(request):
 	if request.method == 'POST':
-		print('Yoooooooooooooooooooooo')
+		print('Submit successfully')
 		return redirect('register')
 
 	else:
