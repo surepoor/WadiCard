@@ -30,10 +30,14 @@ def about(request):
 
 def details(request, slug_com):
 	all_cats = get_list_or_404(Company, slug_com=slug_com)
+
 	data = {
 		'all_cats': all_cats,
 	}
+
 	return render(request, 'indextest.html', data)
+
+
 
 def search(request):
 	companys = Company.objects.order_by('-date_created')
