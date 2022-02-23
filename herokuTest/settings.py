@@ -13,6 +13,46 @@ import os
 import dj_database_url
 import django_heroku
 
+
+LOGGING = {
+'version': 1,
+'disable_existing_loggers': False,
+'formatters': {
+    'verbose': {
+        'format': ('%(asctime)s [%(process)d] [%(levelname)s] '
+                   'pathname=%(pathname)s lineno=%(lineno)s '
+                   'funcname=%(funcName)s %(message)s'),
+        'datefmt': '%Y-%m-%d %H:%M:%S'
+    },
+    'simple': {
+        'format': '%(levelname)s %(message)s'
+    }
+},
+'handlers': {
+    'null': {
+        'level': 'DEBUG',
+        'class': 'logging.NullHandler',
+    },
+    'console': {
+        'level': 'INFO',
+        'class': 'logging.StreamHandler',
+        'formatter': 'verbose'
+    }
+},
+'loggers': {
+    'django': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+        'propagate': True,
+    },
+    'django.request': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+        'propagate': False,
+    },
+}}
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -46,7 +86,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -140,4 +180,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'photos')
 MEDIA_URL = '/photos/'
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
+
+# django_heroku.settings(config=locals(), staticfiles=False,logging=False)
