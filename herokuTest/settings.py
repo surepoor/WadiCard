@@ -158,7 +158,7 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['.localhost','https://desolate-stream-43784.herokuapp.com/', 'desolate-stream-43784.herokuapp.com', '127.0.0.1', 'http://127.0.0.1/']
+ALLOWED_HOSTS = ['https://desolate-stream-43784.herokuapp.com/', 'desolate-stream-43784.herokuapp.com', '127.0.0.1', 'http://127.0.0.1/']
 # ALLOWED_HOSTS = ['*']
 
 # Static files (CSS, JavaScript, Images)
@@ -183,3 +183,4 @@ MEDIA_URL = '/photos/'
 # django_heroku.settings(locals())
 
 # django_heroku.settings(config=locals(), staticfiles=False,logging=False)
+
