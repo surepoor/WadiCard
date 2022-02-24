@@ -101,3 +101,28 @@ class Ad(models.Model):
 	end_date = models.DateTimeField(blank=True)
 
 
+
+class Register(models.Model):
+
+	# logo_com = models.ImageField(upload_to='photos/company')
+	name_com = models.CharField(max_length=50)
+	category_com = models.CharField(max_length=50, default='none')
+	# slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
+	# is_featured = models.BooleanField(default=False)
+	description_com = models.CharField(max_length=170, blank=True)
+	city = models.CharField(max_length=70,)
+	location = models.CharField(max_length=70, blank=True)
+	# phone = models.IntegerField()
+	phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+	phone_num = models.CharField(validators=[phone_regex], max_length=17, blank=True)  # validators should be a list
+	website = models.URLField(max_length=150, blank=True)
+	facebook_link = models.URLField(max_length=100, blank=True)
+	twitter_link = models.URLField(max_length=100, blank=True)
+	instgram_link = models.URLField(max_length=100, blank=True)
+	linkedin_link = models.URLField(max_length=100, blank=True)
+	whatsapp_link = models.URLField(max_length=100, blank=True)
+	email = models.EmailField(max_length=255, blank=True)
+	review = models.BooleanField(default=False)
+	# date_created = models.DateTimeField(default=datetime.now, blank=True)
+
+

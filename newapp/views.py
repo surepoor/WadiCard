@@ -58,8 +58,30 @@ def search(request):
 
 def register(request):
 	if request.method == 'POST':
-		print('Submit successfully')
-		return redirect('register')
+		name_com = request.POST['name_com']
+		category_com = request.POST['category_com']
+		description_com = request.POST['description_com']
+		city = request.POST['city']
+		location = request.POST['location']
+		website = request.POST['website']
+		facebook_link = request.POST['facebook_link']
+		twitter_link = request.POST['twitter_link']
+		instgram_link = request.POST['instgram_link']
+		linkedin_link = request.POST['linkedin_link']
+		whatsapp_link = request.POST['whatsapp_link']
+		email = request.POST['email']
+
+		if Register.objects.filter(name_com=name_com).exists():
+			return redirect('register')
+
+		else:
+			register = Register.objects.create(name_com=name_com, category_com=category_com,
+											   description_com=description_com,
+											   city=city, location=location, website=website,
+											   facebook_link=facebook_link, twitter_link=twitter_link,
+											   instgram_link=instgram_link, linkedin_link=linkedin_link,
+											   whatsapp_link=whatsapp_link, email=email)
+			return redirect('home')
 
 	else:
 		return render(request, 'register.html')

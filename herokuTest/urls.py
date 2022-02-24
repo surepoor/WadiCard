@@ -21,16 +21,19 @@ from django.conf import settings
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
 from newapp.views import *
+from django.views.static import serve
 
 urlpatterns = [
     # re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/assets/img/favicon.ico')),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('assets/img/favicon.ico'))),
-    path('admin/', admin.site.urls),
+    # path('Sh_log', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', home, name='home'),
     path('company', company, name='company'),
     path('search', search, name='search'),
     path('about', about, name='about'),
     path('register', register, name='register'),
     path('<slug:slug_com>', details, name='details'),
-
+    re_path(r'^photos/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
+    re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
