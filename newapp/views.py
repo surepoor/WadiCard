@@ -4,6 +4,9 @@ from .models import *
 from django.db.models import Q
 from functools import reduce
 from operator import or_
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Create your views here.
 def home(request):
