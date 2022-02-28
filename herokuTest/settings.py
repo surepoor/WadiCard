@@ -15,7 +15,7 @@ import django_heroku
 import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
-# import cloudinary_storage
+import cloudinary_storage
 
 # LOGGING = {
 # 'version': 1,
