@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import dj_database_url
 import django_heroku
-# import cloudinary
+import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
-# import cloudinary_storage
+import cloudinary_storage
 
 # LOGGING = {
 # 'version': 1,
@@ -186,11 +186,16 @@ MEDIA_URL = '/photos/'
 # django_heroku.settings(locals())
 
 # django_heroku.settings(config=locals(), staticfiles=False,logging=False)
+cloudinary.config(
+  cloud_name = "hgfcbzcmp",
+  api_key = "482516611123756",
+  api_secret = "ULa6vI61Q8UYE8PQ1OWYorT_Ozc"
+)
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'hgfcbzcmp',
-    'API_KEY': '482516611123756',
-    'API_SECRET': 'ULa6vI61Q8UYE8PQ1OWYorT_Ozc',
-}
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'hgfcbzcmp',
+#     'API_KEY': '482516611123756',
+#     'API_SECRET': 'ULa6vI61Q8UYE8PQ1OWYorT_Ozc',
+# }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

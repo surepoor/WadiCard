@@ -3,6 +3,7 @@ from datetime import datetime
 from django.utils.timezone import now
 from django.core.validators import FileExtensionValidator
 from django.core.validators import RegexValidator
+from cloudinary.models import CloudinaryField
 
 
 
@@ -72,7 +73,8 @@ class Company(models.Model):
 
 	)
 
-	logo_com = models.ImageField(upload_to='photos/company')
+	# logo_com = models.ImageField(upload_to='photos/company')
+	logo_img = CloudinaryField('logo_img')
 	name_com = models.CharField(max_length=50)
 	category_com = models.CharField(max_length=50, choices=category_choices, default='none')
 	slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
