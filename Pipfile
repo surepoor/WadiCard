@@ -16,6 +16,8 @@ python_version = "3.8"
 django-heroku = "*"
 gunicorn = "*"
 Pillow = "*"
+cloudinary="*"
+
 
 [dev-packages]
 
