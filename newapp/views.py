@@ -14,7 +14,7 @@ def home(request):
 	companys = Company.objects.all()
 	data = {
 		# 'heros': heros,
-		'companys':companys,
+		'companys': companys,
 
 	}
 	return render(request, 'home.html', data)
