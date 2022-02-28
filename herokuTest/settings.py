@@ -15,7 +15,7 @@ import django_heroku
 import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
-import cloudinary_storage
+# import cloudinary_storage
 
 # LOGGING = {
 # 'version': 1,
@@ -84,6 +84,8 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'newapp',
+    'cloudinary',
+    'cloudinary_storage',
 
 ]
 
