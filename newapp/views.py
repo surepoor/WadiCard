@@ -4,9 +4,9 @@ from .models import *
 from django.db.models import Q
 from functools import reduce
 from operator import or_
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
+# import cloudinary
+# import cloudinary.uploader
+# import cloudinary.api
 
 # Create your views here.
 def home(request):
@@ -88,9 +88,3 @@ def register(request):
 
 	else:
 		return render(request, 'register.html')
-
-
-def view_404(request, exception=None):
-	# make a redirect to homepage
-    # you can use the name of url or just the plain link
-    return redirect('home') # or redirect('name-of-index-url')

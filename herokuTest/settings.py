@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import dj_database_url
 import django_heroku
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-import cloudinary_storage
+# import cloudinary
+# import cloudinary.uploader
+# import cloudinary.api
+# import cloudinary_storage
 
 # LOGGING = {
 # 'version': 1,
@@ -68,7 +68,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = "django-insecure-*@8omwg16h%ht*mmad^c4*0h5(v8lba1ruoyxjwy46-_vdz1nv"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Application definition
 
@@ -84,8 +84,6 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'newapp',
-    'cloudinary_storage',
-    'cloudinary',
 
 ]
 
@@ -189,11 +187,3 @@ MEDIA_URL = '/photos/'
 
 # django_heroku.settings(config=locals(), staticfiles=False,logging=False)
 
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'hgfcbzcmp',
-    'API_KEY': '482516611123756',
-    'API_SECRET': 'ULa6vI61Q8UYE8PQ1OWYorT_Ozc',
-}
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
