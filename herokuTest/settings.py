@@ -187,3 +187,10 @@ MEDIA_URL = '/photos/'
 
 # django_heroku.settings(config=locals(), staticfiles=False,logging=False)
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'hgfcbzcmp',
+    'API_KEY': '482516611123756',
+    'API_SECRET': 'ULa6vI61Q8UYE8PQ1OWYorT_Ozc',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
