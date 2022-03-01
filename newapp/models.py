@@ -98,13 +98,16 @@ class Company(models.Model):
 	whatsapp_link = models.URLField(max_length=100, blank=True)
 	email = models.EmailField(max_length=255, blank=True)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
-	end_date = models.DateTimeField(blank=True)
+	end_date = models.DateTimeField(blank=True, default=datetime.now)
 
 class Ad(models.Model):
+	name_ad = models.CharField(max_length=150, blank=True)
 	image_ad = models.ImageField(upload_to='photos/ad')
 	link = models.URLField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
-	end_date = models.DateTimeField(blank=True)
+	end_date = models.DateTimeField(blank=True, default=datetime.now)
+
+
 
 
 
@@ -131,4 +134,5 @@ class Register(models.Model):
 	review = models.BooleanField(default=False)
 	# date_created = models.DateTimeField(default=datetime.now, blank=True)
 
-
+	def __str__(self):
+		return self.name_com
