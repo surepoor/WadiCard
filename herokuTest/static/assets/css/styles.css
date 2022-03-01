@@ -5914,7 +5914,7 @@ body .owl-theme .owl-nav [class*=owl-] {
 }
 .Reveal-grid-caption-body ul li img {
     max-width: 17px;
-    margin-right: 7px;
+    /*margin-right: 7px;*/
     margin-left: 10px;
 }
 .Reveal-grid-footer {
@@ -11797,8 +11797,8 @@ h3.pa-name {
 }
 .Reveal-st-author-info .Reveal-st-author-subtitle {
     font-family: 'Lora', serif;
-    font-style: italic;
-    font-size: 15px;
+    /*font-style: italic;*/
+    font-size: 18px;
 }
 .Reveal-st-author-box {
     display: flex;
