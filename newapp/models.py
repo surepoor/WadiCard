@@ -50,8 +50,8 @@ class Company(models.Model):
 		('education', 'التعليم'),
 		('twafah', 'الطوافة'),
 		('safety', 'الأمن والسلامة'),
-		('engineering ', 'استشارات هندسية'),
-		('farming ', 'الزراعة'),
+		('engineering', 'استشارات هندسية'),
+		('farming', 'الزراعة'),
 
 	)
 
