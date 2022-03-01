@@ -169,7 +169,7 @@
 										</div>
 										<div class="Reveal-st-author-info">
 											<h4 class="Reveal-st-author-title">{{all_cat.name_com}}</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">{{ all_cat.category.name_cat}}</span>
+											<span class="Reveal-st-author-subtitle theme-cl">{{ all_cat.category_com}}</span>
 										</div>
 									</div>
 								</div>
@@ -219,7 +219,9 @@
 											<!-- Whatsapp -->
 											<i class="fab fa-whatsapp ml-3 ihov"></i>
 
-											<i class="fas fa-phone ml-3 ihov"></i>
+{#											<i class="fas fa-phone ml-3 ihov"></i>#}
+
+                                            <a href="mailto: {{company.email}}" class="fas fa-address-book ml-3 ihov"></a>
 
 											<i class="fas fa-globe ihov"></i>
 										</column>
