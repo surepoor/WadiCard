@@ -84,7 +84,7 @@ class Company(models.Model):
 	slug_com = models.CharField(max_length=50, choices=slug_choices, default='none')
 	is_special = models.BooleanField(default=False)
 	is_featured = models.BooleanField(default=False)
-	description_com = models.CharField(max_length=170, blank=True)
+	description_com = models.CharField(max_length=194, blank=True)
 	location = models.CharField(max_length=70, blank=True)
 	city = models.CharField(max_length=70, choices= city_choices)
 	# phone = models.IntegerField()
