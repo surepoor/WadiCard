@@ -188,10 +188,16 @@ MEDIA_URL = '/photos/'
 # django_heroku.settings(locals())
 
 # django_heroku.settings(config=locals(), staticfiles=False,logging=False)
+# cloudinary.config(
+#   cloud_name = "hgfcbzcmp",
+#   api_key = "482516611123756",
+#   api_secret = "ULa6vI61Q8UYE8PQ1OWYorT_Ozc"
+# )
+
 cloudinary.config(
-  cloud_name = "hgfcbzcmp",
-  api_key = "482516611123756",
-  api_secret = "ULa6vI61Q8UYE8PQ1OWYorT_Ozc"
+  cloud_name = "hcvmhvlwk",
+  api_key = "813159883675153",
+  api_secret = "ND4WL_pjstEtz5AF-jhPW_l0u4w"
 )
 
 # CLOUDINARY_STORAGE = {

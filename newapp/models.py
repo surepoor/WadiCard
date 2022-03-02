@@ -102,7 +102,8 @@ class Company(models.Model):
 
 class Ad(models.Model):
 	name_ad = models.CharField(max_length=150, blank=True)
-	image_ad = models.ImageField(upload_to='photos/ad')
+	# image_ad = models.ImageField(upload_to='photos/ad')
+	ad_img = CloudinaryField('ad_img')
 	link = models.URLField(max_length=150)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
 	end_date = models.DateTimeField(blank=True, default=datetime.now)

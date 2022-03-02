@@ -46,7 +46,8 @@
 					<nav id="navigation" class="navigation navigation-landscape">
 						<div class="nav-header">
 							<a class="nav-brand" href="#">
-								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />
+{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />#}
+								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" alt="" />
 								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />
 							</a>
 
@@ -265,7 +266,7 @@
 										</div>
 
 										<div class="Reveal-category-detail category-desc-text">
-											<h4>السكن</h4>
+											<h4>الإسكان</h4>
 											<!-- <p>300 Listings</p> -->
 										</div>
 									</div>
@@ -470,6 +471,25 @@
 
 										<div class="Reveal-category-detail category-desc-text">
 											<h4>الزراعة</h4>
+											<!-- <p>90 Listings</p> -->
+										</div>
+									</div>
+								</a>
+							</div>
+
+                            <!-- Single Category -->
+							<div class="Reveal-cats-box">
+								<a href="{% url 'details' 'governance' %}" class="Reveal-category-box">
+									<div class="category-desc">
+										<div class="category-icon">
+											<i class="ti-id-badge"></i>
+{#                                            <span class="catsize">#}
+{#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
+{#                                            </span>#}
+										</div>
+
+										<div class="Reveal-category-detail category-desc-text">
+											<h4>القطاع الحكومي</h4>
 											<!-- <p>90 Listings</p> -->
 										</div>
 									</div>
@@ -1177,16 +1197,18 @@
 					<div class="row">
 						<div class="owl-carousel owl-theme" id="lists-slide">
 
+                            {% for ad in ads %}
 							<!-- Single List -->
 							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">
+								<a class="Reveal-moderns-category" href="{{ad.link}}">
 									<figure>
-										 <img src="{% static 'assets/img/011.png' %}" title="store" alt="store">
+{#										 <img src="{{ ad.ad_img.url }}" title="store" alt="store">#}
+										 <img src="{{ ad.ad_img.url }}" title="store" alt="store">
 
 									</figure>
 								</a>
 							</div>
-
+                            {% endfor %}
 							<!-- Single List -->
 							<div class="list-slide-box">
 								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">

@@ -11,10 +11,12 @@ from operator import or_
 # Create your views here.
 def home(request):
 	# heros = Hero.objects.all()
+	ads = Ad.objects.all()
 	companys = Company.objects.all()
 	data = {
 		# 'heros': heros,
 		'companys': companys,
+		'ads': ads,
 
 	}
 	return render(request, 'home.html', data)
@@ -88,6 +90,7 @@ def register(request):
 
 	else:
 		return render(request, 'register.html')
+
 
 
 def view_404(request, exception=None):

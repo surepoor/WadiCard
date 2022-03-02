@@ -4010,10 +4010,20 @@ nav a {
     color:#333333 !important;
 }
 .nav-brand img {
-    max-width:122px;
-	position: relative;
+    max-width: 50px;
+    position: relative;
     top: 2px;
 }
+
+@media (max-width: 990px){
+    .nav-brand img {
+    max-width:50px;
+    margin-right: 30px;
+	position: relative;
+    top: 2px;
+    }
+}
+
 .nav-menu.nav-menu-social>li.add-listing:hover, .nav-menu.nav-menu-social>li.add-listing:focus,
 .nav-menu.nav-menu-social>li.add-listing.bg-whit:hover, .nav-menu.nav-menu-social>li.add-listing.bg-whit:focus,
 .header-transparent.header-fixed .nav-menu.nav-menu-social>li.add-listing.bg-whit, .header-transparent.header-fixed .nav-menu.nav-menu-social>li.add-listing.bg-whit{
