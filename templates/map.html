@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+
+{% load static %}
+
+
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Reveal - Business Listing & Directory HTML Template</title>
+
+    <!-- All Plugins Css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">
+
+
+    <!-- Custom CSS -->
+    <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
+
+    <!-- Custom Color Option -->
+    <link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="red-skin">
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div id="preloader">
+    <div class="preloader"><span></span><span></span></div>
+</div>
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+
+<!-- ============================================================== -->
+<!-- Top header  -->
+<!-- ============================================================== -->
+<!-- Start Navigation -->
+<div class="header header-dark">
+    <div class="container">
+        <nav id="navigation" class="navigation navigation-landscape">
+            <div class="nav-header">
+                <a class="nav-brand" href="#">
+                    <img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt=""/>
+                    <img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt=""/>
+                </a>
+
+                <div class="nav-toggle"></div>
+            </div>
+            <div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">
+                <ul class="nav-menu justify-content-center">
+
+                    <li><a href="{% url 'home' %}">الرئيسية</a>
+
+                    </li>
+
+                    <li><a href="{% url 'company' %}">كل الشركات</a></li>
+
+
+                    <li><a href="{% url 'about' %}">من نحن</a></li>
+
+
+                    {#								<li><a href="">تواصل معنا</a>#}
+                    {##}
+                    {#								</li>#}
+
+
+                    <!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>
+                        <ul class="nav-dropdown nav-submenu">
+                            <li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>
+                                <ul class="nav-dropdown nav-submenu">
+                                    <li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>
+                                    <li><a href="list-layout-full-width.html">Full Width</a></li>
+                                    <li><a href="list-layout-with-map.html">With Map</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>
+                                <ul class="nav-dropdown nav-submenu" style="display: none;">
+                                    <li><a href="grid-with-sidebar.html">With Sidebar</a></li>
+                                    <li><a href="grid-full-width.html">With Full Width</a></li>
+                                    <li><a href="grid-with-map.html">With Map</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>
+                                <ul class="nav-dropdown nav-submenu">
+                                    <li><a href="half-map-with-list-layout.html">With List Layout</a></li>
+                                    <li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>
+                                    <li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>
+                                <ul class="nav-dropdown nav-submenu">
+                                    <li><a href="single-listing-1.html">Single Listing 1</a></li>
+                                    <li><a href="single-listing-2.html">Single Listing 2</a></li>
+                                    <li><a href="single-listing-3.html">Single Listing 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                    <li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن المعهد</a>
+
+                    </li>
+
+                    <!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->
+
+                </ul>
+
+                <ul class="nav-menu nav-menu-social align-to-right">
+
+                    <!-- <li>
+                        <a href="#" data-toggle="modal" data-target="#login">
+                            <i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>
+                        </a>
+                    </li> -->
+                    <li class="add-listing bg-whit">
+                        <a href="{% url 'register' %}">
+                            <i class="fas fa-plus-circle"></i> انضم لنا
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- End Navigation -->
+<div class="clearfix"></div>
+<!-- ============================================================== -->
+<!-- Top header  -->
+<!-- ============================================================== -->
+
+
+{#			<!-- ============================ Page Title Start================================== -->#}
+{#			<div class="image-cover page-title" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="5">#}
+{#				<div class="container rightkha">#}
+{#					<div class="row rightkha">#}
+{#						<div class="col-lg-12 col-md-12 rightkha">#}
+{#							#}
+{#							<h2 class="ipt-title rightkha">من نحن</h2>#}
+{#							<!-- <span class="ipn-subtitle text-light">Who we are & our mission</span> -->#}
+{#							#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- ============================ Page Title End ================================== -->#}
+
+<!-- ============================ Our Story Start ================================== -->
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Single Box -->
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="doc_video">
+                    <div class="thumb">
+                        <img class="pro_img img-fluid w100" src="https://via.placeholder.com/1200x800" alt="7.jpg">
+                        <div class="overlay_icon">
+                            <div class="bb-video-box">
+                                <div class="bb-video-box-inner">
+                                    <div class="bb-video-box-innerup">
+                                        <a href="https://www.youtube.com/watch?v=A8EI6JaFbv4" data-bs-toggle="modal" data-bs-target="#popup-video"><i class="fa fa-play"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- kha -->
+            <!-- Single Box -->
+            <div class="col-lg-12 col-md-6 col-sm-12">
+                <div class="about-captione centerkha">
+                    <!-- <h6 class="text-info centerkha">MediPure Tips</h6> -->
+                    <h2 class="centerkha">خريطة المعرض</h2>
+                    {#								<p> منصة خدمات الحج والعمرة والزيارة عبارة عن بوابة إلكترونية توفر أكبر قاعدة بيانات لخدمات شركات الحج والعمرة ، حيث يتم تنظيم  معلوماتها في فئات رئيسيه، حيث تُمكن جميع مستخدمي الإنترنت في جميع دول العالم من البحث عن أي بيانات تخص مقدمي خدمات الحج والعمرة مجاناً و بدون إجراءات تسجيل أو إشتراك، يتوفر الموقع باللغتين العربية و الإنجليزية ​ #}
+                    {#									​#}
+                    {#									يمكن للزائر البحث بسهولة عن الخدمة (الخدمات) المطلوبة أو المعلومات التجارية باستخدام معايير بحث بسيطة و متقدمة.​#}
+                    {#									</p>#}
+                    <!-- <div class="authorct-button">
+                        <a href="#" class="btn btn-theme rounded">Read More</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ============================ Our Story End ================================== -->
+
+
+{##}
+{#				<div class="container">#}
+{#                    <img src="{% static 'assets/img/map02.jpg' %}" usemap="image-map"/>#}
+{##}
+{##}
+{#                </div>#}
+
+<!-- ============================ Our Story End ================================== -->
+
+{#        <section class="gray">#}
+{#				<div class="container">#}
+{##}
+{#					<div class="row">#}
+{#						<div class="col-lg-12 col-md-12">#}
+{#                                <img src="{% static 'assets/img/map02.jpg' %}"/>#}
+{##}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{#				</div>#}
+{#			</section>#}
+<!-- ============================ Listing Category End ================================== -->
+
+
+<div class="modal_map_holder">
+
+
+
+{#    <script type="text/javascript" src="Bisat%20Alreeh%20-Booking_files/jquery-1.js"></script>#}
+{##}
+{#    <script src="Bisat%20Alreeh%20-Booking_files/newblockdata.js"></script>#}
+
+            <style id="compiled-css" type="text/css">
+                .popup {
+                    position: absolute;
+                    z-index: 20000;
+                    top: 0px;
+                    left: 0px;
+                    display: none;
+                    background-color: #fff;
+                    border: 1px solid #cccccc;
+                    min-height: 100px;
+                    color: #634f2e;
+                    padding: 5px;
+                }
+
+                .thb {
+                    font-weight: 600;
+                    font-size: 1em;
+                    color: #634f2e;
+                    text-transform: uppercase;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .tda {
+                    font-weight: 600;
+                    font-size: 0.8em;
+                    color: #634f2e;
+
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background-color: #e5e5e5;
+                    height: 30px;
+                }
+
+                .tdr {
+                    font-weight: 600;
+                    font-size: 0.8em;
+                    color: #634f2e;
+
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    background-color: #cccccc;
+                    height: 30px;
+                }
+
+                .delblock {
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+                .btrequest {
+                    background-color: #634b29;
+                    border: 0px solid red;
+                    font-size: 0.8em;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                .txtterms {
+                    font-size: 0.7em;
+                }
+
+                .txtclose {
+                    font-size: 0.7em;
+                    cursor: pointer;
+                }
+            </style>
+
+
+        {#    <script type="text/javascript">#}
+        {#        //<![CDATA[#}
+        {##}
+        {##}
+        {#        function pop(e, model_popup_id, block_id) { //function called by first hotspot#}
+        {##}
+        {#            ajax_call_add_block(block_id);#}
+        {#            //model_popup_id = "model_popup_block";#}
+        {##}
+        {##}
+        {#            //var thing = document.getElementById(model_popup_id);#}
+        {#            //thing.style.left = e.clientX + 'px';#}
+        {#            //thing.style.top = (e.clientY+100)/2 + 'px';#}
+        {##}
+        {#            //var mid_val = "#" + model_popup_id;#}
+        {#            //$(mid_val).toggle();#}
+        {#            //if (block_id !=0)#}
+        {##}
+        {#            return true;#}
+        {#        }#}
+        {##}
+        {##}
+        {#        //]]></script>#}
+
+        {#    <div class="row">#}
+        {#        <div class="col-md-1"></div>#}
+        {#        <div class="col-md-9 text-right">#}
+        {#            <input id="btrequest" type="button" value="Google Location Map" class="btn BtnOne" data-toggle="modal"#}
+        {#                   data-target="#exampleMap">#}
+        {#        </div>#}
+        {#        <div class="col-md-1">#}
+        {#            <img src="Bisat%20Alreeh%20-Booking_files/Shopping-cart.png" onclick="ajax_call_get_all_block();openNav()"#}
+        {#                 style="cursor:pointer"></div>#}
+        {#    </div>#}
+<div class="wrapper">
+      <div class="scrolls">
+            <div style="display: block; background: rgba(0, 0, 0, 0) url('{% static 'assets/img/map04.jpg' %}') no-repeat scroll 0% 0% / contain; position: relative; padding: 0px; width: 1360px; height: 1080px;"
+                 class="map">
+                <canvas style="width: 1920px; height: 1080px; position: absolute; center: 0px; top: 0px; padding: 0px; border: 0px none;"
+                        width="1920" height="1080"></canvas>
+                <canvas style="width: 1920px; height: 1080px; position: absolute; center: 0px; top: 0px; padding: 0px; border: 0px none; opacity: 1;"
+                        width="1920" height="1080"></canvas>
+                <img src="{% static 'assets/img/map04.jpg' %}" class="imageDiv map maphilighted" usemap="#image-map"
+                     style="max-width: 100%; display: initial; opacity: 1e-10; position: absolute; center: 0px; top: 0px; padding: 0px; border: 0px none;">
+            </div>
+
+                <map name="image-map">
+            <area target="_blank" alt="STC" title="STC" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="107,384,258,457" shape="rect">
+            <area target="_blank" alt="PPMDC" title="PPMDC" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="108,554,258,627" shape="rect">
+            <area target="_blank" alt="EVC" title="EVC" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="36,468,107,541" shape="rect">
+            <area target="_blank" alt="SDAIA" title="SDAIA" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="348,253,420,316" shape="rect">
+            <area target="_blank" alt="MUTAHED" title="MUTAHED" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="108,214,180,250" shape="rect">
+            <area target="_blank" alt="HAJJ_UQU" title="HAJJ_UQU" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="421,290,458,326" shape="rect">
+            <area target="_blank" alt="BTGroup" title="BTGroup" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="349,363,384,436" shape="rect">
+            <area target="_blank" alt="SEMANOOR" title="SEMANOOR" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="422,363,458,399" shape="rect">
+            <area target="_blank" alt="SWISS HOTEL" title="SWISS HOTEL" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="421,400,457,435" shape="rect">
+            <area target="_blank" alt="T" title="T" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="349,579,384,615" shape="rect">
+            <area target="_blank" alt="moi.gov.sa" title="moi.gov.sa" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="422,473,645,544" shape="rect">
+            <area target="_blank" alt="MILLENNIUM" title="MILLENNIUM" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="641,258,713,293" shape="rect">
+            <area target="_blank" alt="BLUE" title="BLUE" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="713,331,677,294" shape="rect">
+            <area target="_blank" alt="ADAHI" title="ADAHI" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="604,368,677,404" shape="rect">
+            <area target="_blank" alt="ELAF" title="ELAF" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="713,403,677,367" shape="rect">
+            <area target="_blank" alt="ALL" title="ALL" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="712,440,677,404" shape="rect">
+            <area target="_blank" alt="ZOWAR" title="ZOWAR" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="722,648,685,575" shape="rect">
+            <area target="_blank" alt="PULLMAN" title="PULLMAN" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="720,759,684,723" shape="rect">
+            <area target="_blank" alt="MADEN" title="MADEN" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="805,260,866,319" shape="rect">
+            <area target="_blank" alt="SCEC" title="SCEC" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="805,369,864,430" shape="rect">
+            <area target="_blank" alt="ALARABIA" title="ALARABIA" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="805,489,840,526" shape="rect">
+            <area target="_blank" alt="darp.gov.sa" title="darp.gov.sa" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="805,584,866,646" shape="rect">
+            <area target="_blank" alt="sons of abdul aziz al rajhi endowment charity" title="sons of abdul aziz al rajhi endowment charity" href="https://www.youtube.com/channel/UCh0J67QFBCJpskeVyDxSGPw" coords="1252,122,1283,152" shape="rect">
+        </map>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ============================ Footer Start ================================== -->
+<footer class="dark-footer skin-dark-footer">
+    <div class="ht-80"></div>
+    <div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo"
+                             style="height:120px;" alt=""/>
+                        {#                                    <h4 class="Reveal-st-author-title">شاذروان</h4>#}
+                        <p>المملكة العربية السعودية<br>جدة</p>
+                        <ul class="footer-bottom-social">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">المشروع</h4>
+                        <ul class="footer-menu">
+                            <li><a href="about-us.html">من نحن</a></li>
+                            {#										<li><a href="faq.html">استفسار</a></li>#}
+                            {#										<li><a href="checkout.html">الدفع</a></li>#}
+                            {#										<li><a href="login.html">التسجيل</a></li>#}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">المعهد</h4>
+                        <ul class="footer-menu">
+                            <li><a href="about-us.html">عن المعهد</a></li>
+                            {#										<li><a href="faq.html">استفسار</a></li>#}
+                            {#										<li><a href="checkout.html">الدفع</a></li>#}
+                            {#										<li><a href="login.html">التسجيل</a></li>#}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">التواصل</h4>
+                        <ul class="footer-menu">
+                            <li><a href="about-us.html">تواصل معنا</a></li>
+                            {#										<li><a href="faq.html">استفسار</a></li>#}
+                            {#										<li><a href="checkout.html">الدفع</a></li>#}
+                            {#										<li><a href="login.html">التسجيل</a></li>#}
+                        </ul>
+                    </div>
+                </div>
+
+                {#							<div class="col-lg-2 col-md-4">#}
+                {#								<div class="footer-widget">#}
+                {#									<h4 class="widget-title">روابط</h4>#}
+                {#									<ul class="footer-menu">#}
+                {#										<li><a href="about-us.html">عن الشركة</a></li>#}
+                {#										<li><a href="faq.html">استفسار</a></li>#}
+                {#										<li><a href="checkout.html">الدفع</a></li>#}
+                {#									</ul>#}
+                {#								</div>#}
+                {#							</div>#}
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-12 col-md-12 text-center">
+                    <p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="https://themezhub.net"></a>
+                        جميع الحقوق محفوظة © 2022 </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ============================ Footer End ================================== -->
+
+<!-- Log In Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">
+    <div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+        <div class="modal-content" id="registermodal">
+            <span class="mod-close" data-dismiss="modal"><i class="ti-close"></i></span>
+            <div class="modal-body">
+                <h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>
+                <div class="login-form">
+                    <form>
+
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <div class="input-with-icon gray">
+                                <input type="text" class="form-control" placeholder="Username">
+                                <i class="ti-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div class="input-with-icon gray">
+                                <input type="password" class="form-control" placeholder="*******">
+                                <i class="ti-unlock"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-md full-width pop-login">Login</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-divider"><span>Or login via</span></div>
+                <div class="social-login mb-3">
+                    <ul>
+                        <li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>
+                        <li><a href="#" class="btn google"><i class="ti-google"></i></a></li>
+                        <li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="modat-foot">
+                    <div class="md-left">Have't Account? <a href="register.html" class="theme-cl">Sign Up</a></div>
+                    <div class="md-right"><a href="#" class="theme-cl">Forget Password?</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
+
+<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+
+
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+{#        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>#}
+
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/rangeslider.js' %}"></script>
+<script src="{% static 'assets/js/select2.min.js' %}"></script>
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/slick.js' %}"></script>
+<script src="{% static 'assets/js/slider-bg.js' %}"></script>
+<script src="{% static 'assets/js/lightbox.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/counterup.min.js' %}"></script>
+
+<script src="{% static 'assets/js/custom.js' %}"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+
+</body>
+</html>

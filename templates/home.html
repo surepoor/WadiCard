@@ -1300,13 +1300,13 @@
 								<div class="footer-widget">
 									<img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo" style="height:120px;" alt="" />
 {#                                    <h4 class="Reveal-st-author-title">شاذروان</h4>#}
-									<p>المملكة العربية السعودية<br>جدة</p>
-									<ul class="footer-bottom-social">
-										<li><a href="#"><i class="ti-facebook"></i></a></li>
-										<li><a href="#"><i class="ti-twitter"></i></a></li>
-										<li><a href="#"><i class="ti-instagram"></i></a></li>
-										<li><a href="#"><i class="ti-linkedin"></i></a></li>
-									</ul>
+									<p>المملكة العربية السعودية<br>جدة | حي الحمراء</p>
+{#									<ul class="footer-bottom-social">#}
+{#										<li><a href="#"><i class="ti-facebook"></i></a></li>#}
+{#										<li><a href="#"><i class="ti-twitter"></i></a></li>#}
+{#										<li><a href="#"><i class="ti-instagram"></i></a></li>#}
+{#										<li><a href="#"><i class="ti-linkedin"></i></a></li>#}
+{#									</ul>#}
 								</div>
 
 							</div>
@@ -1316,7 +1316,7 @@
 								<div class="footer-widget">
 									<h4 class="widget-title">المشروع</h4>
 									<ul class="footer-menu">
-										<li><a href="about-us.html">من نحن</a></li>
+										<li><a href="{% url 'about' %}">من نحن</a></li>
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
@@ -1328,7 +1328,7 @@
 								<div class="footer-widget">
 									<h4 class="widget-title">المعهد</h4>
 									<ul class="footer-menu">
-										<li><a href="about-us.html">عن المعهد</a></li>
+										<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن المعهد</a></li>
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
@@ -1336,11 +1336,23 @@
 								</div>
 							</div>
 
-							<div class="col-lg-2 col-md-4">
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">التواصل</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="about-us.html">تواصل معنا</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+
+                            <div class="col-lg-2 col-md-4">
 								<div class="footer-widget">
-									<h4 class="widget-title">التواصل</h4>
+									<h4 class="widget-title">الشركات</h4>
 									<ul class="footer-menu">
-										<li><a href="about-us.html">تواصل معنا</a></li>
+										<li><a href="{% url 'company' %}">كل الشركات</a></li>
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
@@ -1372,7 +1384,8 @@
 						<div class="row align-items-center">
 
 							<div class="col-lg-12 col-md-12 text-center">
-								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="https://themezhub.net"></a>  جميع الحقوق محفوظة © 2022 </p>
+								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="#"></a>  جميع الحقوق محفوظة © 2022 </p>
+								<p class="mb-0"> تنفيذ شركة دنيا للإنتاج المرئي والصوتي<a href="#"></a></p>
 							</div>
 
 						</div>
@@ -1381,55 +1394,55 @@
 			</footer>
 			<!-- ============================ Footer End ================================== -->
 
-			<!-- Log In Modal -->
-			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">
-				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
-					<div class="modal-content" id="registermodal">
-						<span class="mod-close" data-dismiss="modal"><i class="ti-close"></i></span>
-						<div class="modal-body">
-							<h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>
-							<div class="login-form">
-								<form>
-
-									<div class="form-group">
-										<label>User Name</label>
-										<div class="input-with-icon gray">
-											<input type="text" class="form-control" placeholder="Username">
-											<i class="ti-user"></i>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label>Password</label>
-										<div class="input-with-icon gray">
-											<input type="password" class="form-control" placeholder="*******">
-											<i class="ti-unlock"></i>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<button type="submit" class="btn btn-md full-width pop-login">Login</button>
-									</div>
-
-								</form>
-							</div>
-							<div class="modal-divider"><span>Or login via</span></div>
-							<div class="social-login mb-3">
-								<ul>
-									<li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>
-									<li><a href="#" class="btn google"><i class="ti-google"></i></a></li>
-									<li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>
-								</ul>
-							</div>
-							<div class="modat-foot">
-								<div class="md-left">Have't Account? <a href="register.html" class="theme-cl">Sign Up</a></div>
-								<div class="md-right"><a href="#" class="theme-cl">Forget Password?</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Modal -->
+{#			<!-- Log In Modal -->#}
+{#			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">#}
+{#				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">#}
+{#					<div class="modal-content" id="registermodal">#}
+{#						<span class="mod-close" data-dismiss="modal"><i class="ti-close"></i></span>#}
+{#						<div class="modal-body">#}
+{#							<h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>#}
+{#							<div class="login-form">#}
+{#								<form>#}
+{##}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<div class="input-with-icon gray">#}
+{#											<input type="text" class="form-control" placeholder="Username">#}
+{#											<i class="ti-user"></i>#}
+{#										</div>#}
+{#									</div>#}
+{##}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<div class="input-with-icon gray">#}
+{#											<input type="password" class="form-control" placeholder="*******">#}
+{#											<i class="ti-unlock"></i>#}
+{#										</div>#}
+{#									</div>#}
+{##}
+{#									<div class="form-group">#}
+{#										<button type="submit" class="btn btn-md full-width pop-login">Login</button>#}
+{#									</div>#}
+{##}
+{#								</form>#}
+{#							</div>#}
+{#							<div class="modal-divider"><span>Or login via</span></div>#}
+{#							<div class="social-login mb-3">#}
+{#								<ul>#}
+{#									<li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>#}
+{#									<li><a href="#" class="btn google"><i class="ti-google"></i></a></li>#}
+{#									<li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="modat-foot">#}
+{#								<div class="md-left">Have't Account? <a href="register.html" class="theme-cl">Sign Up</a></div>#}
+{#								<div class="md-right"><a href="#" class="theme-cl">Forget Password?</a></div>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- End Modal -->#}
 
 			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
 
