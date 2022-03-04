@@ -33,7 +33,7 @@ urlpatterns = [
     path('search', search, name='search'),
     path('about', about, name='about'),
     path('register', register, name='register'),
-    path('map', mapage, name='mapage'),
+    path('map', mapage, name='map'),
     path('<slug:slug_com>', details, name='details'),
     re_path(r'^photos/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
