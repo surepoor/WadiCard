@@ -12,7 +12,7 @@ from operator import or_
 def home(request):
 	# heros = Hero.objects.all()
 	ads = Ad.objects.all()
-	companys = Company.objects.all()
+	companys = Company.objects.order_by('date_created')
 	data = {
 		# 'heros': heros,
 		'companys': companys,
