@@ -26,7 +26,10 @@ def home(request):
 	return render(request, 'home.html', data)
 
 def company(request):
-	companys = Company.objects.all()
+	# companys = Company.objects.all()
+	companys = list(Company.objects.all())  # convert here queryset to list
+	shuffle(companys)
+
 	data = {
 		# 'heros': heros,
 		'companys': companys,
@@ -39,7 +42,7 @@ def about(request):
 
 def details(request, slug_com):
 	all_cats = get_list_or_404(Company, slug_com=slug_com)
-
+	shuffle(all_cats)
 	data = {
 		'all_cats': all_cats,
 	}
@@ -49,7 +52,9 @@ def details(request, slug_com):
 
 
 def search(request):
-	companys = Company.objects.order_by('-date_created')
+	# companys = Company.objects.order_by('-date_created')
+	companys = list(Company.objects.all())  # convert here queryset to list
+	shuffle(companys)
 
 	if 'keyword' in request.GET:
 		keyword = request.GET['keyword']
