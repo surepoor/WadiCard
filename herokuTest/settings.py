@@ -70,6 +70,7 @@ SECRET_KEY = "django-insecure-*@8omwg16h%ht*mmad^c4*0h5(v8lba1ruoyxjwy46-_vdz1nv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -182,7 +183,7 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'photos')
-MEDIA_URL = '/photos/'
+MEDIA_URL = '//photos/'
 
 # Activate Django-Heroku.
 # django_heroku.settings(locals())
@@ -197,7 +198,8 @@ MEDIA_URL = '/photos/'
 cloudinary.config(
   cloud_name = "hcvmhvlwk",
   api_key = "813159883675153",
-  api_secret = "ND4WL_pjstEtz5AF-jhPW_l0u4w"
+  api_secret = "ND4WL_pjstEtz5AF-jhPW_l0u4w",
+  secure = True
 )
 
 # CLOUDINARY_STORAGE = {
