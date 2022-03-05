@@ -52,9 +52,8 @@ def details(request, slug_com):
 
 
 def search(request):
-	# companys = Company.objects.order_by('-date_created')
-	companys = list(Company.objects.all())  # convert here queryset to list
-	shuffle(companys)
+	companys = Company.objects.order_by('-date_created')
+
 
 	if 'keyword' in request.GET:
 		keyword = request.GET['keyword']
