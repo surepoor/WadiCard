@@ -7,12 +7,16 @@ from operator import or_
 # import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
+from random import shuffle
 
 # Create your views here.
 def home(request):
 	# heros = Hero.objects.all()
 	ads = Ad.objects.all()
-	companys = Company.objects.order_by('date_created')
+	# companys = Company.objects.order_by('date_created')
+	companys = list(Company.objects.all())  # convert here queryset to list
+	shuffle(companys)
+
 	data = {
 		# 'heros': heros,
 		'companys': companys,
