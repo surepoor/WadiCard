@@ -16,7 +16,7 @@ import cloudinary
 # import cloudinary.uploader
 # import cloudinary.api
 import cloudinary_storage
-
+#
 # LOGGING = {
 # 'version': 1,
 # 'disable_existing_loggers': False,
@@ -68,7 +68,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = "django-insecure-*@8omwg16h%ht*mmad^c4*0h5(v8lba1ruoyxjwy46-_vdz1nv"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 # Application definition
