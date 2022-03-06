@@ -347,6 +347,38 @@
 								</a>
 							</div>
 
+{#                            <!-- Single Category -->#}
+{#							<div class="Reveal-cats-box">#}
+{#								<a href="{% url 'details' 'private' %}" class="Reveal-category-box">#}
+{#									<div class="category-desc">#}
+{#										<div class="category-icon">#}
+{#											<i class="ti-world"></i>#}
+{#										</div>#}
+{##}
+{#										<div class="Reveal-category-detail category-desc-text">#}
+{#											<h4>القطاع الخاص</h4>#}
+{#											<!-- <p>90 Listings</p> -->#}
+{#										</div>#}
+{#									</div>#}
+{#								</a>#}
+{#							</div>#}
+{##}
+{#                            <!-- Single Category -->#}
+{#							<div class="Reveal-cats-box">#}
+{#								<a href="{% url 'details' 'consulting' %}" class="Reveal-category-box">#}
+{#									<div class="category-desc">#}
+{#										<div class="category-icon">#}
+{#											<i class="ti-world"></i>#}
+{#										</div>#}
+{##}
+{#										<div class="Reveal-category-detail category-desc-text">#}
+{#											<h4>الاستشارات</h4>#}
+{#											<!-- <p>90 Listings</p> -->#}
+{#										</div>#}
+{#									</div>#}
+{#								</a>#}
+{#							</div>#}
+
                         <!-- Single Category -->
 							<div class="Reveal-cats-box">
 								<a href="{% url 'details' 'catering' %}" class="Reveal-category-box">
@@ -1222,7 +1254,7 @@
                             {% for ad in ads %}
 							<!-- Single List -->
 							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="{{ad.link}}">
+								<a class="Reveal-moderns-category" href="{{ad.link}}" target="_blank">
 									<figure>
 {#										 <img src="{{ ad.ad_img.url }}" title="store" alt="store">#}
 										 <img src="{{ ad.ad_img.url }}" title="" alt="">
