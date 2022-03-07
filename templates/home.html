@@ -1,36 +1,42 @@
+{% extends 'base.html' %}
 {% load static %}
+
+
+
+
+{% block content %}
 {#{% load cloudinary %}#}
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-	<head>
+{#<!DOCTYPE html>#}
+{#<html lang="ar" dir="rtl">#}
+{#	<head>#}
+{##}
+{#        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">#}
+{##}
+{#		<meta charset="utf-8">#}
+{#        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">#}
+{##}
+{#        <title>شاذروان</title>#}
+{##}
+{#		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">#}
+{##}
+{#        <!-- All Plugins Css -->#}
+{#        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">#}
+{##}
+{##}
+{##}
+{#        <!-- Custom CSS -->#}
+{#        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">#}
+{##}
+{#		<!-- Custom Color Option -->#}
+{#		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">#}
+{##}
+{#    </head>#}
 
-        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
-
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-        <title>شاذروان</title>
-
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
-        <!-- All Plugins Css -->
-        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">
-
-
-
-        <!-- Custom CSS -->
-        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
-
-		<!-- Custom Color Option -->
-		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">
-
-    </head>
-
-    <body class="red-skin">
-        <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+{#    <body class="red-skin">#}
+{#        <!-- ============================================================== -->#}
+{#        <!-- Preloader - style you can find in spinners.css -->#}
+{#        <!-- ============================================================== -->#}
+{#        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>#}
 
         <!-- ============================================================== -->
         <!-- Main wrapper - style you can find in pages.scss -->
@@ -40,132 +46,132 @@
             <!-- ============================================================== -->
             <!-- Top header  -->
             <!-- ============================================================== -->
-            <!-- Start Navigation -->
-			<div class="header header-dark">
-				<div class="container">
-					<nav id="navigation" class="navigation navigation-landscape">
-						<div class="nav-header">
-							<a class="nav-brand" href="#">
+{#            <!-- Start Navigation -->#}
+{#			<div class="header header-dark">#}
+{#				<div class="container">#}
+{#					<nav id="navigation" class="navigation navigation-landscape">#}
+{#						<div class="nav-header">#}
+{#							<a class="nav-brand" href="#">#}
 {#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />#}
-								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" alt="" />
-								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />
-							</a>
-
-							<div class="nav-toggle"></div>
-						</div>
-						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">
-							<ul class="nav-menu justify-content-center">
-
-								<li><a href="{% url 'home' %}">الرئيسية</a>
-
-								</li>
-
-                                <li><a href="{% url 'company' %}">كل الشركات</a></li>
-
-
-                                <li><a href="{% url 'about' %}">من نحن</a></li>
-
-
-                                <li><a href="{% url 'map' %}">خريطة المعرض</a></li>
-
-
+{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" alt="" />#}
+{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />#}
+{#							</a>#}
+{##}
+{#							<div class="nav-toggle"></div>#}
+{#						</div>#}
+{#						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">#}
+{#							<ul class="nav-menu justify-content-center">#}
+{##}
+{#								<li><a href="{% url 'home' %}">الرئيسية</a>#}
+{##}
+{#								</li>#}
+{##}
+{#                                <li><a href="{% url 'company' %}">كل الشركات</a></li>#}
+{##}
+{##}
+{#                                <li><a href="{% url 'about' %}">من نحن</a></li>#}
+{##}
+{##}
+{#                                <li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
+{##}
+{##}
 {#								<li><a href="">تواصل معنا</a>#}
 {##}
 {#								</li>#}
-
-
-
-
-								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>
-									<ul class="nav-dropdown nav-submenu">
-										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>
-											<ul class="nav-dropdown nav-submenu">
-												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>
-												<li><a href="list-layout-full-width.html">Full Width</a></li>
-												<li><a href="list-layout-with-map.html">With Map</a></li>
-											</ul>
-										</li>
-										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>
-											<ul class="nav-dropdown nav-submenu" style="display: none;">
-												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>
-												<li><a href="grid-full-width.html">With Full Width</a></li>
-												<li><a href="grid-with-map.html">With Map</a></li>
-											</ul>
-										</li>
-										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>
-											<ul class="nav-dropdown nav-submenu">
-												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>
-												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>
-												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>
-											</ul>
-										</li>
-										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>
-											<ul class="nav-dropdown nav-submenu">
-												<li><a href="single-listing-1.html">Single Listing 1</a></li>
-												<li><a href="single-listing-2.html">Single Listing 2</a></li>
-												<li><a href="single-listing-3.html">Single Listing 3</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li> -->
-
-								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a>
-
-								</li>
-
-								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->
-
-							</ul>
-
-							<ul class="nav-menu nav-menu-social align-to-right">
-
-								<!-- <li>
-									<a href="#" data-toggle="modal" data-target="#login">
-										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>
-									</a>
-								</li> -->
-								<li class="add-listing bg-whit">
+{##}
+{##}
+{##}
+{##}
+{#								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>#}
+{#									<ul class="nav-dropdown nav-submenu">#}
+{#										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu">#}
+{#												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>#}
+{#												<li><a href="list-layout-full-width.html">Full Width</a></li>#}
+{#												<li><a href="list-layout-with-map.html">With Map</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu" style="display: none;">#}
+{#												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>#}
+{#												<li><a href="grid-full-width.html">With Full Width</a></li>#}
+{#												<li><a href="grid-with-map.html">With Map</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu">#}
+{#												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>#}
+{#												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>#}
+{#												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu">#}
+{#												<li><a href="single-listing-1.html">Single Listing 1</a></li>#}
+{#												<li><a href="single-listing-2.html">Single Listing 2</a></li>#}
+{#												<li><a href="single-listing-3.html">Single Listing 3</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#									</ul>#}
+{#								</li> -->#}
+{##}
+{#								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a>#}
+{##}
+{#								</li>#}
+{##}
+{#								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->#}
+{##}
+{#							</ul>#}
+{##}
+{#							<ul class="nav-menu nav-menu-social align-to-right">#}
+{##}
+{#								<!-- <li>#}
+{#									<a href="#" data-toggle="modal" data-target="#login">#}
+{#										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>#}
+{#									</a>#}
+{#								</li> -->#}
+{#								<li class="add-listing bg-whit">#}
 {#									<a href="https://forms.gle/ciLNj2KwDuSDJDxbA">#}
-									<a href="{% url 'register' %}">
-										 <i class="fas fa-plus-circle"></i> انضم لنا
-									</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-			<!-- End Navigation -->
-			<div class="clearfix"></div>
-			<!-- ============================================================== -->
-			<!-- Top header  -->
-			<!-- ============================================================== -->
-
-
-			<!-- ============================ Hero Banner  Start================================== -->
+{#									<a href="{% url 'register' %}">#}
+{#										 <i class="fas fa-plus-circle"></i> انضم لنا#}
+{#									</a>#}
+{#								</li>#}
+{#							</ul>#}
+{#						</div>#}
+{#					</nav>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- End Navigation -->#}
+{#			<div class="clearfix"></div>#}
+{#			<!-- ============================================================== -->#}
+{#			<!-- Top header  -->#}
+{#			<!-- ============================================================== -->#}
+{##}
+{##}
+{#			<!-- ============================ Hero Banner  Start================================== -->#}
 {#			<div class="image-cover hero-banner" style="background:url(https://via.placeholder.com/1920x900) no-repeat;" data-overlay="6">#}
-
-            <div class="image-cover hero-banner" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="6">
-                <div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-
-							<h1 class="big-header-capt capti">أكبر تجمع خدمات في منظومة الحج والعمرة و الزيارة</h1>
-							<div class="full-search-2 Reveal-search Reveal-search-radius box-style">
-								<div class="Reveal-search-content">
-                                    <form method="GET" action="{% url 'search' %}">
-
-									<div class="row">
-
-                                        <div class="col-lg-10 col-md-9 col-sm-12 br-left-p">
-                                            <div class="form-group">
-                                                <div class="input-with-icon">
-                                                    <input type="text" class="form-control" placeholder="البحث عن ...." name="keyword">
-                                                    <i class="theme-cl ti-search"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
+{##}
+{#            <div class="image-cover hero-banner" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="6">#}
+{#                <div class="container">#}
+{#					<div class="row">#}
+{#						<div class="col-lg-12 col-md-12">#}
+{##}
+{#							<h1 class="big-header-capt capti">أكبر تجمع خدمات في منظومة الحج والعمرة و الزيارة</h1>#}
+{#							<div class="full-search-2 Reveal-search Reveal-search-radius box-style">#}
+{#								<div class="Reveal-search-content">#}
+{#                                    <form method="GET" action="{% url 'search' %}">#}
+{##}
+{#									<div class="row">#}
+{##}
+{#                                        <div class="col-lg-10 col-md-9 col-sm-12 br-left-p">#}
+{#                                            <div class="form-group">#}
+{#                                                <div class="input-with-icon">#}
+{#                                                    <input type="text" class="form-control" placeholder="البحث عن ...." name="keyword">#}
+{#                                                    <i class="theme-cl ti-search"></i>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{##}
 {#                                        <div class="col-lg-3 col-md-4 col-sm-12 br-left-p">#}
 {#                                            <div class="form-group">#}
 {#                                                <div class="input-with-icon">#}
@@ -174,52 +180,52 @@
 {#                                                </div>#}
 {#                                            </div>#}
 {#                                        </div>#}
-
-                                        <!-- <div class="col-lg-3 col-md-3 col-sm-6">
-                                            <div class="form-group">
-                                                <div class="input-with-icon">
-                                                    <select id="list-category" class="form-control">
-                                                        <option value="">&nbsp;</option>
-                                                        <option value="1">Spa & Bars</option>
-                                                        <option value="2">Restaurants</option>
-                                                        <option value="3">Hotels</option>
-                                                        <option value="4">Educations</option>
-                                                        <option value="5">Business</option>
-                                                        <option value="6">Retail & Shops</option>
-                                                        <option value="7">Garage & Services</option>
-                                                    </select>
-                                                    <i class="theme-cl ti-briefcase"></i>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                        <div class="col-lg-2 col-md-3 col-sm-12">
-                                            <div class="form-group">
-                                                <button type="submit" class="btn search-btn">بحث</button>
-                                            </div>
-                                        </div>
-
-
-									</div>
-                                    </form>
-
-								</div>
-
-							</div>
-							<!-- <div class="popular-cat-list">
-								<ul>
-									<li><a href="grid-with-sidebar.html">Hotel & Spa</a></li>
-									<li><a href="grid-with-sidebar.html">Education</a></li>
-									<li><a href="grid-with-sidebar.html">Shopping</a></li>
-									<li><a href="grid-with-sidebar.html">Restaurants</a></li>
-								</ul>
-							</div> -->
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- ============================ Hero Banner End ================================== -->
+{##}
+{#                                        <!-- <div class="col-lg-3 col-md-3 col-sm-6">#}
+{#                                            <div class="form-group">#}
+{#                                                <div class="input-with-icon">#}
+{#                                                    <select id="list-category" class="form-control">#}
+{#                                                        <option value="">&nbsp;</option>#}
+{#                                                        <option value="1">Spa & Bars</option>#}
+{#                                                        <option value="2">Restaurants</option>#}
+{#                                                        <option value="3">Hotels</option>#}
+{#                                                        <option value="4">Educations</option>#}
+{#                                                        <option value="5">Business</option>#}
+{#                                                        <option value="6">Retail & Shops</option>#}
+{#                                                        <option value="7">Garage & Services</option>#}
+{#                                                    </select>#}
+{#                                                    <i class="theme-cl ti-briefcase"></i>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div> -->#}
+{##}
+{#                                        <div class="col-lg-2 col-md-3 col-sm-12">#}
+{#                                            <div class="form-group">#}
+{#                                                <button type="submit" class="btn search-btn">بحث</button>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{##}
+{##}
+{#									</div>#}
+{#                                    </form>#}
+{##}
+{#								</div>#}
+{##}
+{#							</div>#}
+{#							<!-- <div class="popular-cat-list">#}
+{#								<ul>#}
+{#									<li><a href="grid-with-sidebar.html">Hotel & Spa</a></li>#}
+{#									<li><a href="grid-with-sidebar.html">Education</a></li>#}
+{#									<li><a href="grid-with-sidebar.html">Shopping</a></li>#}
+{#									<li><a href="grid-with-sidebar.html">Restaurants</a></li>#}
+{#								</ul>#}
+{#							</div> -->#}
+{##}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- ============================ Hero Banner End ================================== -->#}
 
 			<!-- ============================ Calegory Start ================================== -->
 			<section class="half light gray">
@@ -1323,53 +1329,53 @@
 
 
 
-			<!-- ============================ Footer Start ================================== -->
-			<footer class="dark-footer skin-dark-footer">
-				<div class="ht-80"></div>
-				<div>
-					<div class="container">
-						<div class="row">
-
-							<div class="col-lg-4 col-md-6">
-								<div class="footer-widget">
-									<img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo" style="height:120px;" alt="" />
+{#			<!-- ============================ Footer Start ================================== -->#}
+{#			<footer class="dark-footer skin-dark-footer">#}
+{#				<div class="ht-80"></div>#}
+{#				<div>#}
+{#					<div class="container">#}
+{#						<div class="row">#}
+{##}
+{#							<div class="col-lg-4 col-md-6">#}
+{#								<div class="footer-widget">#}
+{#									<img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo" style="height:120px;" alt="" />#}
 {#                                    <h4 class="Reveal-st-author-title">شاذروان</h4>#}
-									<p>المملكة العربية السعودية<br>جدة | حي الحمراء</p>
+{#									<p>المملكة العربية السعودية<br>جدة | حي الحمراء</p>#}
 {#									<ul class="footer-bottom-social">#}
 {#										<li><a href="#"><i class="ti-facebook"></i></a></li>#}
 {#										<li><a href="#"><i class="ti-twitter"></i></a></li>#}
 {#										<li><a href="#"><i class="ti-instagram"></i></a></li>#}
 {#										<li><a href="#"><i class="ti-linkedin"></i></a></li>#}
 {#									</ul>#}
-								</div>
-
-							</div>
-
-
-							<div class="col-lg-2 col-md-4">
-								<div class="footer-widget">
-									<h4 class="widget-title">المشروع</h4>
-									<ul class="footer-menu">
-										<li><a href="{% url 'about' %}">من نحن</a></li>
+{#								</div>#}
+{##}
+{#							</div>#}
+{##}
+{##}
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">المشروع</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="{% url 'about' %}">من نحن</a></li>#}
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
-									</ul>
-								</div>
-							</div>
-
-							<div class="col-lg-2 col-md-4">
-								<div class="footer-widget">
-									<h4 class="widget-title">الملتقى</h4>
-									<ul class="footer-menu">
-										<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a></li>
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">الملتقى</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a></li>#}
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
-									</ul>
-								</div>
-							</div>
-
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
 {#							<div class="col-lg-2 col-md-4">#}
 {#								<div class="footer-widget">#}
 {#									<h4 class="widget-title">التواصل</h4>#}
@@ -1381,34 +1387,34 @@
 {#									</ul>#}
 {#								</div>#}
 {#							</div>#}
-
-                            <div class="col-lg-2 col-md-4">
-								<div class="footer-widget">
-									<h4 class="widget-title">الشركات</h4>
-									<ul class="footer-menu">
-										<li><a href="{% url 'company' %}">كل الشركات</a></li>
+{##}
+{#                            <div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">الشركات</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="{% url 'company' %}">كل الشركات</a></li>#}
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
-									</ul>
-								</div>
-							</div>
-
-
-                            <div class="col-lg-2 col-md-4">
-								<div class="footer-widget">
-									<h4 class="widget-title">معرض الملتقى</h4>
-									<ul class="footer-menu">
-										<li><a href="{% url 'map' %}">خريطة المعرض</a></li>
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{##}
+{#                            <div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">معرض الملتقى</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
 {#										<li><a href="faq.html">استفسار</a></li>#}
 {#										<li><a href="checkout.html">الدفع</a></li>#}
 {#										<li><a href="login.html">التسجيل</a></li>#}
-									</ul>
-								</div>
-							</div>
-
-
-
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{##}
+{##}
 {#							<div class="col-lg-2 col-md-4">#}
 {#								<div class="footer-widget">#}
 {#									<h4 class="widget-title">روابط</h4>#}
@@ -1419,27 +1425,29 @@
 {#									</ul>#}
 {#								</div>#}
 {#							</div>#}
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="footer-bottom">
-					<div class="container">
-						<div class="row align-items-center">
-
-							<div class="col-lg-12 col-md-12 text-center">
-								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="#"></a>  جميع الحقوق محفوظة © 2022 </p>
-								<p class="mb-0"> تنفيذ شركة دنيا للإنتاج المرئي والصوتي<a href="#"></a></p>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- ============================ Footer End ================================== -->
+{##}
+{#						</div>#}
+{##}
+{#					</div>#}
+{##}
+{#				</div>#}
+{##}
+{#				<div class="footer-bottom">#}
+{#					<div class="container">#}
+{#						<div class="row align-items-center">#}
+{##}
+{#							<div class="col-lg-12 col-md-12 text-center">#}
+{#								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="#"></a>  جميع الحقوق محفوظة © 2022 </p>#}
+{#								<p class="mb-0"> تنفيذ شركة دنيا للإنتاج المرئي والصوتي<a href="#"></a></p>#}
+{#							</div>#}
+{##}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</footer>#}
+{##}
+{#			<!-- ============================ Footer End ================================== -->#}
+        {% endblock %}
 
 {#			<!-- Log In Modal -->#}
 {#			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">#}
@@ -1491,11 +1499,12 @@
 {#			</div>#}
 {#			<!-- End Modal -->#}
 
-			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+{#			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>#}
+{##}
+{##}
+{##}
+{#		</div>#}
 
-
-
-		</div>
 		<!-- ============================================================== -->
 		<!-- End Wrapper -->
 		<!-- ============================================================== -->
@@ -1505,24 +1514,24 @@
 		<!-- ============================================================== -->
 {#        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>#}
 
-		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-		<script src="{% static 'assets/js/popper.min.js' %}"></script>
-		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-		<script src="{% static 'assets/js/rangeslider.js' %}"></script>
-		<script src="{% static 'assets/js/select2.min.js' %}"></script>
-		<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
-		<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
-		<script src="{% static 'assets/js/slick.js' %}"></script>
-		<script src="{% static 'assets/js/slider-bg.js' %}"></script>
-		<script src="{% static 'assets/js/lightbox.js' %}"></script>
-		<script src="{% static 'assets/js/imagesloaded.js' %}"></script>
-		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
-		<script src="{% static 'assets/js/counterup.min.js' %}"></script>
-
-		<script src="{% static 'assets/js/custom.js' %}"></script>
-		<!-- ============================================================== -->
-		<!-- This page plugins -->
-		<!-- ============================================================== -->
-
-	</body>
-</html>
+{#		<script src="{% static 'assets/js/jquery.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/popper.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/rangeslider.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/select2.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/slick.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/slider-bg.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/lightbox.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/imagesloaded.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/counterup.min.js' %}"></script>#}
+{##}
+{#		<script src="{% static 'assets/js/custom.js' %}"></script>#}
+{#		<!-- ============================================================== -->#}
+{#		<!-- This page plugins -->#}
+{#		<!-- ============================================================== -->#}
+{##}
+{#	</body>#}
+{#</html>#}

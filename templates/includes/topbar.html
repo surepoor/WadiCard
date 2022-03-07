@@ -1,0 +1,99 @@
+{% load static %}
+
+
+<!-- Start Navigation -->
+			<div class="header header-dark">
+				<div class="container">
+					<nav id="navigation" class="navigation navigation-landscape">
+						<div class="nav-header">
+							<a class="nav-brand" href="#">
+{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />#}
+								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" alt="" />
+								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />
+							</a>
+
+							<div class="nav-toggle"></div>
+						</div>
+						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">
+							<ul class="nav-menu justify-content-center">
+
+								<li><a href="{% url 'home' %}">الرئيسية</a>
+
+								</li>
+
+                                <li><a href="{% url 'company' %}">كل الشركات</a></li>
+
+
+                                <li><a href="{% url 'about' %}">من نحن</a></li>
+
+
+                                <li><a href="{% url 'map' %}">خريطة المعرض</a></li>
+
+
+{#								<li><a href="">تواصل معنا</a>#}
+{##}
+{#								</li>#}
+
+
+
+
+								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>
+									<ul class="nav-dropdown nav-submenu">
+										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>
+											<ul class="nav-dropdown nav-submenu">
+												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>
+												<li><a href="list-layout-full-width.html">Full Width</a></li>
+												<li><a href="list-layout-with-map.html">With Map</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>
+											<ul class="nav-dropdown nav-submenu" style="display: none;">
+												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>
+												<li><a href="grid-full-width.html">With Full Width</a></li>
+												<li><a href="grid-with-map.html">With Map</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>
+											<ul class="nav-dropdown nav-submenu">
+												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>
+												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>
+												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>
+											</ul>
+										</li>
+										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>
+											<ul class="nav-dropdown nav-submenu">
+												<li><a href="single-listing-1.html">Single Listing 1</a></li>
+												<li><a href="single-listing-2.html">Single Listing 2</a></li>
+												<li><a href="single-listing-3.html">Single Listing 3</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li> -->
+
+								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a>
+
+								</li>
+
+								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->
+
+							</ul>
+
+							<ul class="nav-menu nav-menu-social align-to-right">
+
+								<!-- <li>
+									<a href="#" data-toggle="modal" data-target="#login">
+										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>
+									</a>
+								</li> -->
+								<li class="add-listing bg-whit">
+{#									<a href="https://forms.gle/ciLNj2KwDuSDJDxbA">#}
+									<a href="{% url 'register' %}">
+										 <i class="fas fa-plus-circle"></i> انضم لنا
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<!-- End Navigation -->

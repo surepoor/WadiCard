@@ -1,34 +1,39 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
+
+{#<!DOCTYPE html>#}
+{#{% load static %}#}
 {#{% load cloudinary %}#}
-<html lang="ar" dir="rtl">
-	<head>
-        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-        <title>شاذروان</title>
-		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
-        <!-- All Plugins Css -->
-        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">
-
-
-
-        <!-- Custom CSS -->
-        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
-
-		<!-- Custom Color Option -->
-		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">
-		
-    </head>
-	
-    <body class="red-skin">
-        <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+{#<html lang="ar" dir="rtl">#}
+{#	<head>#}
+{#        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">#}
+{#		<meta charset="utf-8">#}
+{#        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">#}
+{#		#}
+{#        <title>شاذروان</title>#}
+{#		#}
+{#		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">#}
+{##}
+{#        <!-- All Plugins Css -->#}
+{#        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">#}
+{##}
+{##}
+{##}
+{#        <!-- Custom CSS -->#}
+{#        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">#}
+{##}
+{#		<!-- Custom Color Option -->#}
+{#		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">#}
+{#		#}
+{#    </head>#}
+{#	#}
+{#    <body class="red-skin">#}
+{#        <!-- ============================================================== -->#}
+{#        <!-- Preloader - style you can find in spinners.css -->#}
+{#        <!-- ============================================================== -->#}
+{#        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>#}
 		
         <!-- ============================================================== -->
         <!-- Main wrapper - style you can find in pages.scss -->
@@ -837,62 +842,64 @@
 				</div>
 			</footer>
 			<!-- ============================ Footer End ================================== -->
+{% endblock %}
 
-			<!-- Log In Modal -->
-			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">
-				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
-					<div class="modal-content" id="registermodal">
-						<span class="mod-close" data-dismiss="modal"><i class="ti-close"></i></span>
-						<div class="modal-body">
-							<h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>
-							<div class="login-form">
-								<form>
+{#			<!-- Log In Modal -->#}
+{#			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">#}
+{#				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">#}
+{#					<div class="modal-content" id="registermodal">#}
+{#						<span class="mod-close" data-dismiss="modal"><i class="ti-close"></i></span>#}
+{#						<div class="modal-body">#}
+{#							<h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>#}
+{#							<div class="login-form">#}
+{#								<form>#}
+{##}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<div class="input-with-icon gray">#}
+{#											<input type="text" class="form-control" placeholder="Username">#}
+{#											<i class="ti-user"></i>#}
+{#										</div>#}
+{#									</div>#}
+{##}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<div class="input-with-icon gray">#}
+{#											<input type="password" class="form-control" placeholder="*******">#}
+{#											<i class="ti-unlock"></i>#}
+{#										</div>#}
+{#									</div>#}
+{##}
+{#									<div class="form-group">#}
+{#										<button type="submit" class="btn btn-md full-width pop-login">Login</button>#}
+{#									</div>#}
+{##}
+{#								</form>#}
+{#							</div>#}
+{#							<div class="modal-divider"><span>Or login via</span></div>#}
+{#							<div class="social-login mb-3">#}
+{#								<ul>#}
+{#									<li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>#}
+{#									<li><a href="#" class="btn google"><i class="ti-google"></i></a></li>#}
+{#									<li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="modat-foot">#}
+{#								<div class="md-left">Have't Account? <a href="register.html" class="theme-cl">Sign Up</a></div>#}
+{#								<div class="md-right"><a href="#" class="theme-cl">Forget Password?</a></div>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- End Modal -->#}
 
-									<div class="form-group">
-										<label>User Name</label>
-										<div class="input-with-icon gray">
-											<input type="text" class="form-control" placeholder="Username">
-											<i class="ti-user"></i>
-										</div>
-									</div>
+{#			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>#}
+{##}
+{##}
+{##}
+{#		</div>#}
 
-									<div class="form-group">
-										<label>Password</label>
-										<div class="input-with-icon gray">
-											<input type="password" class="form-control" placeholder="*******">
-											<i class="ti-unlock"></i>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<button type="submit" class="btn btn-md full-width pop-login">Login</button>
-									</div>
-
-								</form>
-							</div>
-							<div class="modal-divider"><span>Or login via</span></div>
-							<div class="social-login mb-3">
-								<ul>
-									<li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>
-									<li><a href="#" class="btn google"><i class="ti-google"></i></a></li>
-									<li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>
-								</ul>
-							</div>
-							<div class="modat-foot">
-								<div class="md-left">Have't Account? <a href="register.html" class="theme-cl">Sign Up</a></div>
-								<div class="md-right"><a href="#" class="theme-cl">Forget Password?</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- End Modal -->
-
-			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
-
-
-
-		</div>
 		<!-- ============================================================== -->
 		<!-- End Wrapper -->
 		<!-- ============================================================== -->
@@ -902,24 +909,24 @@
 		<!-- ============================================================== -->
 {#        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>#}
 
-		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-		<script src="{% static 'assets/js/popper.min.js' %}"></script>
-		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-		<script src="{% static 'assets/js/rangeslider.js' %}"></script>
-		<script src="{% static 'assets/js/select2.min.js' %}"></script>
-		<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
-		<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
-		<script src="{% static 'assets/js/slick.js' %}"></script>
-		<script src="{% static 'assets/js/slider-bg.js' %}"></script>
-		<script src="{% static 'assets/js/lightbox.js' %}"></script>
-		<script src="{% static 'assets/js/imagesloaded.js' %}"></script>
-		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
-		<script src="{% static 'assets/js/counterup.min.js' %}"></script>
-
-		<script src="{% static 'assets/js/custom.js' %}"></script>
-		<!-- ============================================================== -->
-		<!-- This page plugins -->
-		<!-- ============================================================== -->
-
-	</body>
-</html>
+{#		<script src="{% static 'assets/js/jquery.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/popper.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/rangeslider.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/select2.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/slick.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/slider-bg.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/lightbox.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/imagesloaded.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>#}
+{#		<script src="{% static 'assets/js/counterup.min.js' %}"></script>#}
+{##}
+{#		<script src="{% static 'assets/js/custom.js' %}"></script>#}
+{#		<!-- ============================================================== -->#}
+{#		<!-- This page plugins -->#}
+{#		<!-- ============================================================== -->#}
+{##}
+{#	</body>#}
+{#</html>#}
