@@ -5,173 +5,174 @@
 
 
 {% block content %}
-{#{% load cloudinary %}#}
-{#<!DOCTYPE html>#}
-{#<html lang="ar" dir="rtl">#}
-{#	<head>#}
-{##}
-{#        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">#}
-{##}
-{#		<meta charset="utf-8">#}
-{#        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">#}
-{##}
-{#        <title>شاذروان</title>#}
-{##}
-{#		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">#}
-{##}
-{#        <!-- All Plugins Css -->#}
-{#        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">#}
-{##}
-{##}
-{##}
-{#        <!-- Custom CSS -->#}
-{#        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">#}
-{##}
-{#		<!-- Custom Color Option -->#}
-{#		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">#}
-{##}
-{#    </head>#}
+    {#{% load cloudinary %}#}
+    {#<!DOCTYPE html>#}
+    {#<html lang="ar" dir="rtl">#}
+    {#	<head>#}
+    {##}
+    {#        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">#}
+    {##}
+    {#		<meta charset="utf-8">#}
+    {#        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">#}
+    {##}
+    {#        <title>شاذروان</title>#}
+    {##}
+    {#		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">#}
+    {##}
+    {#        <!-- All Plugins Css -->#}
+    {#        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">#}
+    {##}
+    {##}
+    {##}
+    {#        <!-- Custom CSS -->#}
+    {#        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">#}
+    {##}
+    {#		<!-- Custom Color Option -->#}
+    {#		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">#}
+    {##}
+    {#    </head>#}
 
-{#    <body class="red-skin">#}
-{#        <!-- ============================================================== -->#}
-{#        <!-- Preloader - style you can find in spinners.css -->#}
-{#        <!-- ============================================================== -->#}
-{#        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>#}
+    {#    <body class="red-skin">#}
+    {#        <!-- ============================================================== -->#}
+    {#        <!-- Preloader - style you can find in spinners.css -->#}
+    {#        <!-- ============================================================== -->#}
+    {#        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>#}
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
 
         <!-- ============================================================== -->
-        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- Top header  -->
         <!-- ============================================================== -->
-        <div id="main-wrapper">
+        <!-- Start Navigation -->
+        {#			<div class="header header-dark">#}
+        {#				<div class="container">#}
+        {#					<nav id="navigation" class="navigation navigation-landscape">#}
+        {#						<div class="nav-header">#}
+        {#							<a class="nav-brand" href="#">#}
+        {#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />#}
+        {#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" alt="" />#}
+        {#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />#}
+        {#							</a>#}
+        {##}
+        {#							<div class="nav-toggle"></div>#}
+        {#						</div>#}
+        {#						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">#}
+        {#							<ul class="nav-menu justify-content-center">#}
+        {##}
+        {#								<li><a href="{% url 'home' %}">الرئيسية</a>#}
+        {##}
+        {#								</li>#}
+        {##}
+        {#                                <li><a href="{% url 'company' %}">كل الشركات</a></li>#}
+        {##}
+        {##}
+        {#                                <li><a href="{% url 'about' %}">من نحن</a></li>#}
+        {##}
+        {##}
+        {#                                <li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
+        {##}
+        {##}
+        {#								<li><a href="">تواصل معنا</a>#}
+        {##}
+        {#								</li>#}
+        {##}
+        {##}
+        {##}
+        {##}
+        {#								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>#}
+        {#									<ul class="nav-dropdown nav-submenu">#}
+        {#										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>#}
+        {#											<ul class="nav-dropdown nav-submenu">#}
+        {#												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>#}
+        {#												<li><a href="list-layout-full-width.html">Full Width</a></li>#}
+        {#												<li><a href="list-layout-with-map.html">With Map</a></li>#}
+        {#											</ul>#}
+        {#										</li>#}
+        {#										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>#}
+        {#											<ul class="nav-dropdown nav-submenu" style="display: none;">#}
+        {#												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>#}
+        {#												<li><a href="grid-full-width.html">With Full Width</a></li>#}
+        {#												<li><a href="grid-with-map.html">With Map</a></li>#}
+        {#											</ul>#}
+        {#										</li>#}
+        {#										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>#}
+        {#											<ul class="nav-dropdown nav-submenu">#}
+        {#												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>#}
+        {#												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>#}
+        {#												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>#}
+        {#											</ul>#}
+        {#										</li>#}
+        {#										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>#}
+        {#											<ul class="nav-dropdown nav-submenu">#}
+        {#												<li><a href="single-listing-1.html">Single Listing 1</a></li>#}
+        {#												<li><a href="single-listing-2.html">Single Listing 2</a></li>#}
+        {#												<li><a href="single-listing-3.html">Single Listing 3</a></li>#}
+        {#											</ul>#}
+        {#										</li>#}
+        {#									</ul>#}
+        {#								</li> -->#}
+        {##}
+        {#								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a>#}
+        {##}
+        {#								</li>#}
+        {##}
+        {#								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->#}
+        {##}
+        {#							</ul>#}
+        {##}
+        {#							<ul class="nav-menu nav-menu-social align-to-right">#}
+        {##}
+        {#								<!-- <li>#}
+        {#									<a href="#" data-toggle="modal" data-target="#login">#}
+        {#										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>#}
+        {#									</a>#}
+        {#								</li> -->#}
+        {#								<li class="add-listing bg-whit">#}
+        {#									<a href="https://forms.gle/ciLNj2KwDuSDJDxbA">#}
+        {#									<a href="{% url 'register' %}">#}
+        {#										 <i class="fas fa-plus-circle"></i> انضم لنا#}
+        {#									</a>#}
+        {#								</li>#}
+        {#							</ul>#}
+        {#						</div>#}
+        {#					</nav>#}
+        {#				</div>#}
+        {#			</div>#}
+        {#			<!-- End Navigation -->#}
+        <div class="clearfix"></div>
+        <!-- ============================================================== -->
+        <!-- Top header  -->
+        <!-- ============================================================== -->
 
-            <!-- ============================================================== -->
-            <!-- Top header  -->
-            <!-- ============================================================== -->
-{#            <!-- Start Navigation -->#}
-{#			<div class="header header-dark">#}
-{#				<div class="container">#}
-{#					<nav id="navigation" class="navigation navigation-landscape">#}
-{#						<div class="nav-header">#}
-{#							<a class="nav-brand" href="#">#}
-{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />#}
-{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" alt="" />#}
-{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />#}
-{#							</a>#}
-{##}
-{#							<div class="nav-toggle"></div>#}
-{#						</div>#}
-{#						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">#}
-{#							<ul class="nav-menu justify-content-center">#}
-{##}
-{#								<li><a href="{% url 'home' %}">الرئيسية</a>#}
-{##}
-{#								</li>#}
-{##}
-{#                                <li><a href="{% url 'company' %}">كل الشركات</a></li>#}
-{##}
-{##}
-{#                                <li><a href="{% url 'about' %}">من نحن</a></li>#}
-{##}
-{##}
-{#                                <li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
-{##}
-{##}
-{#								<li><a href="">تواصل معنا</a>#}
-{##}
-{#								</li>#}
-{##}
-{##}
-{##}
-{##}
-{#								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>#}
-{#									<ul class="nav-dropdown nav-submenu">#}
-{#										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>#}
-{#											<ul class="nav-dropdown nav-submenu">#}
-{#												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>#}
-{#												<li><a href="list-layout-full-width.html">Full Width</a></li>#}
-{#												<li><a href="list-layout-with-map.html">With Map</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-{#										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>#}
-{#											<ul class="nav-dropdown nav-submenu" style="display: none;">#}
-{#												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>#}
-{#												<li><a href="grid-full-width.html">With Full Width</a></li>#}
-{#												<li><a href="grid-with-map.html">With Map</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-{#										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>#}
-{#											<ul class="nav-dropdown nav-submenu">#}
-{#												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>#}
-{#												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>#}
-{#												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-{#										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>#}
-{#											<ul class="nav-dropdown nav-submenu">#}
-{#												<li><a href="single-listing-1.html">Single Listing 1</a></li>#}
-{#												<li><a href="single-listing-2.html">Single Listing 2</a></li>#}
-{#												<li><a href="single-listing-3.html">Single Listing 3</a></li>#}
-{#											</ul>#}
-{#										</li>#}
-{#									</ul>#}
-{#								</li> -->#}
-{##}
-{#								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a>#}
-{##}
-{#								</li>#}
-{##}
-{#								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->#}
-{##}
-{#							</ul>#}
-{##}
-{#							<ul class="nav-menu nav-menu-social align-to-right">#}
-{##}
-{#								<!-- <li>#}
-{#									<a href="#" data-toggle="modal" data-target="#login">#}
-{#										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>#}
-{#									</a>#}
-{#								</li> -->#}
-{#								<li class="add-listing bg-whit">#}
-{#									<a href="https://forms.gle/ciLNj2KwDuSDJDxbA">#}
-{#									<a href="{% url 'register' %}">#}
-{#										 <i class="fas fa-plus-circle"></i> انضم لنا#}
-{#									</a>#}
-{#								</li>#}
-{#							</ul>#}
-{#						</div>#}
-{#					</nav>#}
-{#				</div>#}
-{#			</div>#}
-{#			<!-- End Navigation -->#}
-{#			<div class="clearfix"></div>#}
-{#			<!-- ============================================================== -->#}
-{#			<!-- Top header  -->#}
-{#			<!-- ============================================================== -->#}
-{##}
-{##}
-{#			<!-- ============================ Hero Banner  Start================================== -->#}
+
+        <!-- ============================ Hero Banner  Start================================== -->
+<!-- ============================ Hero Banner  Start================================== -->
 {#			<div class="image-cover hero-banner" style="background:url(https://via.placeholder.com/1920x900) no-repeat;" data-overlay="6">#}
-{##}
-{#            <div class="image-cover hero-banner" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="6">#}
-{#                <div class="container">#}
-{#					<div class="row">#}
-{#						<div class="col-lg-12 col-md-12">#}
-{##}
-{#							<h1 class="big-header-capt capti">أكبر تجمع خدمات في منظومة الحج والعمرة و الزيارة</h1>#}
-{#							<div class="full-search-2 Reveal-search Reveal-search-radius box-style">#}
-{#								<div class="Reveal-search-content">#}
-{#                                    <form method="GET" action="{% url 'search' %}">#}
-{##}
-{#									<div class="row">#}
-{##}
-{#                                        <div class="col-lg-10 col-md-9 col-sm-12 br-left-p">#}
-{#                                            <div class="form-group">#}
-{#                                                <div class="input-with-icon">#}
-{#                                                    <input type="text" class="form-control" placeholder="البحث عن ...." name="keyword">#}
-{#                                                    <i class="theme-cl ti-search"></i>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{##}
+
+            <div class="image-cover hero-banner" style="background:url('{% static 'assets/img/main.jpg' %}') no-repeat;" data-overlay="6">
+                <div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+
+							<h1 class="big-header-capt capti">أكبر تجمع خدمات في منظومة الحج والعمرة و الزيارة</h1>
+							<div class="full-search-2 Reveal-search Reveal-search-radius box-style">
+								<div class="Reveal-search-content">
+                                    <form method="GET" action="{% url 'search' %}">
+
+									<div class="row">
+
+                                        <div class="col-lg-10 col-md-9 col-sm-12 br-left-p">
+                                            <div class="form-group">
+                                                <div class="input-with-icon">
+                                                    <input type="text" class="form-control" placeholder="البحث عن ...." name="keyword">
+                                                    <i class="theme-cl ti-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
 {#                                        <div class="col-lg-3 col-md-4 col-sm-12 br-left-p">#}
 {#                                            <div class="form-group">#}
 {#                                                <div class="input-with-icon">#}
@@ -180,1274 +181,1270 @@
 {#                                                </div>#}
 {#                                            </div>#}
 {#                                        </div>#}
-{##}
-{#                                        <!-- <div class="col-lg-3 col-md-3 col-sm-6">#}
-{#                                            <div class="form-group">#}
-{#                                                <div class="input-with-icon">#}
-{#                                                    <select id="list-category" class="form-control">#}
-{#                                                        <option value="">&nbsp;</option>#}
-{#                                                        <option value="1">Spa & Bars</option>#}
-{#                                                        <option value="2">Restaurants</option>#}
-{#                                                        <option value="3">Hotels</option>#}
-{#                                                        <option value="4">Educations</option>#}
-{#                                                        <option value="5">Business</option>#}
-{#                                                        <option value="6">Retail & Shops</option>#}
-{#                                                        <option value="7">Garage & Services</option>#}
-{#                                                    </select>#}
-{#                                                    <i class="theme-cl ti-briefcase"></i>#}
-{#                                                </div>#}
-{#                                            </div>#}
-{#                                        </div> -->#}
-{##}
-{#                                        <div class="col-lg-2 col-md-3 col-sm-12">#}
-{#                                            <div class="form-group">#}
-{#                                                <button type="submit" class="btn search-btn">بحث</button>#}
-{#                                            </div>#}
-{#                                        </div>#}
-{##}
-{##}
-{#									</div>#}
-{#                                    </form>#}
-{##}
-{#								</div>#}
-{##}
-{#							</div>#}
-{#							<!-- <div class="popular-cat-list">#}
-{#								<ul>#}
-{#									<li><a href="grid-with-sidebar.html">Hotel & Spa</a></li>#}
-{#									<li><a href="grid-with-sidebar.html">Education</a></li>#}
-{#									<li><a href="grid-with-sidebar.html">Shopping</a></li>#}
-{#									<li><a href="grid-with-sidebar.html">Restaurants</a></li>#}
-{#								</ul>#}
-{#							</div> -->#}
-{##}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#			</div>#}
-{#			<!-- ============================ Hero Banner End ================================== -->#}
 
-			<!-- ============================ Calegory Start ================================== -->
-			<section class="half light gray">
-				<div class="container">
+                                        <!-- <div class="col-lg-3 col-md-3 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-with-icon">
+                                                    <select id="list-category" class="form-control">
+                                                        <option value="">&nbsp;</option>
+                                                        <option value="1">Spa & Bars</option>
+                                                        <option value="2">Restaurants</option>
+                                                        <option value="3">Hotels</option>
+                                                        <option value="4">Educations</option>
+                                                        <option value="5">Business</option>
+                                                        <option value="6">Retail & Shops</option>
+                                                        <option value="7">Garage & Services</option>
+                                                    </select>
+                                                    <i class="theme-cl ti-briefcase"></i>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn search-btn">بحث</button>
+                                            </div>
+                                        </div>
 
 
-					<div class="row">
-						<div class="col text-center">
-							<div class="sec-heading center">
-								<!-- <h2>News & Blog</h2> -->
-								<h3>القطاع <span class="theme-cl"></span></h3>
+									</div>
+                                    </form>
+
+								</div>
+
 							</div>
+							<!-- <div class="popular-cat-list">
+								<ul>
+									<li><a href="grid-with-sidebar.html">Hotel & Spa</a></li>
+									<li><a href="grid-with-sidebar.html">Education</a></li>
+									<li><a href="grid-with-sidebar.html">Shopping</a></li>
+									<li><a href="grid-with-sidebar.html">Restaurants</a></li>
+								</ul>
+							</div> -->
+
 						</div>
 					</div>
+				</div>
+			</div>
 
-					<div class="row">
-						<div class="owl-carousel owl-theme" id="categorie-slide">
+			<!-- ============================ Hero Banner End ================================== -->
 
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-                                <a href="{% url 'details' 'banks' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-{#                                            <span style="width: 44px; display: inline-block">#}
-{#                                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#75c7eb;}</style></defs><path class="cls-1" d="M250.67,499.74c-2,0-4-.09-6,0-6.12.34-12.14-.61-18.2-1.18q-9.39-.88-18.68-2.38a241.16,241.16,0,0,1-31.42-7.34,227.93,227.93,0,0,1-40.11-16.51A273.93,273.93,0,0,1,94.91,445.3a254.62,254.62,0,0,1-26.47-23.95,239.59,239.59,0,0,1-23.87-29.2,243.42,243.42,0,0,1-31.92-65.53,266.16,266.16,0,0,1-9.6-41.07c-1-6.88-1.78-13.81-2.64-20.71,0-.44,0-.88,0-1.32,0-6.45.1-12.9,0-19.34a87.13,87.13,0,0,1,1.17-15.72c.79-4.89,1.41-9.83,2-14.76a192.64,192.64,0,0,1,4.81-25.08,252.71,252.71,0,0,1,20.8-55A234.46,234.46,0,0,1,57.05,91.67a242.39,242.39,0,0,1,19.6-20.93,275,275,0,0,1,45.57-34.69,245.33,245.33,0,0,1,54.83-25,227.39,227.39,0,0,1,35.72-8.1A264.31,264.31,0,0,1,241.44.52,222.27,222.27,0,0,1,264.1,1a269.81,269.81,0,0,1,71.51,14.54,233.82,233.82,0,0,1,67.17,36.87q9.84,7.76,18.85,16.45a266.92,266.92,0,0,1,43.93,55.31,236,236,0,0,1,26.59,63.45,238.71,238.71,0,0,1,5.51,28.66c.87,6.82,1.45,13.66,1.79,20.52.37,7.32.4,14.65.13,22a267.09,267.09,0,0,1-4.21,38.45A238.45,238.45,0,0,1,472,365.1a246.55,246.55,0,0,1-27.28,41.17,273.28,273.28,0,0,1-23.32,25.26,250.26,250.26,0,0,1-31,25.17,240.11,240.11,0,0,1-63.71,31,256,256,0,0,1-37.92,9c-7.5,1.17-15,2.25-22.59,2.9-5.14.45-10.35.09-15.52.09ZM39.3,249.85c0,116.34,93.89,210.87,210,211.05,58.09.09,108.33-20.58,149.48-61.52,40.36-40.16,61.28-89.35,62-146.31.75-58.41-19.62-109-60.65-150.67C359.46,61.1,309.51,40,251.58,39.46,133.49,38.44,39.24,134.56,39.3,249.85Z"/><path class="cls-1" d="M366.35,211.85c20.68-.34,38.17,17.27,38.46,38.16.3,21.61-17.88,38.45-37.88,39.07-20.88.64-39-17.05-39.54-37.9C326.79,229,345.57,211.54,366.35,211.85Z"/><path class="cls-1" d="M134.16,289a38.77,38.77,0,0,1-38.77-38.56c-.09-22,18.4-39.13,39.51-38.63,19.52.46,38,16.37,37.91,38.8C172.7,272.31,154.1,289.42,134.16,289Z"/><path class="cls-1" d="M250.13,289c-19.87.4-38.69-16.59-38.73-38.31A38.79,38.79,0,0,1,251,211.81c19.21.41,37.83,16.14,37.85,38.25C288.84,272.45,270.43,289.23,250.13,289Z"/></svg>#}
-{#                                            </span>#}
-
-											<i class="lni-revenue theme-cl"></i>
-											<i class="lni-revenue abs-icon"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-{#											<h4>البنوك</h4>#}
-											<h4>البنوك</h4>
-											<!-- <p>122 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+    <!-- ============================ Calegory Start ================================== -->
+    <section class="half light gray">
+        <div class="container">
 
 
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'living' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-home"></i>
-										</div>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="sec-heading center">
+                        <!-- <h2>News & Blog</h2> -->
+                        <h3>القطاع <span class="theme-cl"></span></h3>
+                    </div>
+                </div>
+            </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الإسكان</h4>
-											<!-- <p>300 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="categorie-slide">
 
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'banks' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    {#                                            <span style="width: 44px; display: inline-block">#}
+                                    {#                                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#75c7eb;}</style></defs><path class="cls-1" d="M250.67,499.74c-2,0-4-.09-6,0-6.12.34-12.14-.61-18.2-1.18q-9.39-.88-18.68-2.38a241.16,241.16,0,0,1-31.42-7.34,227.93,227.93,0,0,1-40.11-16.51A273.93,273.93,0,0,1,94.91,445.3a254.62,254.62,0,0,1-26.47-23.95,239.59,239.59,0,0,1-23.87-29.2,243.42,243.42,0,0,1-31.92-65.53,266.16,266.16,0,0,1-9.6-41.07c-1-6.88-1.78-13.81-2.64-20.71,0-.44,0-.88,0-1.32,0-6.45.1-12.9,0-19.34a87.13,87.13,0,0,1,1.17-15.72c.79-4.89,1.41-9.83,2-14.76a192.64,192.64,0,0,1,4.81-25.08,252.71,252.71,0,0,1,20.8-55A234.46,234.46,0,0,1,57.05,91.67a242.39,242.39,0,0,1,19.6-20.93,275,275,0,0,1,45.57-34.69,245.33,245.33,0,0,1,54.83-25,227.39,227.39,0,0,1,35.72-8.1A264.31,264.31,0,0,1,241.44.52,222.27,222.27,0,0,1,264.1,1a269.81,269.81,0,0,1,71.51,14.54,233.82,233.82,0,0,1,67.17,36.87q9.84,7.76,18.85,16.45a266.92,266.92,0,0,1,43.93,55.31,236,236,0,0,1,26.59,63.45,238.71,238.71,0,0,1,5.51,28.66c.87,6.82,1.45,13.66,1.79,20.52.37,7.32.4,14.65.13,22a267.09,267.09,0,0,1-4.21,38.45A238.45,238.45,0,0,1,472,365.1a246.55,246.55,0,0,1-27.28,41.17,273.28,273.28,0,0,1-23.32,25.26,250.26,250.26,0,0,1-31,25.17,240.11,240.11,0,0,1-63.71,31,256,256,0,0,1-37.92,9c-7.5,1.17-15,2.25-22.59,2.9-5.14.45-10.35.09-15.52.09ZM39.3,249.85c0,116.34,93.89,210.87,210,211.05,58.09.09,108.33-20.58,149.48-61.52,40.36-40.16,61.28-89.35,62-146.31.75-58.41-19.62-109-60.65-150.67C359.46,61.1,309.51,40,251.58,39.46,133.49,38.44,39.24,134.56,39.3,249.85Z"/><path class="cls-1" d="M366.35,211.85c20.68-.34,38.17,17.27,38.46,38.16.3,21.61-17.88,38.45-37.88,39.07-20.88.64-39-17.05-39.54-37.9C326.79,229,345.57,211.54,366.35,211.85Z"/><path class="cls-1" d="M134.16,289a38.77,38.77,0,0,1-38.77-38.56c-.09-22,18.4-39.13,39.51-38.63,19.52.46,38,16.37,37.91,38.8C172.7,272.31,154.1,289.42,134.16,289Z"/><path class="cls-1" d="M250.13,289c-19.87.4-38.69-16.59-38.73-38.31A38.79,38.79,0,0,1,251,211.81c19.21.41,37.83,16.14,37.85,38.25C288.84,272.45,270.43,289.23,250.13,289Z"/></svg>#}
+                                    {#                                            </span>#}
 
+                                    <i class="lni-revenue theme-cl"></i>
+                                    <i class="lni-revenue abs-icon"></i>
+                                </div>
 
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'education' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-ruler-pencil"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>التعليم</h4>
-											<!-- <p>80 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'health' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-heart-broken"></i>
-										</div>
-
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الصحة</h4>
-											<!-- <p>120 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    {#											<h4>البنوك</h4>#}
+                                    <h4>البنوك</h4>
+                                    <!-- <p>122 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
 
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'living' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-home"></i>
+                                </div>
+
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الإسكان</h4>
+                                    <!-- <p>300 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
 
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'education' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-ruler-pencil"></i>
+                                </div>
 
-							<!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'media' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-desktop"></i>
-										</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>التعليم</h4>
+                                    <!-- <p>80 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الإعلام</h4>
-											<!-- <p>210 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'health' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-heart-broken"></i>
+                                </div>
 
-                        <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'telecom' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-world"></i>
-										</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الصحة</h4>
+                                    <!-- <p>120 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الاتصالات</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
 
-{#                            <!-- Single Category -->#}
-{#							<div class="Reveal-cats-box">#}
-{#								<a href="{% url 'details' 'private' %}" class="Reveal-category-box">#}
-{#									<div class="category-desc">#}
-{#										<div class="category-icon">#}
-{#											<i class="ti-world"></i>#}
-{#										</div>#}
-{##}
-{#										<div class="Reveal-category-detail category-desc-text">#}
-{#											<h4>القطاع الخاص</h4>#}
-{#											<!-- <p>90 Listings</p> -->#}
-{#										</div>#}
-{#									</div>#}
-{#								</a>#}
-{#							</div>#}
-{##}
-{#                            <!-- Single Category -->#}
-{#							<div class="Reveal-cats-box">#}
-{#								<a href="{% url 'details' 'consulting' %}" class="Reveal-category-box">#}
-{#									<div class="category-desc">#}
-{#										<div class="category-icon">#}
-{#											<i class="ti-world"></i>#}
-{#										</div>#}
-{##}
-{#										<div class="Reveal-category-detail category-desc-text">#}
-{#											<h4>الاستشارات</h4>#}
-{#											<!-- <p>90 Listings</p> -->#}
-{#										</div>#}
-{#									</div>#}
-{#								</a>#}
-{#							</div>#}
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'media' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-desktop"></i>
+                                </div>
 
-                        <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'catering' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-{#											<i class="ti-world"></i>#}
-                                            <span class="catsize">
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الإعلام</h4>
+                                    <!-- <p>210 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'telecom' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-world"></i>
+                                </div>
+
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الاتصالات</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    {#                            <!-- Single Category -->#}
+                    {#							<div class="Reveal-cats-box">#}
+                    {#								<a href="{% url 'details' 'private' %}" class="Reveal-category-box">#}
+                    {#									<div class="category-desc">#}
+                    {#										<div class="category-icon">#}
+                    {#											<i class="ti-world"></i>#}
+                    {#										</div>#}
+                    {##}
+                    {#										<div class="Reveal-category-detail category-desc-text">#}
+                    {#											<h4>القطاع الخاص</h4>#}
+                    {#											<!-- <p>90 Listings</p> -->#}
+                    {#										</div>#}
+                    {#									</div>#}
+                    {#								</a>#}
+                    {#							</div>#}
+                    {##}
+                    {#                            <!-- Single Category -->#}
+                    {#							<div class="Reveal-cats-box">#}
+                    {#								<a href="{% url 'details' 'consulting' %}" class="Reveal-category-box">#}
+                    {#									<div class="category-desc">#}
+                    {#										<div class="category-icon">#}
+                    {#											<i class="ti-world"></i>#}
+                    {#										</div>#}
+                    {##}
+                    {#										<div class="Reveal-category-detail category-desc-text">#}
+                    {#											<h4>الاستشارات</h4>#}
+                    {#											<!-- <p>90 Listings</p> -->#}
+                    {#										</div>#}
+                    {#									</div>#}
+                    {#								</a>#}
+                    {#							</div>#}
+
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'catering' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    {#											<i class="ti-world"></i>#}
+                                    <span class="catsize">
                                                 <img src="{% static 'assets/img/food.png' %}">
                                             </span>
-										</div>
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الإعاشة</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الإعاشة</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'twafah' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-{#											<i class="ti-world"></i>#}
-                                            <span class="catsize">
-                                                <img  src="{% static 'assets/img/pilgrim.png' %}">
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'twafah' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    {#											<i class="ti-world"></i>#}
+                                    <span class="catsize">
+                                                <img src="{% static 'assets/img/pilgrim.png' %}">
                                             </span>
-										</div>
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الطوافة</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الطوافة</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'electronics' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-{#											<i class="ti-world"></i>#}
-                                            <span class="catsize">
-                                                <img  src="{% static 'assets/img/electronic.png' %}">
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'electronics' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    {#											<i class="ti-world"></i>#}
+                                    <span class="catsize">
+                                                <img src="{% static 'assets/img/electronic.png' %}">
                                             </span>
-										</div>
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الإلكترونيات</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الإلكترونيات</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'safety' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-{#											<i class="ti-world"></i>#}
-                                            <span class="catsize">
-                                                <img  src="{% static 'assets/img/safety.png' %}">
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'safety' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    {#											<i class="ti-world"></i>#}
+                                    <span class="catsize">
+                                                <img src="{% static 'assets/img/safety.png' %}">
                                             </span>
-										</div>
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الأمن والسلامة</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الأمن والسلامة</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                        <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'aviation' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-{#											<i class="ti-world"></i>#}
-                                            <span class="catsize">
-                                                <img  src="{% static 'assets/img/plane.png' %}">
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'aviation' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    {#											<i class="ti-world"></i>#}
+                                    <span class="catsize">
+                                                <img src="{% static 'assets/img/plane.png' %}">
                                             </span>
-										</div>
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الطيران</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الطيران</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                            <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'engineering' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-ruler-alt-2"></i>
-{#                                            <span class="catsize">#}
-{#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
-{#                                            </span>#}
-										</div>
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'engineering' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-ruler-alt-2"></i>
+                                    {#                                            <span class="catsize">#}
+                                    {#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
+                                    {#                                            </span>#}
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>استشارات هندسية</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>استشارات هندسية</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                            <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'farming' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-shine"></i>
-{#                                            <span class="catsize">#}
-{#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
-{#                                            </span>#}
-										</div>
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'farming' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-shine"></i>
+                                    {#                                            <span class="catsize">#}
+                                    {#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
+                                    {#                                            </span>#}
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>الزراعة</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>الزراعة</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                            <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'governance' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-id-badge"></i>
-{#                                            <span class="catsize">#}
-{#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
-{#                                            </span>#}
-										</div>
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'governance' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-id-badge"></i>
+                                    {#                                            <span class="catsize">#}
+                                    {#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
+                                    {#                                            </span>#}
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>القطاع الحكومي</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>القطاع الحكومي</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-                            <!-- Single Category -->
-							<div class="Reveal-cats-box">
-								<a href="{% url 'details' 'nonprofit' %}" class="Reveal-category-box">
-									<div class="category-desc">
-										<div class="category-icon">
-											<i class="ti-support"></i>
-{#                                            <span class="catsize">#}
-{#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
-{#                                            </span>#}
-										</div>
+                    <!-- Single Category -->
+                    <div class="Reveal-cats-box">
+                        <a href="{% url 'details' 'nonprofit' %}" class="Reveal-category-box">
+                            <div class="category-desc">
+                                <div class="category-icon">
+                                    <i class="ti-support"></i>
+                                    {#                                            <span class="catsize">#}
+                                    {#                                                <img  src="{% static 'assets/img/plane.png' %}">#}
+                                    {#                                            </span>#}
+                                </div>
 
-										<div class="Reveal-category-detail category-desc-text">
-											<h4>القطاع الثالث</h4>
-											<!-- <p>90 Listings</p> -->
-										</div>
-									</div>
-								</a>
-							</div>
-
-
+                                <div class="Reveal-category-detail category-desc-text">
+                                    <h4>القطاع الثالث</h4>
+                                    <!-- <p>90 Listings</p> -->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
 
-						</div>
-					</div>
+                </div>
+            </div>
 
-				</div>
-			</section>
-			<!-- ============================ Calegory End ================================== -->
+        </div>
+    </section>
+    <!-- ============================ Calegory End ================================== -->
 
 
 
 
 
-			<!-- ================================= Blog Grid ================================== -->
-			<section>
-				<div class="container">
+    <!-- ================================= Blog Grid ================================== -->
+    <section>
+        <div class="container">
 
-					<!-- <div class="row">
-						<div class="col text-center">
-							<div class="sec-heading center">
-								<h2>News & Blog</h2>
-								<h3>Updates From <span class="theme-cl">Reveal</span></h3>
-							</div>
-						</div>
-					</div>
-					 -->
+            <!-- <div class="row">
+                <div class="col text-center">
+                    <div class="sec-heading center">
+                        <h2>News & Blog</h2>
+                        <h3>Updates From <span class="theme-cl">Reveal</span></h3>
+                    </div>
+                </div>
+            </div>
+             -->
 
 
-					<div class="row">
+            <div class="row">
 
-                        {% for company in companys %}
-                        {% if company.is_special %}
-						<!-- Single blog Grid -->
-						<div class="col-lg-4 col-md-6 col-sm-12">
+                {% for company in companys %}
+                    {% if company.is_special %}
+                        <!-- Single blog Grid -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
 
                             {% if company.is_featured %}
-							<span class="featurenew"><span class="fst">مُميّز</span></span>
+                                <span class="featurenew"><span class="fst">مُميّز</span></span>
                             {% endif %}
 
-							<div class="item testimonial-center">
-								<div class="Reveal-smart-tes-author">
-									<div class="Reveal-st-author-box">
-										<div class="Reveal-st-author-thumb">
-											<img src="{{ company.logo_img.url }}" class="img-fluid" alt="" />
-										</div>
-										<div class="Reveal-st-author-info">
-											<h4 class="Reveal-st-author-title">{{company.name_com}}</h4>
-											<span class="Reveal-st-author-subtitle theme-cl">{{ company.category_com}}</span>
-										</div>
-									</div>
-								</div>
+                            <div class="item testimonial-center">
+                                <div class="Reveal-smart-tes-author">
+                                    <div class="Reveal-st-author-box">
+                                        <div class="Reveal-st-author-thumb">
+                                            <img src="{{ company.logo_img.url }}" class="img-fluid" alt=""/>
+                                        </div>
+                                        <div class="Reveal-st-author-info">
+                                            <h4 class="Reveal-st-author-title">{{ company.name_com }}</h4>
+                                            <span class="Reveal-st-author-subtitle theme-cl">{{ company.category_com }}</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-								<div class="Reveal-grid-caption-body">
-									<ul class="Reveal-contact-list">
-										<li><h6>عن الشركة:</h6></li>
-										<div class="row">
-											<div class="col-12 alignright cardheight">
-												{{ company.description_com }}
-
-
-
-												<!-- 140 letter -->
+                                <div class="Reveal-grid-caption-body">
+                                    <ul class="Reveal-contact-list">
+                                        <li><h6>عن الشركة:</h6></li>
+                                        <div class="row">
+                                            <div class="col-12 alignright cardheight">
+                                                {{ company.description_com }}
 
 
-											</div>
-										</div>
-										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />{{company.city }} | {{ company.location }}</li>
-										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />{{company.phone_num}} 966+</li>
-										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
+                                                <!-- 140 letter -->
 
 
-									</ul>
-								</div>
-
-								<!-- <div class="Reveal-smart-tes-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-								</div> -->
-									<row>
-										<column>
-											<!-- Facebook -->
-{#											<i <a href="{{company.facebook_link}}"> class="fab fa-facebook-f ml-3 ihov"> </a></i>#}
-
-                                            <a href="{{company.facebook_link}}" class="fab fa-facebook-f ml-3 ihov"></a>
-
-											<!-- Twitter -->
-{#											<i class="fab fa-twitter ml-3 ihov"></i>#}
-
-                                            <a href="{{company.twitter_link}}" class="fab fa-twitter ml-3 ihov"></a>
+                                            </div>
+                                        </div>
+                                        <li><img src="{% static 'assets/img/add.svg' %}" class=""
+                                                 alt=""/>{{ company.city }} | {{ company.location }}</li>
+                                        <li><img src="{% static 'assets/img/call.svg' %}" class=""
+                                                 alt=""/>{{ company.phone_num }} 966+
+                                        </li>
+                                        <!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->
 
 
-											<!-- Google -->
-{#											<i class="fab fa-google ml-3 ihov"></i>#}
+                                    </ul>
+                                </div>
 
-{#                                            <a href="{{company.facebook_link}}" class="fab fa-google ml-3 ihov"></a>#}
+                                <!-- <div class="Reveal-smart-tes-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                </div> -->
+                                <row>
+                                    <column>
+                                        <!-- Facebook -->
+                                        {#											<i <a href="{{company.facebook_link}}"> class="fab fa-facebook-f ml-3 ihov"> </a></i>#}
 
+                                        <a href="{{ company.facebook_link }}" class="fab fa-facebook-f ml-3 ihov"></a>
 
-											<!-- Instagram -->
-{#											<i class="fab fa-instagram ml-3 ihov"></i>#}
-                                            <a href="{{company.instgram_link}}" class="fab fa-instagram ml-3 ihov"></a>
+                                        <!-- Twitter -->
+                                        {#											<i class="fab fa-twitter ml-3 ihov"></i>#}
 
-											<!-- Linkedin -->
-{#											<i class="fab fa-linkedin-in ml-3 ihov"></i>#}
-                                            <a href="{{company.linkedin_link}}" class="fab fa-linkedin-in ml-3 ihov"></a>
-
-											<!-- Whatsapp -->
-{#											<i class="fab fa-whatsapp ml-3 ihov"></i>#}
-                                            <a href="{{company.whatsapp_link}}" class="fab fa-whatsapp ml-3 ihov"></a>
-
-{#											<i class="fas fa-phone ml-3 ihov"></i>#}
-                                            <a href="mailto: {{company.email}}" class="fas fa-address-book ml-3 ihov"></a>
-
-{#											<i class="fas fa-globe ihov"></i>#}
-                                            <a href="{{company.website}}" class="fas fa-globe ihov"></a>
-
-										</column>
-									</row>
-
-							</div>
-						</div>
-                        {% endif %}
-                        {% endfor %}
-
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<span class="featurenew"><span class="fst">مُميّز</span></span>#}
-{##}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{##}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{##}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-{##}
-{##}
-{#						<!-- Single blog Grid -->#}
-{#						<div class="col-lg-4 col-md-6 col-sm-12">#}
-{#							<div class="item testimonial-center">#}
-{#								<div class="Reveal-smart-tes-author">#}
-{#									<div class="Reveal-st-author-box">#}
-{#										<div class="Reveal-st-author-thumb">#}
-{#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
-{#										</div>#}
-{#										<div class="Reveal-st-author-info">#}
-{#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
-{#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
-{#										</div>#}
-{#									</div>#}
-{#								</div>#}
-{##}
-{#								<div class="Reveal-grid-caption-body">#}
-{#									<ul class="Reveal-contact-list">#}
-{#										<li><h6>عن الشركة:</h6></li>#}
-{#										<div class="row">#}
-{#											<div class="col-12 alignright cardheight">#}
-{#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
-{##}
-{##}
-{#												<!-- 140 letter -->#}
-{##}
-{##}
-{#											</div>#}
-{#										</div>#}
-{#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
-{#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
-{#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
-{##}
-{##}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#								<!-- <div class="Reveal-smart-tes-content">#}
-{#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
-{#								</div> -->#}
-{#									<row>#}
-{#										<column>#}
-{#											<!-- Facebook -->#}
-{#											<i class="fab fa-facebook-f ml-3"></i>#}
-{##}
-{#											<!-- Twitter -->#}
-{#											<i class="fab fa-twitter ml-3"></i>#}
-{##}
-{#											<!-- Google -->#}
-{#											<i class="fab fa-google ml-3"></i>#}
-{##}
-{#											<!-- Instagram -->#}
-{#											<i class="fab fa-instagram ml-3"></i>#}
-{##}
-{#											<!-- Linkedin -->#}
-{#											<i class="fab fa-linkedin-in ml-3"></i>#}
-{##}
-{#											<!-- Whatsapp -->#}
-{#											<i class="fab fa-whatsapp ml-3"></i>#}
-{##}
-{#											<i class="fas fa-phone ml-3"></i>#}
-{##}
-{#											<i class="fas fa-globe"></i>#}
-{#										</column>#}
-{#									</row>#}
-{##}
-{#							</div>#}
-{#						</div>#}
-{##}
-				</div>
-			</section>
+                                        <a href="{{ company.twitter_link }}" class="fab fa-twitter ml-3 ihov"></a>
 
 
+                                        <!-- Google -->
+                                        {#											<i class="fab fa-google ml-3 ihov"></i>#}
+
+                                        {#                                            <a href="{{company.facebook_link}}" class="fab fa-google ml-3 ihov"></a>#}
 
 
-			<!-- ============================ Listing Ctegory Start ================================== -->
-			<section class="gray">
-				<div class="container">
+                                        <!-- Instagram -->
+                                        {#											<i class="fab fa-instagram ml-3 ihov"></i>#}
+                                        <a href="{{ company.instgram_link }}" class="fab fa-instagram ml-3 ihov"></a>
 
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<div class="sec-heading center">
-								<!-- <h2>Categories</h2> -->
-								<h3>
-									مساحة إعلانية
-									<span class="theme-cl"></span></h3>
-							</div>
-						</div>
-					</div>
+                                        <!-- Linkedin -->
+                                        {#											<i class="fab fa-linkedin-in ml-3 ihov"></i>#}
+                                        <a href="{{ company.linkedin_link }}" class="fab fa-linkedin-in ml-3 ihov"></a>
 
-					<div class="row">
-						<div class="owl-carousel owl-theme" id="lists-slide">
+                                        <!-- Whatsapp -->
+                                        {#											<i class="fab fa-whatsapp ml-3 ihov"></i>#}
+                                        <a href="{{ company.whatsapp_link }}" class="fab fa-whatsapp ml-3 ihov"></a>
 
-                            {% for ad in ads %}
-							<!-- Single List -->
-							<div class="list-slide-box">
-								<a class="Reveal-moderns-category" href="{{ad.link}}" target="_blank">
-									<figure>
-{#										 <img src="{{ ad.ad_img.url }}" title="store" alt="store">#}
-										 <img src="{{ ad.ad_img.url }}" title="" alt="">
+                                        {#											<i class="fas fa-phone ml-3 ihov"></i>#}
+                                        <a href="mailto: {{ company.email }}" class="fas fa-address-book ml-3 ihov"></a>
 
-									</figure>
-								</a>
-							</div>
-                            {% endfor %}
-{#							<!-- Single List -->#}
-{#							<div class="list-slide-box">#}
-{#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
-{#									<figure>#}
-{#										 <img src="{% static 'assets/img/022.png' %}" title="hotel" alt="hotel">#}
-{##}
-{#									</figure>#}
-{#								</a>#}
-{#							</div>#}
-{##}
-{#							<!-- Single List -->#}
-{#							<div class="list-slide-box">#}
-{#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
-{#									<figure>#}
-{#										 <img src="{% static 'assets/img/033.png' %}" title="Shopping" alt="Shopping">#}
-{##}
-{#									</figure>#}
-{#								</a>#}
-{#							</div>#}
-{##}
-{#							<!-- Single List -->#}
-{#							<div class="list-slide-box">#}
-{#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
-{#									<figure>#}
-{#										 <img src="{% static 'assets/img/011.png' %}" title="Places" alt="Places">#}
-{##}
-{#									</figure>#}
-{#								</a>#}
-{#							</div>#}
-{##}
-{#							<!-- Single List -->#}
-{#							<div class="list-slide-box">#}
-{#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
-{#									<figure>#}
-{#										 <img src="{% static 'assets/img/022.png' %}" title="Restaurants" alt="Restaurants">#}
-{##}
-{#									</figure>#}
-{#								</a>#}
-{#							</div>#}
-{##}
-{#							<!-- Single List -->#}
-{#							<div class="list-slide-box">#}
-{#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
-{#									<figure>#}
-{#										 <img src="{% static 'assets/img/033.png' %}" title="Marriage Hall" alt="Marriage Hall">#}
-{##}
-{#										</figcaption>#}
-{#									</figure>#}
-{#								</a>#}
-{#							</div>#}
+                                        {#											<i class="fas fa-globe ihov"></i>#}
+                                        <a href="{{ company.website }}" class="fas fa-globe ihov"></a>
 
-					    </div>
+                                    </column>
+                                </row>
+
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<span class="featurenew"><span class="fst">مُميّز</span></span>#}
+                {##}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {##}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {##}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+                {##}
+                {##}
+                {#						<!-- Single blog Grid -->#}
+                {#						<div class="col-lg-4 col-md-6 col-sm-12">#}
+                {#							<div class="item testimonial-center">#}
+                {#								<div class="Reveal-smart-tes-author">#}
+                {#									<div class="Reveal-st-author-box">#}
+                {#										<div class="Reveal-st-author-thumb">#}
+                {#											<img src="https://via.placeholder.com/400x400" class="img-fluid" alt="" />#}
+                {#										</div>#}
+                {#										<div class="Reveal-st-author-info">#}
+                {#											<h4 class="Reveal-st-author-title">شركة دنيا للإنتاج الصوتي والمرئي</h4>#}
+                {#											<span class="Reveal-st-author-subtitle theme-cl">انتاج - تسويق</span>#}
+                {#										</div>#}
+                {#									</div>#}
+                {#								</div>#}
+                {##}
+                {#								<div class="Reveal-grid-caption-body">#}
+                {#									<ul class="Reveal-contact-list">#}
+                {#										<li><h6>عن الشركة:</h6></li>#}
+                {#										<div class="row">#}
+                {#											<div class="col-12 alignright cardheight">#}
+                {#												فريق محلي مؤلف من مواهب شابة متنوعة تستمع بعناية لقصص عملائنا ، وتفهم اتجاهاتهم ، وتنتج محتوى قيمًا بأعلى جودة#}
+                {##}
+                {##}
+                {#												<!-- 140 letter -->#}
+                {##}
+                {##}
+                {#											</div>#}
+                {#										</div>#}
+                {#										<li><img src="{% static 'assets/img/add.svg' %}" class="" alt="" />جدة السعودية</li>#}
+                {#										<li><img src="{% static 'assets/img/call.svg' %}" class="" alt="" />0536637215</li>#}
+                {#										<!-- <li><h6 class= "fonweight pl-2"> المنتجات: </h6> 0536637215 </li> -->#}
+                {##}
+                {##}
+                {#									</ul>#}
+                {#								</div>#}
+                {##}
+                {#								<!-- <div class="Reveal-smart-tes-content">#}
+                {#									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>#}
+                {#								</div> -->#}
+                {#									<row>#}
+                {#										<column>#}
+                {#											<!-- Facebook -->#}
+                {#											<i class="fab fa-facebook-f ml-3"></i>#}
+                {##}
+                {#											<!-- Twitter -->#}
+                {#											<i class="fab fa-twitter ml-3"></i>#}
+                {##}
+                {#											<!-- Google -->#}
+                {#											<i class="fab fa-google ml-3"></i>#}
+                {##}
+                {#											<!-- Instagram -->#}
+                {#											<i class="fab fa-instagram ml-3"></i>#}
+                {##}
+                {#											<!-- Linkedin -->#}
+                {#											<i class="fab fa-linkedin-in ml-3"></i>#}
+                {##}
+                {#											<!-- Whatsapp -->#}
+                {#											<i class="fab fa-whatsapp ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-phone ml-3"></i>#}
+                {##}
+                {#											<i class="fas fa-globe"></i>#}
+                {#										</column>#}
+                {#									</row>#}
+                {##}
+                {#							</div>#}
+                {#						</div>#}
+                {##}
+            </div>
+    </section>
+
+
+
+
+    <!-- ============================ Listing Ctegory Start ================================== -->
+    <section class="gray">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="sec-heading center">
+                        <!-- <h2>Categories</h2> -->
+                        <h3>
+                            مساحة إعلانية
+                            <span class="theme-cl"></span></h3>
                     </div>
-				</div>
-			</section>
-			<!-- ============================ Listing Category End ================================== -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="lists-slide">
+
+                    {% for ad in ads %}
+                        <!-- Single List -->
+                        <div class="list-slide-box">
+                            <a class="Reveal-moderns-category" href="{{ ad.link }}" target="_blank">
+                                <figure>
+                                    {#										 <img src="{{ ad.ad_img.url }}" title="store" alt="store">#}
+                                    <img src="{{ ad.ad_img.url }}" title="" alt="">
+
+                                </figure>
+                            </a>
+                        </div>
+                    {% endfor %}
+                    {#							<!-- Single List -->#}
+                    {#							<div class="list-slide-box">#}
+                    {#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
+                    {#									<figure>#}
+                    {#										 <img src="{% static 'assets/img/022.png' %}" title="hotel" alt="hotel">#}
+                    {##}
+                    {#									</figure>#}
+                    {#								</a>#}
+                    {#							</div>#}
+                    {##}
+                    {#							<!-- Single List -->#}
+                    {#							<div class="list-slide-box">#}
+                    {#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
+                    {#									<figure>#}
+                    {#										 <img src="{% static 'assets/img/033.png' %}" title="Shopping" alt="Shopping">#}
+                    {##}
+                    {#									</figure>#}
+                    {#								</a>#}
+                    {#							</div>#}
+                    {##}
+                    {#							<!-- Single List -->#}
+                    {#							<div class="list-slide-box">#}
+                    {#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
+                    {#									<figure>#}
+                    {#										 <img src="{% static 'assets/img/011.png' %}" title="Places" alt="Places">#}
+                    {##}
+                    {#									</figure>#}
+                    {#								</a>#}
+                    {#							</div>#}
+                    {##}
+                    {#							<!-- Single List -->#}
+                    {#							<div class="list-slide-box">#}
+                    {#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
+                    {#									<figure>#}
+                    {#										 <img src="{% static 'assets/img/022.png' %}" title="Restaurants" alt="Restaurants">#}
+                    {##}
+                    {#									</figure>#}
+                    {#								</a>#}
+                    {#							</div>#}
+                    {##}
+                    {#							<!-- Single List -->#}
+                    {#							<div class="list-slide-box">#}
+                    {#								<a class="Reveal-moderns-category" href="grid-with-sidebar.html">#}
+                    {#									<figure>#}
+                    {#										 <img src="{% static 'assets/img/033.png' %}" title="Marriage Hall" alt="Marriage Hall">#}
+                    {##}
+                    {#										</figcaption>#}
+                    {#									</figure>#}
+                    {#								</a>#}
+                    {#							</div>#}
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================ Listing Category End ================================== -->
 
 
 
 
-{#			<!-- ============================ Footer Start ================================== -->#}
-{#			<footer class="dark-footer skin-dark-footer">#}
-{#				<div class="ht-80"></div>#}
-{#				<div>#}
-{#					<div class="container">#}
-{#						<div class="row">#}
-{##}
-{#							<div class="col-lg-4 col-md-6">#}
-{#								<div class="footer-widget">#}
-{#									<img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo" style="height:120px;" alt="" />#}
-{#                                    <h4 class="Reveal-st-author-title">شاذروان</h4>#}
-{#									<p>المملكة العربية السعودية<br>جدة | حي الحمراء</p>#}
-{#									<ul class="footer-bottom-social">#}
-{#										<li><a href="#"><i class="ti-facebook"></i></a></li>#}
-{#										<li><a href="#"><i class="ti-twitter"></i></a></li>#}
-{#										<li><a href="#"><i class="ti-instagram"></i></a></li>#}
-{#										<li><a href="#"><i class="ti-linkedin"></i></a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{##}
-{#							</div>#}
-{##}
-{##}
-{#							<div class="col-lg-2 col-md-4">#}
-{#								<div class="footer-widget">#}
-{#									<h4 class="widget-title">المشروع</h4>#}
-{#									<ul class="footer-menu">#}
-{#										<li><a href="{% url 'about' %}">من نحن</a></li>#}
-{#										<li><a href="faq.html">استفسار</a></li>#}
-{#										<li><a href="checkout.html">الدفع</a></li>#}
-{#										<li><a href="login.html">التسجيل</a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{#							</div>#}
-{##}
-{#							<div class="col-lg-2 col-md-4">#}
-{#								<div class="footer-widget">#}
-{#									<h4 class="widget-title">الملتقى</h4>#}
-{#									<ul class="footer-menu">#}
-{#										<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a></li>#}
-{#										<li><a href="faq.html">استفسار</a></li>#}
-{#										<li><a href="checkout.html">الدفع</a></li>#}
-{#										<li><a href="login.html">التسجيل</a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{#							</div>#}
-{##}
-{#							<div class="col-lg-2 col-md-4">#}
-{#								<div class="footer-widget">#}
-{#									<h4 class="widget-title">التواصل</h4>#}
-{#									<ul class="footer-menu">#}
-{#										<li><a href="about-us.html">تواصل معنا</a></li>#}
-{#										<li><a href="faq.html">استفسار</a></li>#}
-{#										<li><a href="checkout.html">الدفع</a></li>#}
-{#										<li><a href="login.html">التسجيل</a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{#							</div>#}
-{##}
-{#                            <div class="col-lg-2 col-md-4">#}
-{#								<div class="footer-widget">#}
-{#									<h4 class="widget-title">الشركات</h4>#}
-{#									<ul class="footer-menu">#}
-{#										<li><a href="{% url 'company' %}">كل الشركات</a></li>#}
-{#										<li><a href="faq.html">استفسار</a></li>#}
-{#										<li><a href="checkout.html">الدفع</a></li>#}
-{#										<li><a href="login.html">التسجيل</a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{#							</div>#}
-{##}
-{##}
-{#                            <div class="col-lg-2 col-md-4">#}
-{#								<div class="footer-widget">#}
-{#									<h4 class="widget-title">معرض الملتقى</h4>#}
-{#									<ul class="footer-menu">#}
-{#										<li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
-{#										<li><a href="faq.html">استفسار</a></li>#}
-{#										<li><a href="checkout.html">الدفع</a></li>#}
-{#										<li><a href="login.html">التسجيل</a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{#							</div>#}
-{##}
-{##}
-{##}
-{#							<div class="col-lg-2 col-md-4">#}
-{#								<div class="footer-widget">#}
-{#									<h4 class="widget-title">روابط</h4>#}
-{#									<ul class="footer-menu">#}
-{#										<li><a href="about-us.html">عن الشركة</a></li>#}
-{#										<li><a href="faq.html">استفسار</a></li>#}
-{#										<li><a href="checkout.html">الدفع</a></li>#}
-{#									</ul>#}
-{#								</div>#}
-{#							</div>#}
-{##}
-{#						</div>#}
-{##}
-{#					</div>#}
-{##}
-{#				</div>#}
-{##}
-{#				<div class="footer-bottom">#}
-{#					<div class="container">#}
-{#						<div class="row align-items-center">#}
-{##}
-{#							<div class="col-lg-12 col-md-12 text-center">#}
-{#								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="#"></a>  جميع الحقوق محفوظة © 2022 </p>#}
-{#								<p class="mb-0"> تنفيذ شركة دنيا للإنتاج المرئي والصوتي<a href="#"></a></p>#}
-{#							</div>#}
-{##}
-{#						</div>#}
-{#					</div>#}
-{#				</div>#}
-{#			</footer>#}
-{##}
-{#			<!-- ============================ Footer End ================================== -->#}
-        {% endblock %}
+    {#			<!-- ============================ Footer Start ================================== -->#}
+    {#			<footer class="dark-footer skin-dark-footer">#}
+    {#				<div class="ht-80"></div>#}
+    {#				<div>#}
+    {#					<div class="container">#}
+    {#						<div class="row">#}
+    {##}
+    {#							<div class="col-lg-4 col-md-6">#}
+    {#								<div class="footer-widget">#}
+    {#									<img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo" style="height:120px;" alt="" />#}
+    {#                                    <h4 class="Reveal-st-author-title">شاذروان</h4>#}
+    {#									<p>المملكة العربية السعودية<br>جدة | حي الحمراء</p>#}
+    {#									<ul class="footer-bottom-social">#}
+    {#										<li><a href="#"><i class="ti-facebook"></i></a></li>#}
+    {#										<li><a href="#"><i class="ti-twitter"></i></a></li>#}
+    {#										<li><a href="#"><i class="ti-instagram"></i></a></li>#}
+    {#										<li><a href="#"><i class="ti-linkedin"></i></a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {##}
+    {#							</div>#}
+    {##}
+    {##}
+    {#							<div class="col-lg-2 col-md-4">#}
+    {#								<div class="footer-widget">#}
+    {#									<h4 class="widget-title">المشروع</h4>#}
+    {#									<ul class="footer-menu">#}
+    {#										<li><a href="{% url 'about' %}">من نحن</a></li>#}
+    {#										<li><a href="faq.html">استفسار</a></li>#}
+    {#										<li><a href="checkout.html">الدفع</a></li>#}
+    {#										<li><a href="login.html">التسجيل</a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {#							</div>#}
+    {##}
+    {#							<div class="col-lg-2 col-md-4">#}
+    {#								<div class="footer-widget">#}
+    {#									<h4 class="widget-title">الملتقى</h4>#}
+    {#									<ul class="footer-menu">#}
+    {#										<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a></li>#}
+    {#										<li><a href="faq.html">استفسار</a></li>#}
+    {#										<li><a href="checkout.html">الدفع</a></li>#}
+    {#										<li><a href="login.html">التسجيل</a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {#							</div>#}
+    {##}
+    {#							<div class="col-lg-2 col-md-4">#}
+    {#								<div class="footer-widget">#}
+    {#									<h4 class="widget-title">التواصل</h4>#}
+    {#									<ul class="footer-menu">#}
+    {#										<li><a href="about-us.html">تواصل معنا</a></li>#}
+    {#										<li><a href="faq.html">استفسار</a></li>#}
+    {#										<li><a href="checkout.html">الدفع</a></li>#}
+    {#										<li><a href="login.html">التسجيل</a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {#							</div>#}
+    {##}
+    {#                            <div class="col-lg-2 col-md-4">#}
+    {#								<div class="footer-widget">#}
+    {#									<h4 class="widget-title">الشركات</h4>#}
+    {#									<ul class="footer-menu">#}
+    {#										<li><a href="{% url 'company' %}">كل الشركات</a></li>#}
+    {#										<li><a href="faq.html">استفسار</a></li>#}
+    {#										<li><a href="checkout.html">الدفع</a></li>#}
+    {#										<li><a href="login.html">التسجيل</a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {#							</div>#}
+    {##}
+    {##}
+    {#                            <div class="col-lg-2 col-md-4">#}
+    {#								<div class="footer-widget">#}
+    {#									<h4 class="widget-title">معرض الملتقى</h4>#}
+    {#									<ul class="footer-menu">#}
+    {#										<li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
+    {#										<li><a href="faq.html">استفسار</a></li>#}
+    {#										<li><a href="checkout.html">الدفع</a></li>#}
+    {#										<li><a href="login.html">التسجيل</a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {#							</div>#}
+    {##}
+    {##}
+    {##}
+    {#							<div class="col-lg-2 col-md-4">#}
+    {#								<div class="footer-widget">#}
+    {#									<h4 class="widget-title">روابط</h4>#}
+    {#									<ul class="footer-menu">#}
+    {#										<li><a href="about-us.html">عن الشركة</a></li>#}
+    {#										<li><a href="faq.html">استفسار</a></li>#}
+    {#										<li><a href="checkout.html">الدفع</a></li>#}
+    {#									</ul>#}
+    {#								</div>#}
+    {#							</div>#}
+    {##}
+    {#						</div>#}
+    {##}
+    {#					</div>#}
+    {##}
+    {#				</div>#}
+    {##}
+    {#				<div class="footer-bottom">#}
+    {#					<div class="container">#}
+    {#						<div class="row align-items-center">#}
+    {##}
+    {#							<div class="col-lg-12 col-md-12 text-center">#}
+    {#								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="#"></a>  جميع الحقوق محفوظة © 2022 </p>#}
+    {#								<p class="mb-0"> تنفيذ شركة دنيا للإنتاج المرئي والصوتي<a href="#"></a></p>#}
+    {#							</div>#}
+    {##}
+    {#						</div>#}
+    {#					</div>#}
+    {#				</div>#}
+    {#			</footer>#}
+    {##}
+    {#			<!-- ============================ Footer End ================================== -->#}
+{% endblock %}
 
 {#			<!-- Log In Modal -->#}
 {#			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">#}
@@ -1505,13 +1502,13 @@
 {##}
 {#		</div>#}
 
-		<!-- ============================================================== -->
-		<!-- End Wrapper -->
-		<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
 
-		<!-- ============================================================== -->
-		<!-- All Jquery -->
-		<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
 {#        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>#}
 
 {#		<script src="{% static 'assets/js/jquery.min.js' %}"></script>#}
