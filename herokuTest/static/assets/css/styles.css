@@ -14451,4 +14451,48 @@ a.blue2-theme {
 
 }
 
+.container2 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
 
+@media (min-width: 1400px) {
+    .container2 {
+        width: 1400px !important;
+    }
+}
+    @media (min-width: 992px) {
+    .container2 {
+        width: 1400px !important;
+    }
+}
+    @media (min-width: 768px) {
+    .container2 {
+         width: 1400px !important;
+    }
+}
+
+
+.container2{ width: 1400px !important;}
+
+/*@media (min-width: 1200px) {*/
+/*    .container {*/
+/*        width: 750px !important;*/
+/*    }*/
+/*    }*/
+/*}*/
+/*    @media (min-width: 992px) {*/
+/*    .container {*/
+/*        width: 750px !
+/*    @media (min-width: 768px) {*/
+/*    .container {*/
+/*         width: 750px !important;*/
+/*    }*/
+/*}*/
+
+
+/*.container{ width: 750px !important;}*/
+/*.thumbnail{ width: 750px !important;}*/
