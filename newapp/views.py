@@ -94,7 +94,7 @@ def register(request):
 											   facebook_link=facebook_link, twitter_link=twitter_link,
 											   instgram_link=instgram_link, linkedin_link=linkedin_link,
 											   whatsapp_link=whatsapp_link, email=email)
-			return redirect('home')
+			return redirect('success')
 
 	else:
 		return render(request, 'register.html')
@@ -103,6 +103,10 @@ def register(request):
 
 def mapage(request):
 	return render(request, 'map.html')
+
+
+def success(request):
+	return render(request, 'success.html')
 
 
 def view_404(request, exception=None):

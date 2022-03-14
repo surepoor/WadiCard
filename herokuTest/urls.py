@@ -43,6 +43,7 @@ urlpatterns = [
     path('about', about, name='about'),
     path('register', register, name='register'),
     path('map', mapage, name='map'),
+    path('success', success, name='success'),
     path('<slug:slug_com>', details, name='details'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap')
     # re_path(r'^photos/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
