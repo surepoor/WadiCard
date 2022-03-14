@@ -102,6 +102,7 @@ class Company(models.Model):
 	instgram_link = models.URLField(max_length=100, blank=True)
 	linkedin_link = models.URLField(max_length=100, blank=True)
 	whatsapp_link = models.URLField(max_length=100, blank=True)
+	youtube_link = models.URLField(max_length=100, blank=True)
 	email = models.EmailField(max_length=255, blank=True)
 	date_created = models.DateTimeField(default=datetime.now, blank=True)
 	end_date = models.DateTimeField(blank=True, default=datetime.now)

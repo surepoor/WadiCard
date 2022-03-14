@@ -4,7 +4,7 @@ from django.utils.html import format_html
 
 # Register your models here.
 # admin.site.register(Company)
-admin.site.register(Ad)
+# admin.site.register(Ad)
 admin.site.register(Register)
 
 class ComAdmin(admin.ModelAdmin):
@@ -25,3 +25,20 @@ class ComAdmin(admin.ModelAdmin):
     list_filter = ('city', 'name_com', 'category_com', 'is_special', 'is_featured')
 
 admin.site.register(Company, ComAdmin)
+
+
+class AdAdmin(admin.ModelAdmin):
+
+    def thumbnail(self, object):
+        return format_html('<img src="{}" width="60" style="border-radius: 10px;" />'.format(object.ad_img.url))
+
+    thumbnail.short_description = 'img'
+
+    list_display = ('id', 'thumbnail', 'name_ad', 'date_created')
+
+    list_display_links = ('id', 'thumbnail', 'name_ad')
+
+    search_fields = ('id', 'name_ad')
+
+
+admin.site.register(Ad, AdAdmin)
