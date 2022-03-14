@@ -87,8 +87,12 @@ INSTALLED_APPS = [
     'newapp',
     'cloudinary',
     'cloudinary_storage',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
 
 ]
+SITE_ID = 1
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

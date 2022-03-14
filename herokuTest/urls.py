@@ -22,6 +22,15 @@ from django.views.generic import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
 from newapp.views import *
 from django.views.static import serve
+from django.contrib.sitemaps.views import sitemap
+from newapp.sitemaps import *
+
+sitemaps = {
+    'static': StaticViewSitemap,
+
+}
+
+
 
 urlpatterns = [
     # re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/assets/img/favicon.ico')),
@@ -35,6 +44,7 @@ urlpatterns = [
     path('register', register, name='register'),
     path('map', mapage, name='map'),
     path('<slug:slug_com>', details, name='details'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap')
     # re_path(r'^photos/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     # re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
