@@ -8,6 +8,8 @@ from operator import or_
 # import cloudinary.uploader
 # import cloudinary.api
 from random import shuffle
+from PIL import Image, ImageFont, ImageDraw
+import cloudinary
 
 # Create your views here.
 def home(request):
@@ -113,5 +115,27 @@ def view_404(request, exception=None):
     # make a redirect to homepage
     # you can use the name of url or just the plain link
     return redirect('home') # or redirect('name-of-index-url')
+
+
+
+
+def card(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('kufi.ttf',60)
+		my_image = Image.open("bg2.png")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+		image_edit.text((963,413), title, font=title_font)
+		my_image.save("zz.png")
+		image = "zz.png"
+		cloudinary.uploader.upload(image)
+
+		return redirect('success')
+
+
+
+	else:
+		return render(request, 'card.html')
 
 
