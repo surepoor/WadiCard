@@ -124,7 +124,7 @@ def card(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("card.png")
+		my_image = Image.open("dunia.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
