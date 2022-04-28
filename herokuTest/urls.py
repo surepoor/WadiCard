@@ -33,7 +33,7 @@ sitemaps = {
 
 
 urlpatterns = [
-    # re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/assets/img/favicon.ico')),
+    re_path(r'^favicon\.ico$', RedirectView.as_view(url='/static/assets/img/favicon.ico')),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('assets/img/favicon.ico'))),
     # path('Sh_log', admin.site.urls),
     path('admin', admin.site.urls),
@@ -42,7 +42,8 @@ urlpatterns = [
     # path('search', search, name='search'),
     # path('about', about, name='about'),
     # path('register', register, name='register'),
-    path('', card, name='card'),
+    path('', carddunia, name='carddunia'),
+    path('cardppmdc', cardppmdc, name='cardppmdc'),
     # path('map', mapage, name='map'),
     # path('success', success, name='success'),
     # path('<slug:slug_com>', details, name='details'),

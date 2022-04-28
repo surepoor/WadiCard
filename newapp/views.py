@@ -119,8 +119,18 @@ def view_404(request, exception=None):
 
 
 
+size1 = 240
+size2 = 637
+size3 = 230
+size4 = 637
+size5 = 200
+size6 = 637
+size7 = 190
+size8 = 637
 
-def card(request):
+
+
+def carddunia(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
@@ -130,16 +140,16 @@ def card(request):
 
 
 		if 5 <= len(name_com) <= 10:
-			image_edit.text((240, 637), title, (130, 130, 131), font=title_font)
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
 
 		if 11 <= len(name_com) <= 14:
-			image_edit.text((230, 637), title, (130, 130, 131), font=title_font)
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
 
 		elif 15 <= len(name_com) <= 20:
-			image_edit.text((200, 637), title, (130, 130, 131), font=title_font)
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
 
 		elif 21 <= len(name_com) <= 26:
-			image_edit.text((190, 637), title, (130, 130, 131), font=title_font)
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 		# else:
 		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
@@ -148,8 +158,8 @@ def card(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("newcard.png")
-		image = "newcard.png"
+		my_image.save("dunia.png")
+		image = "dunia.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
@@ -163,6 +173,53 @@ def card(request):
 
 
 	else:
-		return render(request, 'card.html')
+		return render(request, 'temp/card.html')
+
+
+def cardppmdc(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("ppmdc.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("ppmdc.png")
+		image = "ppmdc.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardppmdc.html')
+
 
 
