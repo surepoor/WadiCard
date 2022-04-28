@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_list_or_404, redirect
 from .models import *
+from django.http import HttpResponse
 
 from django.db.models import Q
 from functools import reduce
@@ -129,9 +130,15 @@ def card(request):
 		image_edit.text((963,413), title, font=title_font)
 		my_image.save("zz.png")
 		image = "zz.png"
-		cloudinary.uploader.upload(image)
-
-		return redirect('success')
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
 
 
 
