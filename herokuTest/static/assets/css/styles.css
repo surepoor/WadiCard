@@ -6151,13 +6151,13 @@ a.tag_t, a.tag_t:hover, a.tag_t:focus {
 	padding: 12px 22px;
 }
 .btn.btn-theme {
-    background:#f96825;
+    /*background:#f96825;*/
     border-radius: 4px;
 	/*margin-right:10px;*/
 	margin-bottom:5px;
 }
 .btn.btn-theme-light {
-    color:#f96825;
+    /*color:#f96825;*/
     background: rgba(255, 139, 0,0.12);
     border-radius: 4px;
 	margin-bottom:5px;
