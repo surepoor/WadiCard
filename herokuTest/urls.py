@@ -44,6 +44,7 @@ urlpatterns = [
     # path('register', register, name='register'),
     path('', carddunia, name='carddunia'),
     path('cardppmdc', cardppmdc, name='cardppmdc'),
+    path('cardbinladin', cardbinladen, name='cardbinladen'),
     # path('map', mapage, name='map'),
     # path('success', success, name='success'),
     # path('<slug:slug_com>', details, name='details'),
