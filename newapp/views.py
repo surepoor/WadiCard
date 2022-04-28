@@ -127,7 +127,7 @@ def card(request):
 		my_image = Image.open("card.png")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
-		image_edit.text((250,637), title, (130, 130, 131), font=title_font)
+		image_edit.text((170,637), title, (130, 130, 131), font=title_font)
 		my_image.save("newcard.png")
 		image = "newcard.png"
 		# cloudinary.uploader.upload(image)
