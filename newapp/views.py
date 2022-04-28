@@ -127,7 +127,27 @@ def card(request):
 		my_image = Image.open("card.png")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
-		image_edit.text((205,637), title, (130, 130, 131), font=title_font)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((220, 637), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((205, 637), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((175, 637), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((150, 637), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
 		my_image.save("newcard.png")
 		image = "newcard.png"
 		# cloudinary.uploader.upload(image)
