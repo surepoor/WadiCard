@@ -69,6 +69,9 @@ urlpatterns = [
 
     path('pmdc', cardpmdc, name='cardpmdc'),
     path('vdhc', cardvddc, name='cardvddc'),
+    path('alborg', cardalborg, name='cardalborg'),
+    path('abcc', cardabcc, name='cardabcc'),
+    path('hdhc', cardhdhc, name='cardhdhc'),
     # path('map', mapage, name='map'),
     # path('success', success, name='success'),
     # path('<slug:slug_com>', details, name='details'),
