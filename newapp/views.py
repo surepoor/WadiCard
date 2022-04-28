@@ -139,7 +139,7 @@ def card(request):
 			image_edit.text((185, 637), title, (130, 130, 131), font=title_font)
 
 		elif 21 <= len(name_com) <= 26:
-			image_edit.text((165, 637), title, (130, 130, 131), font=title_font)
+			image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
 
 		# else:
 		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
