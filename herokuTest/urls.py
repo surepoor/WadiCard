@@ -56,6 +56,15 @@ urlpatterns = [
     path('prm', cardprm, name='cardprm'),
     path('rec', cardrec, name='cardrec'),
     path('sacodeco', cardsacodeco, name='cardsacodeco'),
+
+
+    path('btat', cardbtat, name='cardbtat'),
+    path('btgroup', cardbtgroup, name='cardbtgroup'),
+    path('hasoub', cardhasoub, name='cardhasoub'),
+    path('hsb', cardhsb, name='cardhsb'),
+    path('btam', cardbtam, name='cardbtam'),
+    path('dsp', carddsb, name='carddsb'),
+    path('mubadra', cardmubadra, name='cardmubadra'),
     # path('map', mapage, name='map'),
     # path('success', success, name='success'),
     # path('<slug:slug_com>', details, name='details'),
