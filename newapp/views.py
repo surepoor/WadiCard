@@ -123,11 +123,11 @@ def view_404(request, exception=None):
 def card(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
-		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',28)
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
 		my_image = Image.open("card.png")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
-		image_edit.text((170,637), title, (130, 130, 131), font=title_font)
+		image_edit.text((190,637), title, (130, 130, 131), font=title_font)
 		my_image.save("newcard.png")
 		image = "newcard.png"
 		# cloudinary.uploader.upload(image)
