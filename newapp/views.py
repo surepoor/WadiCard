@@ -268,4 +268,417 @@ def cardbinladen(request):
 		return render(request, 'temp/cardbinladin.html')
 
 
+def cardwatan(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/watan.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
 
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/watan.png")
+		image = "photos/watan.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardwatan.html')
+
+
+def cardcpc(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/cpc.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/cpc.png")
+		image = "photos/cpc.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardcpc.html')
+
+
+
+
+def cardpremco(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/premco.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/premco.png")
+		image = "photos/premco.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardpremco.html')
+
+
+def carduaac(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/UAAC.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/uaac.png")
+		image = "photos/uaac.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/carduaac.html')
+
+
+def cardmgic(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/mgic.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/mgic.png")
+		image = "photos/mgic.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardmgic.html')
+
+
+def cardtower(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/tower.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/tower.png")
+		image = "photos/tower.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardmgic.html')
+
+
+def cardtower(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/tower.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/tower.png")
+		image = "photos/tower.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardmgic.html')
+
+
+def cardempower(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/empower.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/empower.png")
+		image = "photos/empower.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardempower.html')
+
+
+def cardbsc(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/BSC.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/BSC.png")
+		image = "photos/BSC.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardempower.html')
