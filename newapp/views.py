@@ -1095,7 +1095,7 @@ def carddsb(request):
 
 
 	else:
-		return render(request, 'temp/carddsb.html')
+		return render(request, 'temp/carddsp.html')
 
 
 def cardmubadra(request):
