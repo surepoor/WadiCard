@@ -1613,7 +1613,7 @@ def cardfast(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/fast.jpg")
+		my_image = Image.open("photos/fast.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
