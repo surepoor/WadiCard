@@ -1537,8 +1537,8 @@ def cardbihgen(request):
 		elif 21 <= len(name_com) <= 27:
 			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
-		else:
-			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+		# else:
+		# 	image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 
 		# elif len(name_com) > 26:
@@ -1583,8 +1583,8 @@ def cardwatanen(request):
 		elif 21 <= len(name_com) <= 27:
 			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
-		else:
-			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+		# else:
+		# 	image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 
 		# elif len(name_com) > 26:
