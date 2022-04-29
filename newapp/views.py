@@ -122,6 +122,7 @@ def view_404(request, exception=None):
 size1 = 240
 size2 = 637
 size3 = 210
+size31 = 220
 size4 = 637
 size5 = 200
 size6 = 637
@@ -1527,12 +1528,12 @@ def cardbihgen(request):
 			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
 
 		if 11 <= len(name_com) <= 14:
-			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+			image_edit.text((size31, size4), title, (130, 130, 131), font=title_font)
 
 		elif 15 <= len(name_com) <= 20:
 			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
 
-		elif 21 <= len(name_com) <= 26:
+		elif 21 <= len(name_com) <= 27:
 			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 		# else:
@@ -1573,12 +1574,12 @@ def cardwatanen(request):
 			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
 
 		if 11 <= len(name_com) <= 14:
-			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+			image_edit.text((size31, size4), title, (130, 130, 131), font=title_font)
 
 		elif 15 <= len(name_com) <= 20:
 			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
 
-		elif 21 <= len(name_com) <= 26:
+		elif 21 <= len(name_com) <= 27:
 			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 		# else:
