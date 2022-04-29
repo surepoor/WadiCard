@@ -1512,3 +1512,95 @@ def cardbcg(request):
 
 	else:
 		return render(request, 'temp/cardbcg.html')
+
+
+def cardbihgen(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('Frutiger LT 45 Light.ttf',24)
+		my_image = Image.open("photos/bihgen.jpg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/bihgen.png")
+		image = "photos/bihgen.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardbihgen.html')
+
+
+def cardwatanen(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('Frutiger LT 45 Light.ttf',24)
+		my_image = Image.open("photos/watanen.jpg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/watanen.png")
+		image = "photos/watanen.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardwatanen.html')
