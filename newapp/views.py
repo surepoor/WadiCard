@@ -121,7 +121,7 @@ def view_404(request, exception=None):
 
 size1 = 240
 size2 = 637
-size3 = 230
+size3 = 240
 size4 = 637
 size5 = 200
 size6 = 637
@@ -1466,3 +1466,49 @@ def cardjonson(request):
 
 	else:
 		return render(request, 'temp/cardjonson.html')
+
+
+def cardbcg(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
+		my_image = Image.open("photos/bcg.jpeg")
+		title = name_com
+		image_edit = ImageDraw.Draw(my_image)
+
+
+		if 5 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, (130, 130, 131), font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, (130, 130, 131), font=title_font)
+
+		elif 15 <= len(name_com) <= 20:
+			image_edit.text((size5, size6), title, (130, 130, 131), font=title_font)
+
+		elif 21 <= len(name_com) <= 26:
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/bcg.png")
+		image = "photos/bcg.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="/card",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		return redirect(html)
+
+
+
+	else:
+		return render(request, 'temp/cardbcg.html')

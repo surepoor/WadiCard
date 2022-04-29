@@ -76,6 +76,7 @@ urlpatterns = [
 
     path('bihg', cardbihg, name='cardbihg'),
     path('jonson', cardjonson, name='cardjonson'),
+    path('bcg', cardbcg, name='cardbcg'),
     # path('map', mapage, name='map'),
     # path('success', success, name='success'),
     # path('<slug:slug_com>', details, name='details'),
