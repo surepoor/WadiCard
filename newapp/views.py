@@ -1472,7 +1472,7 @@ def cardbcg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/bcg.jpeg")
+		my_image = Image.open("photos/bcg.jpg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
