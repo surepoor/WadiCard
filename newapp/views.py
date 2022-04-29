@@ -127,7 +127,7 @@ size4 = 637
 size5 = 200
 size51 = 190
 size6 = 637
-size7 = 190
+size7 = 175
 size8 = 637
 
 
@@ -1538,7 +1538,7 @@ def cardbihgen(request):
 			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 		else:
-			image_edit.text((size51, size6), title, (130, 130, 131), font=title_font)
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 
 		# elif len(name_com) > 26:
@@ -1584,7 +1584,7 @@ def cardwatanen(request):
 			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 		else:
-			image_edit.text((size51, size6), title, (130, 130, 131), font=title_font)
+			image_edit.text((size7, size8), title, (130, 130, 131), font=title_font)
 
 
 		# elif len(name_com) > 26:
