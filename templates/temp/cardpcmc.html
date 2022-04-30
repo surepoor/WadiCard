@@ -1,0 +1,440 @@
+{% load static %}
+
+{% block content %}
+
+{#{% load static %}#}
+{#{% load cloudinary %}#}
+{#<!DOCTYPE html>#}
+<html lang="ar" dir="rtl">
+	<head>
+        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+       <title>PCMC</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+        <!-- All Plugins Css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'assets/css/plugins.css' %}">
+
+
+
+        <!-- Custom CSS -->
+        <link href="{% static 'assets/css/styles.css' %}" rel="stylesheet">
+
+		<!-- Custom Color Option -->
+		<link href="{% static 'assets/css/colors.css' %}" rel="stylesheet">
+
+    </head>
+
+{#    <body class="red-skin">#}
+{#        <!-- ============================================================== -->#}
+{#        <!-- Preloader - style you can find in spinners.css -->#}
+{#        <!-- ============================================================== -->#}
+{#        <div id="preloader"><div class="preloader"><span></span><span></span></div></div>#}
+
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+{#        <div id="main-wrapper">#}
+{##}
+{#            <!-- ============================================================== -->#}
+{#            <!-- Top header  -->#}
+{#            <!-- ============================================================== -->#}
+{#            <!-- Start Navigation -->#}
+{#			<div class="header header-dark">#}
+{#				<div class="container">#}
+{#					<nav id="navigation" class="navigation navigation-landscape">#}
+{#						<div class="nav-header">#}
+{#							<a class="nav-brand" href="#">#}
+{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo hd-992" style="height:56px;" alt="" />#}
+{#								<img src="{% static 'assets/img/Shazerwan.png' %}" class="logo sw-m" alt="" />#}
+{#							</a>#}
+{##}
+{#							<div class="nav-toggle"></div>#}
+{#						</div>#}
+{#						<div class="nav-menus-wrapper justify-content-center" style="transition-property: none;">#}
+{#							<ul class="nav-menu justify-content-center">#}
+{##}
+{#								<li><a href="{% url 'home' %}">الرئيسية</a>#}
+{##}
+{#								</li>#}
+{##}
+{#                                <li><a href="{% url 'company' %}">كل الشركات</a></li>#}
+{##}
+{##}
+{#                                <li><a href="{% url 'about' %}">من نحن</a></li>#}
+{##}
+{#                                <li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
+{##}
+{#								<li><a href="">تواصل معنا</a>#}
+{##}
+{#								</li>#}
+{##}
+{##}
+{##}
+{##}
+{#								<!-- <li><a href="javascript:void(0);">القطاعات<span class="submenu-indicator"></span></a>#}
+{#									<ul class="nav-dropdown nav-submenu">#}
+{#										<li><a href="javascript:void(0);">List Layouts<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu">#}
+{#												<li><a href="list-layout-with-sidebar.html">With Sadebar</a></li>#}
+{#												<li><a href="list-layout-full-width.html">Full Width</a></li>#}
+{#												<li><a href="list-layout-with-map.html">With Map</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li><a href="javascript:void(0);">Grid Layouts<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu" style="display: none;">#}
+{#												<li><a href="grid-with-sidebar.html">With Sidebar</a></li>#}
+{#												<li><a href="grid-full-width.html">With Full Width</a></li>#}
+{#												<li><a href="grid-with-map.html">With Map</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li><a href="javascript:void(0);">Half Map Screen<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu">#}
+{#												<li><a href="half-map-with-list-layout.html">With List Layout</a></li>#}
+{#												<li><a href="half-map-with-grid-layout.html">With Grid Layout</a></li>#}
+{#												<li><a href="half-map-with-grid2-layout.html">With Grid Layout 2</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#										<li><a href="javascript:void(0);">Single Listing<span class="submenu-indicator"></span></a>#}
+{#											<ul class="nav-dropdown nav-submenu">#}
+{#												<li><a href="single-listing-1.html">Single Listing 1</a></li>#}
+{#												<li><a href="single-listing-2.html">Single Listing 2</a></li>#}
+{#												<li><a href="single-listing-3.html">Single Listing 3</a></li>#}
+{#											</ul>#}
+{#										</li>#}
+{#									</ul>#}
+{#								</li> -->#}
+{##}
+{#								<li><a href="https://hajj.uqu.edu.sa/multaqa/21/index.php">عن الملتقى</a>#}
+{##}
+{#								</li>#}
+{##}
+{#								<!-- <li><a href="index-Company.html">الصفحة التالية</a></li> -->#}
+{##}
+{#							</ul>#}
+{##}
+{#							<ul class="nav-menu nav-menu-social align-to-right">#}
+{##}
+{#								<!-- <li>#}
+{#									<a href="#" data-toggle="modal" data-target="#login">#}
+{#										<i class="fa fa-sign-in-alt mr-1"></i><span class="dn-lg">تسجيل الدخول</span>#}
+{#									</a>#}
+{#								</li> -->#}
+{#								<li class="add-listing bg-whit">#}
+{#									<a href="{% url 'register' %}">#}
+{#										 <i class="fas fa-plus-circle"></i> انضم لنا#}
+{#									</a>#}
+{#								</li>#}
+{#							</ul>#}
+{#						</div>#}
+{#					</nav>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- End Navigation -->#}
+{#			<div class="clearfix"></div>#}
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			<!-- ============================ Login Start================================== -->
+			<section class="gray">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-7 col-md-10">
+							<div class="loving-modern-login">
+
+                               <div class="text-center mb-4"><img src="{% static 'assets/logo/pcmc.jpeg' %}" style="max-width: 200px; " class="img-fluid" alt="" /></div>
+                                <div class="text-center mb-4">
+                                    <h2>بطاقة تهنئة عيد الفطر</h2>
+                                </div>
+								<div class="row main_login_form">
+									<div class="login_form_dm">
+										<form action="{% url 'cardpcmc' %}" id="edd_login_form" class="edd_form" method="post">
+                                            {% csrf_token %}
+											<fieldset>
+												<p class="edd-login-username">
+													<label>ادخل الإسم الثنائي</label>
+													<input name='name_com' class="form-control" type="text" placeholder="الاسم">
+												</p>
+{#												<p class="edd-login-username">#}
+{#													<label>القطاع</label>#}
+{#													<input name='category_com' class="form-control" type="text" placeholder="القطاع">#}
+{#												</p>#}
+{#												<p class="edd-login-password">#}
+{#													<label>عن الشركة</label>#}
+{#													<input name='description_com' class="form-control" type="text" placeholder="عن الشركة">#}
+{#												</p>#}
+{#												<p class="edd-login-password">#}
+{#													<label>المدينة</label>#}
+{#													<input name='city' class="form-control" type="text" placeholder="المدينة">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>الحي</label>#}
+{#													<input name='location' class="form-control" type="text" placeholder="الحي">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>رقم التواصل</label>#}
+{#													<input name='phone_num' class="form-control" type="text" placeholder="رقم التواصل">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>الموقع الإلكتروني</label>#}
+{#													<input name='website' class="form-control" type="text" placeholder="الموقع الإلكتروني">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>حساب الفيسبوك</label>#}
+{#													<input name='facebook_link' class="form-control" type="text" placeholder="حساب الفيسبوك">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>حساب التويتر</label>#}
+{#													<input name='twitter_link' class="form-control" type="text" placeholder="حساب التويتر">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>حساب الانستقرام</label>#}
+{#													<input name='instgram_link' class="form-control" type="text" placeholder="حساب الانستقرام">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>حساب لينكد ان</label>#}
+{#													<input name='linkedin_link' class="form-control" type="text" placeholder="حساب لينكد ان">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>رابط واتس اب</label>#}
+{#													<input name='whatsapp_link' class="form-control" type="text" placeholder="رابط واتس اب">#}
+{#												</p>#}
+{#                                                <p class="edd-login-password">#}
+{#													<label>الإيميل</label>#}
+{#													<input name='email' class="form-control" type="text" placeholder="الإيميل">#}
+{#												</p>#}
+{##}
+												<p class="edd-login-submit">
+													<input type="submit" class="btn btn-md btn-theme full-width" value="تسجيل">
+												</p>
+
+											</fieldset>
+{#											<div class="modal-divider"><span>Or login via</span></div>#}
+{#											<div class="social-login mb-3">#}
+{#												<ul>#}
+{#													<li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>#}
+{#													<li><a href="#" class="btn google"><i class="ti-google"></i></a></li>#}
+{#													<li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>#}
+{#												</ul>#}
+{#											</div>#}
+										</form>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ============================ Login End ================================== -->
+			
+{#			<!-- ============================ Call To Action Start ================================== -->#}
+{#			<section class="call-to-act" style="background:#e4074e url(assets/img/landing-bg.png) no-repeat">#}
+{#				<div class="container">#}
+{#					<div class="row justify-content-center">#}
+{#					#}
+{#						<div class="col-lg-7 col-md-8">#}
+{#							<div class="clt-caption text-center mb-4">#}
+{#								<h3>Subscribe Now!</h3>#}
+{#								<p>Simple pricing plans. Unlimited web maintenance service</p>#}
+{#							</div>#}
+{#							<div class="inner-flexible-box subscribe-box">#}
+{#								<div class="input-group">#}
+{#									<input type="text" class="form-control large" placeholder="Enter your mail here">#}
+{#									<button class="btn btn-subscribe" type="button"><i class="fa fa-arrow-right"></i></button>#}
+{#								</div>#}
+{#							</div>#}
+{#						</div>				#}
+{#					</div>#}
+{#				</div>#}
+{#			</section>#}
+{#			<!-- ============================ Call To Action End ================================== -->#}
+			
+			<!-- ============================ Footer Start ================================== -->
+{#			<footer class="dark-footer skin-dark-footer">#}
+{#				<div class="ht-80"></div>#}
+{#				<div>#}
+{#					<div class="container">#}
+{#						<div class="row">#}
+{##}
+{#							<div class="col-lg-4 col-md-6">#}
+{#								<div class="footer-widget">#}
+{#									<img src="{% static 'assets/img/Shazerwan.png' %}" class="img-fluid f-logo" style="height:120px;" alt="" />#}
+{#                                    <h4 class="Reveal-st-author-title">شاذروان</h4>#}
+{#									<p>المملكة العربية السعودية<br>جدة</p>#}
+{#									<ul class="footer-bottom-social">#}
+{#										<li><a href="#"><i class="ti-facebook"></i></a></li>#}
+{#										<li><a href="#"><i class="ti-twitter"></i></a></li>#}
+{#										<li><a href="#"><i class="ti-instagram"></i></a></li>#}
+{#										<li><a href="#"><i class="ti-linkedin"></i></a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">المشروع</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="about-us.html">من نحن</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">الملتقى</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="about-us.html">عن الملتقى</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">التواصل</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="about-us.html">تواصل معنا</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{##}
+{#                            <div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">معرض الملتقى</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="{% url 'map' %}">خريطة المعرض</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#										<li><a href="login.html">التسجيل</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{#							<div class="col-lg-2 col-md-4">#}
+{#								<div class="footer-widget">#}
+{#									<h4 class="widget-title">روابط</h4>#}
+{#									<ul class="footer-menu">#}
+{#										<li><a href="about-us.html">عن الشركة</a></li>#}
+{#										<li><a href="faq.html">استفسار</a></li>#}
+{#										<li><a href="checkout.html">الدفع</a></li>#}
+{#									</ul>#}
+{#								</div>#}
+{#							</div>#}
+{##}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{##}
+{#				<div class="footer-bottom">#}
+{#					<div class="container">#}
+{#						<div class="row align-items-center">#}
+{##}
+{#							<div class="col-lg-12 col-md-12 text-center">#}
+{#								<p class="mb-0"> معهد أبحاث خادم الحرمين الشريفين للحج والعمره<a href="https://themezhub.net"></a>  جميع الحقوق محفوظة © 2021 </p>#}
+{#							</div>#}
+{##}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</footer>#}
+{#			<!-- ============================ Footer End ================================== -->#}
+{% endblock %}
+
+{#			<!-- Log In Modal -->#}
+{#			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal">#}
+{#				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">#}
+{#					<div class="modal-content" id="registermodal">#}
+{#						<span class="mod-close" data-dismiss="modal"><i class="ti-close"></i></span>#}
+{#						<div class="modal-body">#}
+{#							<h4 class="modal-header-title">Log <span class="theme-cl">In</span></h4>#}
+{#							<div class="login-form">#}
+{#								<form>#}
+{##}
+{#									<div class="form-group">#}
+{#										<label>User Name</label>#}
+{#										<div class="input-with-icon gray">#}
+{#											<input type="text" class="form-control" placeholder="Username">#}
+{#											<i class="ti-user"></i>#}
+{#										</div>#}
+{#									</div>#}
+{##}
+{#									<div class="form-group">#}
+{#										<label>Password</label>#}
+{#										<div class="input-with-icon gray">#}
+{#											<input type="password" class="form-control" placeholder="*******">#}
+{#											<i class="ti-unlock"></i>#}
+{#										</div>#}
+{#									</div>#}
+{##}
+{#									<div class="form-group">#}
+{#										<button type="submit" class="btn btn-md full-width pop-login">Login</button>#}
+{#									</div>#}
+{##}
+{#								</form>#}
+{#							</div>#}
+{#							<div class="modal-divider"><span>Or login via</span></div>#}
+{#							<div class="social-login mb-3">#}
+{#								<ul>#}
+{#									<li><a href="#" class="btn fb"><i class="ti-facebook"></i></a></li>#}
+{#									<li><a href="#" class="btn google"><i class="ti-google"></i></a></li>#}
+{#									<li><a href="#" class="btn twitter"><i class="ti-twitter"></i></a></li>#}
+{#								</ul>#}
+{#							</div>#}
+{#							<div class="modat-foot">#}
+{#								<div class="md-left">Have't Account? <a href="register.html" class="theme-cl">Sign Up</a></div>#}
+{#								<div class="md-right"><a href="#" class="theme-cl">Forget Password?</a></div>#}
+{#							</div>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#			<!-- End Modal -->#}
+{##}
+{#			<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>#}
+{##}
+{##}
+{##}
+{#		</div>#}
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
+
+		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+		<script src="{% static 'assets/js/popper.min.js' %}"></script>
+		<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'assets/js/rangeslider.js' %}"></script>
+		<script src="{% static 'assets/js/select2.min.js' %}"></script>
+		<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+		<script src="{% static 'assets/js/slick.js' %}"></script>
+		<script src="{% static 'assets/js/slider-bg.js' %}"></script>
+		<script src="{% static 'assets/js/lightbox.js' %}"></script>
+		<script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+		<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+		<script src="{% static 'assets/js/counterup.min.js' %}"></script>
+
+		<script src="{% static 'assets/js/custom.js' %}"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+
+	</body>
+</html>
