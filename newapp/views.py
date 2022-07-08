@@ -121,10 +121,10 @@ def view_404(request, exception=None):
 
 size1 = 250
 size2 = 790
-size3 = 210
+size3 = 230
 size31 = 220
 size4 = 790
-size5 = 200
+size5 = 180
 size51 = 190
 size6 = 790
 size7 = 175
