@@ -166,7 +166,7 @@ def carddunia(request):
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/bihg",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
