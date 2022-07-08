@@ -923,7 +923,7 @@ def cardhsb(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/hsb.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1154,7 +1154,7 @@ def cardvddc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/vison.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1753,7 +1753,7 @@ def cardsbg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/sbg.jpeg")
+		my_image = Image.open("photos/adha/sbg2.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
