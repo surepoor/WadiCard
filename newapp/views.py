@@ -138,7 +138,7 @@ def carddunia(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/dunia.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -877,7 +877,7 @@ def cardhasoub(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/hasoub.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1292,7 +1292,7 @@ def cardhdhc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/hdh.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1430,7 +1430,7 @@ def cardjonson(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/johnson.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1615,7 +1615,7 @@ def cardfast(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/fast.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
