@@ -119,16 +119,18 @@ def view_404(request, exception=None):
 
 
 
-size1 = 240
-size2 = 637
+size1 = 250
+size2 = 790
 size3 = 215
 size31 = 220
-size4 = 637
+size4 = 790
 size5 = 200
 size51 = 190
-size6 = 637
+size6 = 790
 size7 = 175
-size8 = 637
+size8 = 790
+
+# sizetestY = 637
 
 
 
@@ -136,7 +138,7 @@ def carddunia(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("dunia.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -160,13 +162,13 @@ def carddunia(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("dunia.png")
-		image = "dunia.png"
+		my_image.save("photos/adhasave/dunia.png")
+		image = "photos/adhasave/dunia.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/adha/bihg",
+			folder="/adha/dunia",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -182,7 +184,7 @@ def cardppmdc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("ppmdc.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -206,13 +208,13 @@ def cardppmdc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("ppmdc.png")
-		image = "ppmdc.png"
+		my_image.save("photos/adhasave/ppmdc.png")
+		image = "photos/adhasave/ppmdc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/ppmdc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -228,7 +230,7 @@ def cardbinladen(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/binladin.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -252,13 +254,13 @@ def cardbinladen(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/binladin.png")
-		image = "photos/binladin.png"
+		my_image.save("photos/adhasave/binladin.png")
+		image = "photos/adhasave/binladin.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/binladin",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -274,7 +276,7 @@ def cardwatan(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/watan.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -298,13 +300,13 @@ def cardwatan(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/watan.png")
-		image = "photos/watan.png"
+		my_image.save("photos/adhasave/watan.png")
+		image = "photos/adhasave/watan.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/watan",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -320,7 +322,7 @@ def cardcpc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/cpc.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -344,13 +346,13 @@ def cardcpc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/cpc.png")
-		image = "photos/cpc.png"
+		my_image.save("photos/adhasave/cpc.png")
+		image = "photos/adhasave/cpc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/cpc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -368,7 +370,7 @@ def cardpremco(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/premco.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -392,13 +394,13 @@ def cardpremco(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/premco.png")
-		image = "photos/premco.png"
+		my_image.save("photos/adhasave/premco.png")
+		image = "photos/adhasave/premco.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/premco",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -414,7 +416,7 @@ def carduaac(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/UAAC.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -438,13 +440,13 @@ def carduaac(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/uaac.png")
-		image = "photos/uaac.png"
+		my_image.save("photos/adhasave/uaac.png")
+		image = "photos/adhasave/uaac.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/uaac",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -460,7 +462,7 @@ def cardmgic(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/mgic.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -484,13 +486,13 @@ def cardmgic(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/mgic.png")
-		image = "photos/mgic.png"
+		my_image.save("photos/adhasave/mgic.png")
+		image = "photos/adhasave/mgic.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/mgic",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -506,7 +508,7 @@ def cardtower(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/tower.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -530,13 +532,13 @@ def cardtower(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/tower.png")
-		image = "photos/tower.png"
+		my_image.save("photos/adhasave/tower.png")
+		image = "photos/adhasave/tower.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/tower",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -553,7 +555,7 @@ def cardempower(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/empower.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -577,13 +579,13 @@ def cardempower(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/empower.png")
-		image = "photos/empower.png"
+		my_image.save("photos/adhasave/empower.png")
+		image = "photos/adhasave/empower.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/empower",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -599,7 +601,7 @@ def cardbsc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/BSC.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -623,13 +625,13 @@ def cardbsc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/BSC.png")
-		image = "photos/BSC.png"
+		my_image.save("photos/adhasave/BSC.png")
+		image = "photos/adhasave/BSC.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/bsc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -645,7 +647,7 @@ def cardprm(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/prm.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -669,13 +671,13 @@ def cardprm(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/prm.png")
-		image = "photos/prm.png"
+		my_image.save("photos/adhasave/prm.png")
+		image = "photos/adhasave/prm.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/prm",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -691,7 +693,7 @@ def cardrec(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/rec.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -715,13 +717,13 @@ def cardrec(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/rec.png")
-		image = "photos/rec.png"
+		my_image.save("photos/adhasave/rec.png")
+		image = "photos/adhasave/rec.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/rec",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -737,7 +739,7 @@ def cardsacodeco(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/sacodeco.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -761,13 +763,13 @@ def cardsacodeco(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/sacodeco.png")
-		image = "photos/sacodeco.png"
+		my_image.save("photos/adhasave/sacodeco.png")
+		image = "photos/adhasave/sacodeco.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/sacodeco",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -783,7 +785,7 @@ def cardbtat(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/btat.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -807,13 +809,13 @@ def cardbtat(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/btat.png")
-		image = "photos/btat.png"
+		my_image.save("photos/adhasave/btat.png")
+		image = "photos/adhasave/btat.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/btat",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -829,7 +831,7 @@ def cardbtgroup(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/btgroup.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -853,13 +855,13 @@ def cardbtgroup(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/btgroup.png")
-		image = "photos/btgroup.png"
+		my_image.save("photos/adhasave/btgroup.png")
+		image = "photos/adhasave/btgroup.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/btgroup",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -875,7 +877,7 @@ def cardhasoub(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/hasoub.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -899,13 +901,13 @@ def cardhasoub(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/hasoub.png")
-		image = "photos/hasoub.png"
+		my_image.save("photos/adhasave/hasoub.png")
+		image = "photos/adhasave/hasoub.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/hasoub",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -921,7 +923,7 @@ def cardhsb(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/hsb.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -945,13 +947,13 @@ def cardhsb(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/hsb.png")
-		image = "photos/hsb.png"
+		my_image.save("photos/adhasave/hsb.png")
+		image = "photos/adhasave/hsb.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/hsb",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -967,7 +969,7 @@ def cardbtam(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/btam.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -991,13 +993,13 @@ def cardbtam(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/btam.png")
-		image = "photos/btam.png"
+		my_image.save("photos/adhasave//btam.png")
+		image = "photos/adhasave/btam.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/btam",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1013,7 +1015,7 @@ def carddsb(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/DSP.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1037,13 +1039,13 @@ def carddsb(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/DSP.png")
-		image = "photos/DSP.png"
+		my_image.save("photos/adhasave/DSP.png")
+		image = "photos/adhasave/DSP.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/dsb",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1059,7 +1061,7 @@ def cardmubadra(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/mubadra.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1083,13 +1085,13 @@ def cardmubadra(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/mubadra.png")
-		image = "photos/mubadra.png"
+		my_image.save("photos/adhasave/mubadra.png")
+		image = "photos/adhasave/mubadra.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/mubadra",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1106,7 +1108,7 @@ def cardpmdc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/pmdc.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1130,13 +1132,13 @@ def cardpmdc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/pmdc.png")
-		image = "photos/pmdc.png"
+		my_image.save("photos/adhasave/pmdc.png")
+		image = "photos/adhasave/pmdc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/pmdc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1152,7 +1154,7 @@ def cardvddc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/vddc.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1176,13 +1178,13 @@ def cardvddc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/vddc.png")
-		image = "photos/vddc.png"
+		my_image.save("photos/adhasave/vddc.png")
+		image = "photos/adhasave/vddc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/vddc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1198,7 +1200,7 @@ def cardalborg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/alborg.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1222,13 +1224,13 @@ def cardalborg(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/alborg.png")
-		image = "photos/alborg.png"
+		my_image.save("photos/adhasave/alborg.png")
+		image = "photos/adhasave/alborg.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/alborg",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1244,7 +1246,7 @@ def cardabcc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/abcc.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1268,13 +1270,13 @@ def cardabcc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/abcc.png")
-		image = "photos/abcc.png"
+		my_image.save("photos/adhasave/abcc.png")
+		image = "photos/adhasave/abcc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/abcc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1290,7 +1292,7 @@ def cardhdhc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/hdhc2.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1314,13 +1316,13 @@ def cardhdhc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/hdhc.png")
-		image = "photos/hdhc.png"
+		my_image.save("photos/adhasave/hdhc.png")
+		image = "photos/adhasave/hdhc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/hdhc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1336,7 +1338,7 @@ def cardkone(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/kone2.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1360,13 +1362,13 @@ def cardkone(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/kone.png")
-		image = "photos/kone.png"
+		my_image.save("photos/adhasave/kone.png")
+		image = "photos/adhasave/kone.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/kone",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1382,7 +1384,7 @@ def cardbihg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/bihg.jpeg")
+		my_image = Image.open("photos/adha/bihg.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1406,13 +1408,13 @@ def cardbihg(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/bihg.png")
-		image = "photos/bihg.png"
+		my_image.save("photos/adhasave/bihg.png")
+		image = "photos/adhasave/bihg.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/bihg",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1428,7 +1430,7 @@ def cardjonson(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/jonson.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1452,13 +1454,13 @@ def cardjonson(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/jonson.png")
-		image = "photos/jonson.png"
+		my_image.save("photos/adhasave/jonson.png")
+		image = "photos/adhasave/jonson.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/jonson",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1474,7 +1476,7 @@ def cardbcg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/bcg.jpg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1504,7 +1506,7 @@ def cardbcg(request):
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/bcg",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1520,7 +1522,7 @@ def cardbihgen(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('Frutiger LT 45 Light.ttf',24)
-		my_image = Image.open("photos/bihgen.jpg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1544,13 +1546,13 @@ def cardbihgen(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/bihgen.png")
-		image = "photos/bihgen.png"
+		my_image.save("photos/adhasave/bihgen.png")
+		image = "photos/adhasave/bihgen.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/bihgen",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1566,7 +1568,7 @@ def cardwatanen(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('Frutiger LT 45 Light.ttf',24)
-		my_image = Image.open("photos/watanen.jpg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1590,13 +1592,13 @@ def cardwatanen(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/watanen.png")
-		image = "photos/watanen.png"
+		my_image.save("photos/adhasave/watanen.png")
+		image = "photos/adhasave/watanen.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/watanen",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1613,7 +1615,7 @@ def cardfast(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/fast.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1637,13 +1639,13 @@ def cardfast(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/fast.png")
-		image = "photos/fast.png"
+		my_image.save("photos/adhasave/fast.png")
+		image = "photos/adhasave/fast.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/fast",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1659,7 +1661,7 @@ def cardpcmc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/pcmc.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1683,13 +1685,13 @@ def cardpcmc(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/pcmc.png")
-		image = "photos/pcmc.png"
+		my_image.save("photos/adhasave/pcmc.png")
+		image = "photos/adhasave/pcmc.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/pcmc",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1705,7 +1707,7 @@ def cardsaudi(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/saudi.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1729,13 +1731,13 @@ def cardsaudi(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/saudi.png")
-		image = "photos/saudi.png"
+		my_image.save("photos/adhasave/saudi.png")
+		image = "photos/adhasave/saudi.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/saudi",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
@@ -1751,7 +1753,7 @@ def cardsbg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/sbg.jpg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1775,13 +1777,13 @@ def cardsbg(request):
 		# elif len(name_com) > 26:
 		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
 
-		my_image.save("photos/sbg.png")
-		image = "photos/sbg.png"
+		my_image.save("photos/adhasave/sbg.png")
+		image = "photos/adhasave/sbg.png"
 		# cloudinary.uploader.upload(image)
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/card",
+			folder="/adha/sbg",
 		)
 		# return redirect('success')
 		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
