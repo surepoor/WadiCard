@@ -276,7 +276,7 @@ def cardwatan(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/watan.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1568,7 +1568,7 @@ def cardwatanen(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('Frutiger LT 45 Light.ttf',24)
-		my_image = Image.open("photos/adha/watan.jpeg")
+		my_image = Image.open("photos/adha/watanen.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
