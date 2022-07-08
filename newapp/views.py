@@ -370,7 +370,7 @@ def cardpremco(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/premco.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -416,7 +416,7 @@ def carduaac(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/uaac.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -462,7 +462,7 @@ def cardmgic(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/mgic.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -555,7 +555,7 @@ def cardempower(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/empower.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -601,7 +601,7 @@ def cardbsc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/bsc.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -647,7 +647,7 @@ def cardprm(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/mix.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -739,7 +739,7 @@ def cardsacodeco(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/sacodeco.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1015,7 +1015,7 @@ def carddsb(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/dsp.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1108,7 +1108,7 @@ def cardpmdc(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/pmdc.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
