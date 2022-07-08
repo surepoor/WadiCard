@@ -230,7 +230,7 @@ def cardbinladen(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/sbg.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -785,7 +785,7 @@ def cardbtat(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/btat.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -831,7 +831,7 @@ def cardbtgroup(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/btg.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -969,7 +969,7 @@ def cardbtam(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/btam.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1476,7 +1476,7 @@ def cardbcg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/bcg.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1753,7 +1753,7 @@ def cardsbg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/sbg.jpeg")
+		my_image = Image.open("photos/adha/")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
