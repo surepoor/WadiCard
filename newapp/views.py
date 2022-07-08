@@ -1384,7 +1384,7 @@ def cardbihg(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
-		my_image = Image.open("photos/adha/bihg.jpeg")
+		my_image = Image.open("photos/adha/bihg2.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
@@ -1522,7 +1522,7 @@ def cardbihgen(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('Frutiger LT 45 Light.ttf',24)
-		my_image = Image.open("photos/adha/")
+		my_image = Image.open("photos/adha/bihgen.jpeg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 
