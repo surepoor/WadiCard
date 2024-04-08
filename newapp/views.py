@@ -9,6 +9,8 @@ from operator import or_
 # import cloudinary.uploader
 # import cloudinary.api
 from random import shuffle
+
+from bidi.algorithm import get_display
 from PIL import Image, ImageFont, ImageDraw
 import cloudinary
 
@@ -119,22 +121,70 @@ def view_404(request, exception=None):
 
 
 
-size1 = 250
-size2 = 790
-size3 = 235
+size1 = 660
+size2 = 1100
+size3 = 580
 size31 = 220
-size4 = 790
-size5 = 225
+size4 = 1100
+size5 = 500
 size51 = 190
-size6 = 790
-size7 = 190
-size8 = 790
+size6 = 1100
+size7 = 450
+size8 = 1100
 
+size9 = 350
 # sizetestY = 637
 
 
 
-def carddunia(request):
+def wadi(request):
+	if request.method == 'POST':
+		name_com = request.POST['name_com']
+		title_font = ImageFont.truetype('GE-Dinar-One-Bold-1.otf',60)
+		my_image = Image.open("photos/wadicard.jpg")
+		title = get_display(name_com)
+		image_edit = ImageDraw.Draw(my_image)
+		font_color = (95, 95, 95)
+
+		if 4 <= len(name_com) <= 10:
+			image_edit.text((size1, size2), title, font_color, font=title_font)
+
+		if 11 <= len(name_com) <= 14:
+			image_edit.text((size3, size4), title, font_color, font=title_font)
+
+		elif 15 <= len(name_com) <= 18:
+			image_edit.text((size5, size6), title, font_color, font=title_font)
+
+		elif 19 <= len(name_com) <= 21:
+			image_edit.text((size7, size8), title, font_color, font=title_font)
+
+		elif 21 <= len(name_com):
+			image_edit.text((size9, size8), title, font_color, font=title_font)
+
+		# else:
+		# 	image_edit.text((180, 637), title, (130, 130, 131), font=title_font)
+
+
+		# elif len(name_com) > 26:
+		# 	image_edit.text((130, 637), title, (130, 130, 131), font=title_font)
+
+		my_image.save("photos/adhasave/wadiMakkah.png")
+		image = "photos/adhasave/wadiMakkah.png"
+		# cloudinary.uploader.upload(image)
+		cloudinary_response = cloudinary.uploader.upload_resource(
+			image,
+			use_filename=True,
+			folder="newtest",
+		)
+		# return redirect('success')
+		html = ('https://res.cloudinary.com/dts7rufgf/image/upload/{}'.format(cloudinary_response))
+		print("htmlllll" + html)
+		return redirect(html)
+	else:
+		return render(request, 'temp/card.html')
+
+
+def carddunia2(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('BigVesta-Arabic-Regular.ttf',24)
@@ -168,14 +218,12 @@ def carddunia(request):
 		cloudinary_response = cloudinary.uploader.upload_resource(
 			image,
 			use_filename=True,
-			folder="/adha/dunia",
+			folder="testtest",
 		)
 		# return redirect('success')
-		html = ('https://res.cloudinary.com/hgfcbzcmp/image/upload/{}'.format(cloudinary_response))
+		html = ('https://res.cloudinary.com/dts7rufgf/image/upload/{}'.format(cloudinary_response))
+		print("htmlllll" + html)
 		return redirect(html)
-
-
-
 	else:
 		return render(request, 'temp/card.html')
 

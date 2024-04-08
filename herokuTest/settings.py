@@ -207,9 +207,9 @@ MEDIA_URL = '//photos/'
 # )
 
 cloudinary.config(
-  cloud_name = "hgfcbzcmp",
-  api_key = "482516611123756",
-  api_secret = "ULa6vI61Q8UYE8PQ1OWYorT_Ozc",
+  cloud_name = "dts7rufgf",
+  api_key = "253965829937726",
+  api_secret = "logKdnOE9Bi5zhg8xub3CsJlPGs",
   secure = True
 )
 
