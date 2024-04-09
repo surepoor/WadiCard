@@ -17,43 +17,7 @@ import cloudinary
 # import cloudinary.api
 import cloudinary_storage
 
- LOGGING = {
- 'version': 1,
- 'disable_existing_loggers': False,
- 'formatters': {
-     'verbose': {
-         'format': ('%(asctime)s [%(process)d] [%(levelname)s] '
-                    'pathname=%(pathname)s lineno=%(lineno)s '
-                    'funcname=%(funcName)s %(message)s'),
-         'datefmt': '%Y-%m-%d %H:%M:%S'
-     },
-     'simple': {
-         'format': '%(levelname)s %(message)s'
-     }
- },
- 'handlers': {
-     'null': {
-         'level': 'DEBUG',
-         'class': 'logging.NullHandler',
-     },
-     'console': {
-         'level': 'INFO',
-         'class': 'logging.StreamHandler',
-         'formatter': 'verbose'
-     }
- },
- 'loggers': {
-     'django': {
-         'handlers': ['console'],
-         'level': 'DEBUG',
-         'propagate': True,
-     },
-     'django.request': {
-         'handlers': ['console'],
-         'level': 'DEBUG',
-         'propagate': False,
-     },
- }}
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -168,8 +132,8 @@ DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['shathrawan.com', 'http://www.shathrawan.com', 'www.shathrawan.com', 'https://www.shathrawan.com', 'shathrwan.herokuapp.com', 'https://shathrwan.herokuapp.com',  'https://desolate-stream-43784.herokuapp.com/', 'desolate-stream-43784.herokuapp.com', '127.0.0.1', 'http://127.0.0.1/']
-# ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['shathrawan.com', 'http://www.shathrawan.com', 'www.shathrawan.com', 'https://www.shathrawan.com', 'shathrwan.herokuapp.com', 'https://shathrwan.herokuapp.com',  'https://desolate-stream-43784.herokuapp.com/', 'desolate-stream-43784.herokuapp.com', '127.0.0.1', 'http://127.0.0.1/']
+ALLOWED_HOSTS = ['*']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
