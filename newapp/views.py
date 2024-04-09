@@ -127,7 +127,7 @@ size4 = 1100
 size5 = 550
 size51 = 190
 size6 = 1100
-size7 = 550
+size7 = 500
 size8 = 1100
 
 size9 = 400
