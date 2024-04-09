@@ -130,7 +130,7 @@ size6 = 1100
 size7 = 570
 size8 = 1100
 
-size9 = 450
+size9 = 470
 # sizetestY = 637
 
 
