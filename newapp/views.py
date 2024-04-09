@@ -138,7 +138,7 @@ size9 = 350
 def wadi(request):
 	if request.method == 'POST':
 		name_com = request.POST['name_com']
-		title_font = ImageFont.truetype('GE-Dinar-One-Bold-1.otf',60)
+		title_font = ImageFont.truetype('GE-Dinar-One-Bold-1.otf',52)
 		my_image = Image.open("photos/wadicard.jpg")
 		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
