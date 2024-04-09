@@ -119,7 +119,7 @@ def view_404(request, exception=None):
 
 
 
-size1 = 650
+size1 = 680
 size2 = 1100
 size3 = 650
 size31 = 220
@@ -127,10 +127,10 @@ size4 = 1100
 size5 = 550
 size51 = 190
 size6 = 1100
-size7 = 450
+size7 = 550
 size8 = 1100
 
-size9 = 350
+size9 = 400
 # sizetestY = 637
 
 
@@ -144,6 +144,9 @@ def wadi(request):
 		image_edit = ImageDraw.Draw(my_image)
 		font_color = (95, 95, 95)
 
+		
+		
+		
 		if 4 <= len(name_com) <= 10:
 			image_edit.text((size1, size2), title, font_color, font=title_font)
 
