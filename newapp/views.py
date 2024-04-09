@@ -124,10 +124,10 @@ size2 = 1100
 size3 = 650
 size31 = 220
 size4 = 1100
-size5 = 550
+size5 = 600
 size51 = 190
 size6 = 1100
-size7 = 500
+size7 = 600
 size8 = 1100
 
 size9 = 400
