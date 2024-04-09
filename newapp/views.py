@@ -9,8 +9,6 @@ from operator import or_
 # import cloudinary.uploader
 # import cloudinary.api
 from random import shuffle
-
-from bidi.algorithm import get_display
 from PIL import Image, ImageFont, ImageDraw
 import cloudinary
 
@@ -142,7 +140,7 @@ def wadi(request):
 		name_com = request.POST['name_com']
 		title_font = ImageFont.truetype('GE-Dinar-One-Bold-1.otf',60)
 		my_image = Image.open("photos/wadicard.jpg")
-		title = get_display(name_com)
+		title = name_com
 		image_edit = ImageDraw.Draw(my_image)
 		font_color = (95, 95, 95)
 
